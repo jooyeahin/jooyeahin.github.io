@@ -1762,6 +1762,7 @@ footer {
 .login-text {
   width: 90%;
   height: initial;
+  margin-top: 140px;
   transform: translateX(-50%);
 }
 .login-text > div > input {

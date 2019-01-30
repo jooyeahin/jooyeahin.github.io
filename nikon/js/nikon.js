@@ -255,7 +255,7 @@ $(document).ready(function(){
           '<div class="swiper-slide"><a href="#">'+depth2Menu[key][i]+'</a></div>'
         )
       }
-      depth3frame.update();
+      //depth3frame.update();
     });
 
 
@@ -285,21 +285,21 @@ $(document).ready(function(){
           '</div>'
         )
       }
-      depth3frame.update();
+      //depth3frame.update();
     });
 
 
     // 메인메뉴 클릭시 메뉴 아이콘 색상 변경
     var gnbclk = 0;
     $('.gnb > li').click(function(){
-      depth2Swiper.update();
+      //depth2Swiper.update();
       var dep2idx = $(this).index()+1;
       ++gnbclk
       for(i=0; i<=3; i++){
         $('.gnb > li').eq(i).children('a').find('img').attr({'src':'img/depth2_icon'+ (i+1) +'.png'})
       }
       $(this).find('img').attr({'src':'img/depth2_icon'+dep2idx+'_1.png'});
-      depth3frame.update();
+      //depth3frame.update();
     })
 
     // 메뉴 아이콘 클릭시
@@ -322,9 +322,8 @@ $(document).ready(function(){
         $('.depth3frame').css({'display':'none'})
         $('.gnb').css({'display':'none'})
       }
-
-      depth3frame.update();
-      depth2Swiper.update();
+      //depth3frame.update();
+      //depth2Swiper.update();
     })
 
 
@@ -477,7 +476,7 @@ $(document).ready(function(){
         $('header').removeClass('on');
         $('.gnb-back').hide();
       }
-      depth3frame.update();
+      //depth3frame.update();
     })
 
     // 스크롤 발생시 헤더 크기 변경
