@@ -22,7 +22,8 @@ $(document).ready(function(){
 	$('#lightbox, .close').click(function(){
 		$('#lightbox').width(0).height(0).fadeOut(200);
 		$('#box').fadeOut(200);
-
+		$('#email').val("");
+		$('#name').val("");
 		return false;
 	});
 
