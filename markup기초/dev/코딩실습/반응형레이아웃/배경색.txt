@@ -1,8 +1,0 @@
-ul li:nth-child(1) .wrap{background: #39516d;}
-    ul li:nth-child(2) .wrap{background: #fec6c7;}
-    ul li:nth-child(3) .wrap{background: #a98342;}
-    ul li:nth-child(4) .wrap{background: #f18988;}
-    ul li:nth-child(6) .wrap{background: #ffd200;}
-    ul li:nth-child(7) .wrap{background: #367250;}
-    ul li:nth-child(8) .wrap{background: #94ccd9;}
-    ul li:nth-child(9) .wrap{background: #636466;}

@@ -1,6 +1,0 @@
-@charset "UTF-8";
-#result{padding: 10px; background: #000; color:#fff;}
-.choice{background: yellow; border:1px solid red;}
-.active{background: hotpink;}
-button, input, select{display: block;}
-label input{display: inline;}
