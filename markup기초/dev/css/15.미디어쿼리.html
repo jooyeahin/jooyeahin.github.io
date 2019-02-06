@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>15.미디어쿼리</title>
+  <style>
+    /*
+      [디바이스의 넓이]
+      스마트폰   0~767px
+      테블릿     768px이상(768~991)
+      데스크탑   992px이상(992~1199)
+      큰데스크탑 1200px이상(1200~)
+
+      @media 미디어타입 and (디바이스의 넓이){
+        //각 디바이스의 상황이 왔을 때 처리할 스타일 작성
+      }
+    */
+
+    /*스마트폰   0~767px*/
+    @media screen and (max-width:767px) {
+      body{background:red;}
+    }
+
+    /*테블릿     768px이상(768~991)*/
+    @media screen and (min-width:768px) {
+      body{background:green;}
+    }
+
+    /*데스크탑   992px이상(992~1199)*/
+    @media screen and (min-width:992px) {
+      body{background:blue;}
+    }
+
+    /*큰데스크탑   1200px이상(1200~)*/
+    @media screen and (min-width:1200px) {
+      body{background:black;}
+    }
+
+  </style>
+</head>
+<body>
+
+</body>
+</html>

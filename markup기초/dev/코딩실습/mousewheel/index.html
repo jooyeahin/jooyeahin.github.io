@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>마우스휠(mousewheel)</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- 마우스휠 이벤트 사용 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <style>
+    *{margin: 0; padding: 0;}
+    nav{
+      position: fixed; left:0; top:50%; transform: translateY(-50%);
+      background: #fff; width: 100px; text-align: center;
+    }
+    nav li a{text-decoration: none; color:#000; text-transform: uppercase;}
+    nav li a.active{color:red;}
+    section{height: 100vh;}
+    .a{background: #089869;}
+    .b{background: #986308;}
+    .c{background: #2e9808;}
+    .d{background: #98087c;}
+  </style>
+  <script>
+    $(function(){
+      var windowH=$(window).height();
+      //네비게이션 링크 클릭시 해당 영역으로 이동처리
+      $('nav a').click(function(e){
+        e.preventDefault();
+        var i=$('nav a').index(this);
+        var nowTop=i*windowH;//스크롤의 위치
+        console.log(i, nowTop);
+        $('html').stop().animate({
+          'scrollTop':nowTop
+        },1000)
+      })
+
+      //스크롤이 발생되었을 때 네비게이션의 활성화상태 변경
+      //스크롤스파이:클릭을 하지 않은 상태에서 내가 보고있는 영역의 상태를 표시해주는 것
+      $(window).on('scroll',function(){
+        //예)windowH=500 scrollTop=0
+        var scrollTop=$(window).scrollTop();
+        // console.log(scrollTop);
+
+        //for문 사용안할시
+        var i=0;
+        if(scrollTop>=0 && scrollTop<1*windowH){//a구간 범위
+          i=0;
+        }else if(scrollTop>=1*windowH && scrollTop<2*windowH){//b구간 범위
+          i=1;
+        }else if(scrollTop>=2*windowH && scrollTop<3*windowH){//c구간 범위
+          i=2;
+        }else if(scrollTop>=3*windowH && scrollTop<4*windowH){//d구간 범위
+          i=3;
+        }
+        $('nav li a').removeClass();
+        $('nav li a').eq(i).addClass('active');
+
+        // for (var i = 0; i < 4; i++) {
+        //   //i=0 일때 0>=0 && 0<500       =>a
+        //   //i=1 일때 0>=500 && 0<1000    =>b
+        //   //i=2 일때 0>=1000 && 0<1500   =>c
+        //   //i=3 일때 0>=1500 && 0<2000   =>d
+        //   if(scrollTop>=i*windowH && scrollTop<(i+1)*windowH){//영역의 범위
+        //     // console.log(i)
+        //     //초기화
+        //     $('nav li a').removeClass();
+        //     $('nav li a').eq(i).addClass('active');
+        //   }
+        // }
+      })
+      .scroll();//스크롤이 발생되지 않아도 최초에 한번 수행
+
+      //마우스휠을 위아래로 조작시 scrollTop의 위치를 변경처리
+      $('section').on('mousewheel',function(e, delta){
+        if(delta>0){//마우스휠을 올린상태
+          //내가 선택한 section의 이전section의 위쪽위치값을 구한다.
+          if($(this).prev().is('section')){//이전섹션이 존재할 경우
+            var prev=$(this).prev().offset().top;
+            $('html').stop().animate({
+              scrollTop:prev
+            },1000)
+            console.log('올림', prev);
+          }
+        }else if(delta<0){//마우스휠을 내린상태
+          if($(this).next().is('section')){//이전섹션이 존재할 경우
+            var next=$(this).next().offset().top;
+            $('html').stop().animate({
+              scrollTop:next
+            },1000)
+            console.log('내림', next);
+          }
+        }
+      })
+
+
+
+
+
+
+
+
+    })
+  </script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#" class="active">a</a></li>
+      <li><a href="#">b</a></li>
+      <li><a href="#">c</a></li>
+      <li><a href="#">d</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrap">
+    <section class="a"></section>
+    <section class="b"></section>
+    <section class="c"></section>
+    <section class="d"></section>
+  </div>
+
+</body>
+</html>

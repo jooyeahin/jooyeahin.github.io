@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>07.position(relative)</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    #wrap{width: 400px; height: 400px;
+    border:1px solid #000;}
+    #wrap div{
+      /* 상대위치 */
+      position: relative;
+      /* 방향에 대한 속성 top, bottom, right, left를 이용하여 이동 */
+      width: 100px; height: 100px;}
+    .box1{background: hotpink;}
+    .box2{background: blue;
+      left:300px; top:-100px;
+      /* right:-300px; bottom:100px; */
+    }
+    .box3{background: green; left:300px; top:100px;}
+    .box4{background: orange;}
+    .box5{background: black; left:150px; top:-250px;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>03.jquery선택자(form).html</title>
+  <style>
+    #result{padding: 10px; background: #000; color:#fff;}
+    .choice{background: yellow; border:1px solid red;}
+    .active{background: hotpink;}
+    button, input, select{display: block;}
+    label input{display: inline;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      //1.버튼 선택
+      $('button').addClass('active');
+      $(':button, input[type=reset], input[type=submit]').addClass('active');
+
+      //*특정요소로 감싸기 wrap()
+      // $('input').wrap('<div class="choice"></div>');
+
+      //2.라디오 선택하기
+      $('input[type=radio]').parent().addClass('active');
+      //3.라디오, 체크박스 상태 변경하기
+      //3-1.라디오의 첫번째를 해제하고 두번째 체크하기
+      $('input[type=radio]').eq(1).attr('checked',true);
+      //3-2.체크박스의 값을 체크
+      $('input[type=checkbox]').attr('checked',true);
+
+      //4.텍스트입력 박스에 '안녕하세요'글자 넣기
+      $('[type=text]').val('안녕하세요');
+      //5.텍스트입력 박스에 있는 값을 검색결과에 출력
+      $('#result span').text($('[type=text]').val());
+      //6.숨겨진 값에 값 넣기
+      $('[type=hidden]').val('hide value');
+
+      //7.textarea에 검색결과에 있는 값 획득 후 출력
+      $('textarea').text($('#result span').text());
+
+      //8.select의 옵션값을 획득하고 검색결과에 출력
+      var option=$('select option:selected').val();//val=>value의 값 //text=>내용
+      $('#result span').text(option);
+
+      //9.select의 값이 변경될 때 변경된 값을 alert으로 출력하기
+      $('select').change(function(){
+        var option=$('select option:selected').val();
+        alert(option);
+      })
+
+      //10.라디오값이 변경되면 alert으로 값 출력
+      $('[type=radio]').change(function(){
+        //체크가 된 input의 부모label이 텍스트값을 가지고 있으므로
+        var check=$('[type=radio]:checked').parent().text();
+        alert(check);
+      })
+
+    })
+
+
+  </script>
+</head>
+<body>
+  <div id="result">검색결과: <span></span></div>
+  <form class="" action="#" method="post">
+    <!-- 버튼 -->
+    <button type="button">일반버튼</button>
+    <button type="reset">초기화</button>
+    <button type="submit">전송</button>
+    <input type="button" value="일반버튼">
+    <input type="reset" value="초기화">
+    <input type="submit" value="전송">
+
+    <!-- 입력창,숨김값 -->
+    <input type="text">
+    <input type="password">
+    <input type="hidden">
+
+    <!-- label, 체크, 라디오 -->
+    <label><input type="checkbox">체크박스1</label>
+    <label><input type="checkbox">체크박스2</label>
+    <label><input type="radio" name="group" checked>라디오1</label>
+    <label><input type="radio" name="group">라디오2</label>
+    <label><input type="radio" name="group">라디오3</label>
+
+    <!-- 여러줄입력 -->
+    <textarea name="ta" rows="8" cols="80"></textarea>
+    <!-- select>option*3>{옵션$} -->
+    <select name="op" id="">
+      <option value="red">옵션1</option>
+      <option value="blue">옵션2</option>
+      <option value="green">옵션3</option>
+    </select>
+
+
+  </form>
+
+</body>
+</html>

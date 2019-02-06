@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    *{margin: 0; padding: 0;}
+    button{border: 0; background: none;}
+    .wrap{text-align: center; width: 700px; margin: auto;}
+    .wrap h3{font-size: 30px; color:#4d4d4d; margin-bottom: 20px;}
+    .wrap video{width: 100%; height: 100%; margin-bottom: 10px;
+      border:1px solid #000; box-sizing: border-box;
+    }
+
+    body.fullscreen .video{
+      position: fixed; width:100%; height: 100%; left:0; top:0;
+      background: #fff;
+    }
+    body.fullscreen .video .wrap{
+      position: absolute; top:0; left:0; right:0; bottom:30px;
+      width: 100%; background: #000;
+    }
+    body.fullscreen .video .wrap video{margin: 0;}
+    body.fullscreen #control{
+      position: absolute; bottom:0; width: 100%; background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h3>STARBUCKS RESERVE</h3>
+    <div class="video">
+      <div class="wrap">
+        <video id="video" src="source/starbuck_reserve.mp4">
+          video를 지원하지 않는 브라우저입니다.
+        </video>
+      </div>
+      <!-- 컨트롤러 -->
+      <div id="control">
+        <button id="btn-play-pause"><i class="material-icons">play_arrow</i></button>
+        <button id="btn-replay"><i class="material-icons">replay</i></button>
+        <button id="btn-volume"><i class="material-icons">volume_up</i></button>
+        <button id="btn-fullscreen"><i class="material-icons">fullscreen</i></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="video.js"></script>
+</body>
+</html>

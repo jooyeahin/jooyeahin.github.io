@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>08.z-index</title>
+  <style>
+    *{margin:0; padding:0;}
+    .wrap{border:1px solid #000;
+      position:relative;
+      background:gray;
+      width:200px; height:200px;
+    }
+    .wrap div{
+      width:100px; height:100px;
+      position:absolute;
+      border:1px solid #000;
+    }
+    .red{background:red;}
+    .blue{background:blue;top:20px; left:20px;}
+    .green{background:green;top:40px; left:40px;}
+    /*
+      z-index => 요소가 겹쳐있을 경우 우선순위를 변경하는 것
+      값이 높을 수록 위쪽에 배치되며 낮을 수록 아래쪽에 배치됨.
+      -값을 줄 수도 있음.
+      *z-index는 부모에 값이 걸려있을 경우 자식도 영향을 받는다.
+    */
+    .wrap:nth-child(1){z-index:1;}
+    .wrap:nth-child(2){z-index:2; bottom:150px; left:50px;}
+
+    .wrap:nth-child(1) .green{z-index:10000;}
+    .wrap:nth-child(2) .green{z-index:1;}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+  </div>
+  <div class="wrap">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //반복문 : 조건에 맞을 경우 중괄호안의 구문을 반복적으로 실행하는 것
+    //for문
+    /*
+            초기식         조건식       증감식
+      for (var i = 0; i < array.length; i++) {
+        array[i]//조건을 만족할 경우 실행할 구문
+      }
+    */
+    //문제 : result변수에 1부터 5까지 더한 값을 저장
+    var result=0;
+    for (var i = 1; i < 6; i++) {
+      result=result+i;//result+=i;
+    }
+    document.write('결과:'+result+'<br>');
+
+    //while문
+    //주의사항 : 무한루프에 빠질 수 있으므로 주의해야한다.
+    //          무한루프에 빠지지 않을려면 종결하기 위한 식을 중괄호 안에 작성해주어야함.
+    /*
+      //초기식(필수 아님)
+             조건식
+      while (true) {
+        조건에 만족할 때 수행할 식
+        증감식(종결식, 필수 아님)
+      }
+    */
+    result=0;//결과값을 0으로 초기화
+    var i = 1;
+    while (i < 6) {
+      result=result+i;//result+=i;
+      i++;
+    }
+    document.write('결과:'+result+'<br>');
+
+    /*
+    1번째 반복=> i=1; 1<6 참 => result=0+1; i의 값이 1증가 2;
+    2번째 반복=> i=2; 2<6 참 => result=1+2; i의 값이 1증가 3;
+    3번째 반복=> i=3; 3<6 참 => result=3+3; i의 값이 1증가 4;
+    4번째 반복=> i=4; 4<6 참 => result=6+4; i의 값이 1증가 5;
+    5번째 반복=> i=5; 5<6 참 => result=10+5; i의 값이 1증가 6;
+    6번째 반복=> i=6; 6<6 거짓  => result=15
+
+    1번째 반복=> i=1; 1<6 참 => i의 값이 1증가 2; result=0+2;
+    2번째 반복=> i=2; 2<6 참 => i의 값이 1증가 3; result=2+3;
+    3번째 반복=> i=3; 3<6 참 => i의 값이 1증가 4; result=5+4;
+    4번째 반복=> i=4; 4<6 참 => i의 값이 1증가 5; result=9+5;
+    5번째 반복=> i=5; 5<6 참 => i의 값이 1증가 6; result=14+6;
+    6번째 반복=> i=6; 6<6 거짓 => result=20;
+    */
+  </script>
+</body>
+</html>

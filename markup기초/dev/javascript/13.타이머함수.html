@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+      타이머함수 : javascript에 내장되어 있는 함수
+      setTimeout(함수이름 또는 익명함수, 밀리세컨즈)
+      =>일정시간 후 함수를 한번만 실행
+      setInterval(함수이름 또는 익명함수, 밀리세컨즈)
+      =>일정시간마다 함수를 반복 실행
+
+      clearTimeout(setTimeout을 가리키고 있는 변수이름)
+      =>일정시간 후 함수를 한번 실행하는 것을 중지
+      clearInterval(setInterval을 가리키고 있는 변수이름)
+      =>일정시간마다 함수를 반복 실행하는 것을 중지
+
+      millisecond밀리세컨즈=1000=1초
+    */
+
+    //문제 : 2초 뒤에 한번만 알림창 띄우기
+    var msg=function(){
+      alert('메세지출력');
+    }
+
+    // var play1=setTimeout(msg, 2000);//첫번째 매개변수 자리에 들어가는 함수는 분리해서 넣을 수 있음
+    // setTimeout(function(){
+    //   alert('메세지출력');
+    // }, 2000);
+
+    //문제 : 2초 마다 알림창 띄우기
+    var play2=setInterval(msg, 2000);
+    // setInterval(function(){
+    //   alert('메세지출력');
+    // }, 2000);
+  </script>
+  <!-- 멈추기위한 버튼 만들기 -->
+  <button onclick="clearTimeout(play1)">setTimeout중지</button>
+  <button onclick="clearInterval(play2)">setInterval중지</button>
+</body>
+</html>

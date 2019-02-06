@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //사칙, 나머지 연산
+    //+, -, *, /, %
+    var num1, num2;
+    num1=10, num2=2;
+    console.log('사칙, 나머지연산=============');
+    console.log(num1+num2);
+    console.log(num1-num2);
+    console.log(num1*num2);
+    console.log(num1/num2);
+    console.log(num1%num2);
+
+    //비교연산(비교연산의 결과는 불(논리형)이다.)
+    // >,<, >=, <=, ==, !=
+    // ===, !== (값뿐만 아니라 자료형도 함께 비교)
+    console.log('비교연산=============');
+    console.log(num1>num2);
+    console.log(num1<num2);
+    console.log(num1==num2);
+    console.log(num1!=num2);
+    console.log(num1=='10');
+    console.log(num1==10);
+    console.log(num1==='10');
+    console.log(num1===10);
+
+    //대입연산(변수에 값을 할당)
+    console.log('대입연산=============');
+    num1=1;//1로 초기화(대입)
+    //복합대입연산자(변수의 값에 연산처리)
+    console.log(num1+=2);//num1=num1+2
+    console.log(num1-=2);//num1=num1-2
+    console.log(num1*=2);//num1=num1*2
+    console.log(num1/=2);//num1=num1/2
+    console.log(num1%=2);//num1=num1%2
+
+    //논리연산(참, 거짓을 판별)
+    /*
+      논리곱연산자   && and(그리고)  좌변과 우변이 모두 만족하면 참
+      논리합연산자   || or(또는)     좌변, 우변 중 하나라도 만족하면 참
+      논리부정연산자  ! not(부정)    참이면 거짓, 거짓이면 참
+    */
+    console.log('논리연산=============');
+    console.log('논리곱');
+    console.log(true&&true);
+    console.log(true&&false);
+    console.log(false&&true);
+    console.log(false&&false);
+    console.log('논리합');
+    console.log(true||true);
+    console.log(true||false);
+    console.log(false||true);
+    console.log(false||false);
+    console.log('부정');
+    console.log(!true);
+
+    //문제
+    //클럽 입장에 제한을 주고자 한다.
+    //입장할 수 있는 조건
+    //1. 여자
+    //2. 20대만 가능 20~29
+    //위의 두가지 조건을 통과하면 입장가능이 출력되고
+    //아닐경우 입장불가가 뜨도록 프로그램을 구성하시오.
+
+    var gender;//성별(여 또는 남을 받도록 한다.)
+    var age;//나이를 저장한다.
+
+    //비교후에 결과값을 반환받는다.
+    // gender=prompt('성별?(여 또는 남)');
+    // age=prompt('나이?(숫자만 입력)');
+    var result=(gender=='여')&&(age>=20)&&(age<30)?'입장가능':'입장불가';
+
+    if((gender=='여')&&(age>=20)&&(age<30)){
+      result='입장가능';
+    }else{
+      result='입장불가';
+    }
+
+    console.log('결과:',result);
+
+    //증감연산 : 기존의 변수에 1씩 증감처리
+    //++(1증가) , --(1감소)
+    //선처리와 후처리가 있다.(변수 앞에 붙으면 선처리, 뒤에 붙으면 후처리)
+    console.log('증감연산=============');
+    num1=1;
+    console.log(num1++);//1
+    console.log(num1++);//2
+    console.log(++num1);//4
+    console.log(++num1);//5
+    console.log(num1--);//5
+    console.log(--num1);//3
+
+    //삼항연산
+    //결과=조건식?참일때 수행할 것:거짓일때 수행할 것
+    var result=(gender=='여')&&(age>=20)&&(age<30)?'입장가능':'입장불가';
+
+
+  </script>
+</body>
+</html>

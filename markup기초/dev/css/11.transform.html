@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>11.transform(변형)</title>
+  <style>
+    *{margin:0; padding:0;}
+    div{
+      width:100px; height:100px;
+      margin:100px; border:1px solid #000;
+      float:left;
+      perspective:300px;
+    }
+    p{width:100%; height:100%; background:blue; opacity:0.3;}
+    /*이동 translate()*/
+    /* div:nth-child(1) p{transform:translateX(100%);}
+    div:nth-child(2) p{transform:translateY(100%);}
+    div:nth-child(3) p{transform:translate(100%,100%);} */
+
+    /*비틀기(기울이기) skew()*/
+    /* div:nth-child(1) p{transform:skewX(10deg);}
+    div:nth-child(2) p{transform:skewY(10deg);}
+    div:nth-child(3) p{transform:skew(10deg,10deg);} */
+
+    /*크기 scale()*/
+    /* div:nth-child(1) p{transform:scaleX(2);}
+    div:nth-child(2) p{transform:scaleY(0.5);}
+    div:nth-child(3) p{transform:scale(2,0.5);} */
+
+    /*회전 rotate()*/
+    /* div:nth-child(1) p{transform:rotateX(45deg);}
+    div:nth-child(2) p{transform:rotateY(45deg);}
+    div:nth-child(3) p{transform:rotate(45deg);} */
+
+    /*중심축 이동하기 transform-origin*/
+    div:nth-child(1) p{transform:rotateX(45deg); transform-origin:10px 10px;}
+    div:nth-child(2) p{transform:rotateY(45deg);}
+    div:nth-child(3) p{transform:rotate(45deg);transform-origin:left bottom;}
+
+  </style>
+</head>
+<body>
+  <div><p></p></div>
+  <div><p></p></div>
+  <div><p></p></div>
+</body>
+</html>

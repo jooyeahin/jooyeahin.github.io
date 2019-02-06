@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>12.animation</title>
+  <style>
+    *{margin:0; padding:0;}
+    /*
+      @keyframes 애니메이션이름 {
+        애니메이션 구간을 작성하는 부분 (두구간으로 나눌때는 from, to)
+        0%{}=>애니메이션 시작
+        50%{}=>중간
+        100%{}=>끝
+      }
+      animation:애니메이션이름, 총시간, 가속도함수이름, 지연시간, 반복횟수, 방향설정;
+    */
+    div{
+      width:200px; height:200px;
+      background:blue;
+      animation-name:myAni;
+      animation-duration:2s;
+      animation-fill-mode:forwards;
+      animation-iteration-count:infinite;/*반복횟수를 숫자로 넣어도 됨*/
+      animation-delay:2s;
+      animation-timing-function:linear;
+      animation-direction:alternate-reverse;
+    }
+
+    @keyframes myAni {
+      0%{background:blue; transform:rotate(0deg);}
+      100%{background:orange; transform:rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

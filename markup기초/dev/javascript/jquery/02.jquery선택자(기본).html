@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>02.jquery선택자(기본).html</title>
+  <style>
+    #result{padding:10px; background:#000; color:#fff;}
+    .active{background:hotpink;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      //기본패턴 =>$(선택자).메서드();
+
+      //1.h1선택
+      // $('h1').addClass('active');
+      //2.h1~h6동시 선택
+      // $('h1, h2, h3, h4, h5, h6').addClass('active');
+      // $(':header').addClass('active');
+      //3.리스트중에 .active가 적용되어있는 선택자에 글자색 변경
+      // $('ul li a.active').css('color','white');
+      //4.리스트중에 두번째리스트의 글자색 변경하기
+      // $('ul li').eq(1).find('a').css('color','white');
+      // $('ul li:nth-child(2) a').css('background','red');
+      //5.리스트중 홀수번째 글자색 변경(홀수:odd, 짝수:even, 수열:2n)
+      // $('ul li:nth-child(odd) a').css('background','red');
+      //6.ul의 인접형제 div의 자식중 span만 선택
+      // $('ul + div > span').addClass('active');
+      //7.div의 자식 div를 선택하고 그안에 있는 span중 첫번째선택
+      // $('div>div>span:nth-child(2)').addClass('active');
+      // $('div>div>span:nth-of-type(1)').addClass('active');
+      //8.리스트중 클래스가 active가 아닌 것 선택
+      // $('ul li a').not('.active').css('color','red');
+      // $('ul li a:not(.active)').css('color','red');
+
+      //부모찾기 => parent()부모, parents()조상(부모들)
+      //조건)자식을 먼저 선택한 후 자식을 기준으로 부모를 찾는다.
+      //1.p의 부모찾기
+      // $('p').parent().addClass('active');
+      //2.p의 조상중 div인것 모두찾기
+      // $('p').parents().addClass('active');
+
+      //자식찾기 => find()후손, children()자식
+      //조건)부모를 먼저 선택한 후 부모를 기준으로 자식 또는 후손을 찾는다.
+      //1.ul의 인접한 형제 div의 자식 중 span찾기
+      // $('ul+div').children('span').addClass('active');
+      //2.div의 후손중 span찾기
+      // $('div').find('span').addClass('active');
+
+      //형제찾기 =>next(), nextAll() 다음 있는 형제(들)
+      //        =>prev(), prevAll() 이전에 있는 형제(들)
+      //        =>siblings() 이전, 다음에 있는 형제들
+      //조건)형제를 찾기위한 기준을 정한다음 그 기준으로 형제찾기
+      //1.div 안에 있는 span중 첫번째를 선택하고 그다음에 있는 형제찾기
+      // $('div span:nth-of-type(1)').next().addClass('active');
+      //2.div 안에 있는 span중 첫번째를 선택하고 그다음에 있는 형제들찾기
+      //$('div span:nth-of-type(1)').nextAll().addClass('active');
+      //3.div 안에 있는 div의 후손 span중에 첫번째를 선택 후 이전형제선택
+      //$('div div span:nth-of-type(1)').prev().addClass('active');
+      //4.div 안에 있는 div의 후손 span중에 첫번째를 선택 후 형제들선택
+      // $('div div span:nth-of-type(1)').siblings().addClass('active');
+
+      //검색결과
+      //1.텍스트라는 글자를 검색결과에 출력하기
+      // $('#result span').text('<b>텍스트</b>');
+      $('#result span').html('<b>텍스트</b>');
+      //2.검색결과의 값을 가져와서 alert으로 출력하기
+      var text=$('#result span').text();
+      alert(text);
+      //3.h1의 글자를 획득하고 검색결과에 출력하기
+      text=$('h1').text();
+      $('#result span').html(text);
+
+    })
+  </script>
+</head>
+<body>
+  <div id="result">검색결과: <span></span></div>
+  <hr>
+  <!-- h$*6>{제목$} -->
+  <h1>제목1</h1>
+  <h2>제목2</h2>
+  <h3>제목3</h3>
+  <h4>제목4</h4>
+  <h5>제목5</h5>
+  <h6>제목6</h6>
+  <!-- ul>li*3>a[href=#]>{링크$} -->
+  <ul>
+    <li><a href="#" class="active">링크1</a></li>
+    <li><a href="#">링크2</a></li>
+    <li><a href="#">링크3</a></li>
+  </ul>
+
+  <div>
+    부모입니다.
+    <!-- span*3>{span$} -->
+    <span>span1</span>
+    <span>span2</span>
+    <span>span3</span>
+    <div>
+      자식입니다.
+      <p>문장입니다.</p>
+      <span>span1</span>
+      <span>span2</span>
+      <span>span3</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>13.반응형이미지</title>
+</head>
+<body>
+  <!-- 반응형이미지 : 디바이스의 크기에 맞춰 자동으로 확대/축소되는 것
+                      이미지의 크기를 변경할 때는 원래비율을 변경하면 안된다.
+  -->
+  <h4>원본이미지</h4>
+  <img src="img/photo.jpg" alt="">
+
+  <h4>화면의 넓이에 맞춘 이미지</h4>
+  <img src="img/photo.jpg" alt="" style="width:100%;">
+
+  <h4>화면의 넓이에 맞춘 이미지(원본이미지의 크기보다 더 커지진 않는다.)</h4>
+  <img src="img/photo.jpg" alt="" style="max-width:100%;">
+
+  <h4>화면의 넓이에 맞춘 이미지(정해놓은 최소 넓이보다 작아지지 않는다.)</h4>
+  <img src="img/photo.jpg" alt="" style="width:100%; min-width:300px;">
+
+  <h4>화면의 넓이에 맞춘 이미지(정해놓은 최소 넓이보다 작아지지 않는다.원본이미지의 크기보다 더 커지진 않는다.)</h4>
+  <img src="img/photo.jpg" alt="" style="max-width:100%; min-width:300px;">
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //break : 제어문을 빠져나가기 위해 사용함.
+    //문제: i가 5이면 반복문을 빠져나오게 한다.
+    for (var i = 0; i < 10; i++) {
+      if(i==5){//만약에 i가 5라면
+        break;//반복문을 빠져나온다.
+      }
+      document.write(i+' ');
+    }
+    document.write('<hr>');
+
+    //continue : continue를 만나면 이후 문장을 건너뛰고 다시 반복 수행
+    //문제: 5의 배수가 아닌 숫자만 출력하기
+    for (var i = 1; i <= 50; i++) {
+      //i의 값이 5의 배수일때
+      if(i%5==0){//i의 값을 5로 나누었을때 나머지값이 0이라면
+        continue;
+      }
+      document.write(i+' ');
+    }
+
+  </script>
+</body>
+</html>

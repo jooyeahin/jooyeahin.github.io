@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>09.스타일선택자 우선순위</title>
+  <style>
+    /* !important > 인라인 > 아이디 > 클래스 > 요소 */
+    /* !important=> 어쩔수 없는 경우에만 사용할 것 */
+    #logo{color:red;}
+    .logo{color:blue;}
+    h1{color:green !important;}
+  </style>
+</head>
+<body>
+  <h1 id="logo" class="logo" style="color:yellow;">로고</h1>
+</body>
+</html>

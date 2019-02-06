@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>02.box</title>
+  <style>
+    /* 박스와 관련된 속성
+      width:넓이
+      height:높이
+      padding:안쪽여백
+      margin:바깥쪽여백
+      border:테두리
+      border-radius:모서리 라운드
+      box-sizing:border,padding을 포함한 크기 지정시
+      opacity:투명도
+      box-shadow:박스의 그림자
+    */
+    *{margin: 0; padding: 0;}
+    .box1{
+      background: #ff6200;
+      width:300px;
+      height: 300px;
+      padding: 50px;
+      margin: 50px;
+      border: 5px solid #000;
+      border-radius: 50px;
+      box-sizing:border-box;
+    }
+    .innerbox{
+      background: blue;
+      color:white;
+      height: 100%;
+      text-align: center;
+      line-height: 190px;
+      box-shadow: inset 0px 0px 14px 6px #000;
+    }
+
+    .box2{
+      width: 200px; height: 200px;
+      background: orange url(img/man.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .box2 .innerbox2{
+      background: blue;
+      height: 100%;
+      transition: 0.5s;
+    }
+    .box2 .innerbox2:hover{
+      opacity: 0;
+    }    
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <div class="innerbox">안쪽박스</div>
+  </div>
+  <div class="box2">
+    <div class="innerbox2"></div>
+  </div>
+</body>
+</html>

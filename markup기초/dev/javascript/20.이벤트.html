@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div{height:100px; border:1px solid #000;}
+  </style>
+</head>
+<body>
+  <h2>마우스이벤트(움직이기)</h2>
+  <div id="box1">이곳에 마우스를 올리고 움직이세요.</div>
+
+  <h2>마우스이벤트(클릭)</h2>
+  <div id="box2">이곳에 마우스를 올리고 클릭, 더블클릭하세요.</div>
+
+  <h2>모바일터치이벤트</h2>
+  <div id="box3">이곳을 터치하고 움직이세요(모바일환경에서만 작동됨)</div>
+
+  <h2>키보드이벤트</h2>
+  <div id="box4">아래의 입력창에서 키보드를 누르세요.</div>
+  <input type="text" id="test">
+
+  <script>
+    //아이디로 요소 선택
+    var dox1=document.getElementById('box1');
+    var dox2=document.getElementById('box2');
+    var dox3=document.getElementById('box3');
+    var dox4=document.getElementById('box4');
+    var test=document.getElementById('test');
+
+    //이벤트 연결
+    //기본사용법 => 객체(요소).addEventListener('이벤트이름', function);
+
+    //1.마우스 움직이기
+    box1.addEventListener('mousemove',mouseEvent1);//영역에서 마우스를 움직일때
+    box1.addEventListener('mouseout',mouseEvent1);//영역을 벗어났을때
+    box1.addEventListener('mouseenter',mouseEvent1);//영역에 들어왔을때
+    box1.addEventListener('mouseleave',mouseEvent1);//영역을 벗어났을때
+
+    function mouseEvent1(e){//e는 이벤트객체를 말함.
+      //이벤트가 발생한 시점의 x, y축 좌표값 구하기
+      x=e.clientX;
+      y=e.clientY;
+      //정보 출력
+      box1.innerHTML=e.type+'발생<br>';//e.type은 발생한 이벤트명
+      box1.innerHTML+='좌표 x:'+x+' y:'+y;
+    }
+
+    //2. 마우스 클릭
+    box2.addEventListener('click',mouseEvent2);//클릭했을때
+    box2.addEventListener('dblclick',mouseEvent2);//더블클릭했을때
+    box2.addEventListener('mousedown',mouseEvent2);//마우스를 눌렀을때
+    box2.addEventListener('mouseup',mouseEvent2);//마우스를 뗐을때
+
+    function mouseEvent2(e){
+      x=e.clientX;
+      y=e.clientY;
+      //정보 출력
+      box2.innerHTML=e.type+'발생<br>';
+      box2.innerHTML+='좌표 x:'+x+' y:'+y;
+    }
+
+    //3. 모바일터치
+    box3.addEventListener('touchmove',touchEvent);//터치하고 움직일떄
+    box3.addEventListener('touchstart',touchEvent);//터치를 했을때
+    box3.addEventListener('touchend',touchEvent);//터치를 한 후 손가락을 뗐을때
+
+    function touchEvent(e){
+      if(e.type!='touchend'){//touchmove, touchstart
+        if(e.clientX==undefined){
+          x=e.targetTouches[0].clientX;
+          y=e.targetTouches[0].clientY;
+        }
+        box3.innerHTML=e.type+'발생<br>';
+        box3.innerHTML+='좌표 x:'+x+' y:'+y;
+      }else{//touchend
+        //터치를 하고 있을때만 좌표값을 구할 수 있으므로 이벤트명만 출력한다.
+        box3.innerHTML=e.type+'발생<br>';
+      }
+    }
+
+    //4.키보드이벤트
+    test.addEventListener('keypress',keyEvent);//키를 눌렀을때(특정키 작동안함)
+    test.addEventListener('keydown',keyEvent);//키를 눌렀을때
+    test.addEventListener('keyup',keyEvent);//키를 눌렀다가 뗐을때
+
+    function keyEvent(e){
+      //(구글에서 keyboard keycode검색해서 사용하기)
+      var code=e.keyCode;//누른 키의 코드값을 얻어온다
+      box4.innerHTML='코드값:'+code+'<br>';
+      box4.innerHTML+=e.type+'발생';
+
+      //키를 누르고 난 후 입력박스 값 초기화
+      test.value='';
+      if(code==49){//숫자1을 눌렀을때
+        box4.style.backgroundColor='red';
+      }else{
+        box4.style.backgroundColor='';
+      }
+    }
+
+  </script>
+
+
+
+</body>
+</html>

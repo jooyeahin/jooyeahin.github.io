@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>로그인팝업</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="login.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="login.js"></script>
+</head>
+<body>
+  <!-- 로그인을 하기위한 버튼과 로그인을 했을 때의 정보 -->
+  <div class="center">
+    <button id="btn-login">login</button>
+    <div class="user-info">
+      <span><b>홍길동</b>님 반갑습니다.</span>
+      <button id="btn-logout">logout</button>
+    </div>
+  </div>
+
+  <!-- 로그인팝업 -->
+  <div class="login-form">
+    <h1>LOGIN</h1>
+    <form action="#">
+      <div>
+        <label for="id">아이디</label>
+        <input type="text" placeholder="아이디" id="id">
+      </div>
+      <!-- <p class="message">아이디를 입력하세요.</p> -->
+      <div>
+        <label for="password">비밀번호</label>
+        <input type="password" placeholder="비밀번호" id="password">
+      </div>
+      <!-- <p class="message">비밀번호를 입력하세요.</p> -->
+      <button id="btn-submit" type="button">login</button>
+      <p class="find-info">정보를 잊으셨나요?
+        <a href="#">아이디찾기</a> | <a href="#">비밀번호찾기</a>
+      </p>
+    </form>
+  </div>
+
+
+
+
+
+</body>
+</html>

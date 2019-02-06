@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>04.요소숨기기</title>
+  <style>
+    div{background:#90b692;}
+    div p{border:1px solid #000;}
+    .box1:hover p{visibility:hidden;}
+    .box2:hover p{opacity:0;}
+    .box3:hover p{display:none;}
+  </style>
+</head>
+<body>
+  <h2>특정 요소를 숨기기위한 방법</h2>
+  <div class="box1">
+    <h3>visibility:hidden</h3>
+    <p>숨김처리되고 원래 영역을 유지</p>
+  </div>
+  <div class="box2">
+    <h3>opacity:0</h3>
+    <p>투명처리되고 원래 영역을 유지</p>
+  </div>
+  <div class="box3">
+    <h3>display:none</h3>
+    <p>원래 영역이 사라짐.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //String : 문자열을 조작하기 위한 기능을 가지고 있는 객체
+    var str="Hello! Javascript!";
+    document.write('문자열의 길이:'+str.length+'<br>');
+    document.write('문자열의 위치:'+str.indexOf('!')+'<br>');
+    document.write('문자열의 위치:'+str.indexOf('!',6)+'<br>');
+    document.write('문자열의 위치:'+str.lastIndexOf('!')+'<br>');
+    document.write('특정 위치의 문자:'+str.charAt(17)+'<br>');
+    document.write('문자열자르기:'+str.substring(0,6)+'<br>');//시작인덱스, 끝인덱스
+    document.write('문자열자르기:'+str.substring(7,str.length)+'<br>');
+    document.write('문자열자르기:'+str.substr(0,5)+'<br>');//시작인덱스, 길이
+    document.write('문자열바꾸기:'+str.replace('Hello!','안녕!')+'<br>');
+    document.write('문자열바꾸기:'+str.replace(/!/g, '~')+'<br>');//정규표현식
+    document.write('대문자로바꾸기:'+str.toUpperCase()+'<br>');
+    document.write('소문자로바꾸기:'+str.toLowerCase()+'<br>');
+  </script>
+</body>
+</html>

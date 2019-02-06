@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>01.jquery선언</title>
+  <!-- 1.다운로드:파일을 내부에 가지고 있음 -->
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <!-- 2.cdn:외부에서 소스를 끌어와서 사용함 -->
+  <!-- https://cdnjs.com/사이트에서 끌어올 소스를 검색 후 사용 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  // $(document).ready(function(){
+  // $(function(){
+  //
+  // })
+  window.onload=function(){
+    // document.getElementsByTagName('h1')[0].style.backgroundColor='red';
+    $('h1').css('background','red');
+  }
+</script>
+</head>
+<body>
+  <h1>제목</h1>
+  <script>
+    //document.ready필요없음
+    // $('h1').css('background','red');
+
+  </script>
+</body>
+</html>

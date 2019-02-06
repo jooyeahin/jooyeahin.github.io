@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>03.display</title>
+  <style>
+    div, span{
+      border:1px solid #000;
+      height:50px;
+    }
+    div:nth-of-type(2){display:inline;}
+    div:nth-of-type(3){display:inline-block;}
+
+    span:nth-of-type(2){display:inline-block;}
+    span:nth-of-type(3){display:block;}
+
+  </style>
+</head>
+<body>
+  <h2>블록요소</h2>
+  <div>기본 블록요소</div>
+  <div>블록요소->인라인요소로 변경</div>
+  <div>블록요소->인라인블록요소로 변경</div>
+
+  <h2>인라인요소</h2>
+  <span>기본 인라인요소</span>
+  <span>인라인요소->인라인블록요소로 변경</span>
+  <span>인라인요소->블록요소로 변경</span>
+</body>
+</html>

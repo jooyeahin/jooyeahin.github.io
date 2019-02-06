@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>04.스타일조작css</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      //css()스타일조작 메서드
+      //하이픈(-)이 들어가는 스타일 속성은 두가지 방식을 사용한다.
+      //1.'backgroundColor' =>자바스크립트 속성
+      //2.'background-color' =>css스타일 속성
+
+      //1.요소를 매번 선택하고 css메서드를 한번씩 호출
+      $('.box').css('float','left');//css('변경하고자하는속성','변경할값')
+      $('.box').css('margin',10);
+      $('.box').css('width',100);
+      $('.box').css('height',100);
+      $('.box').css('backgroundColor','red');
+
+      //2.체이닝기법:메서드를 연결해서 사용하는 것
+      $('.box').css('float','left')
+      .css('margin',10)
+      .css('width',100)
+      .css('height',100)
+      .css('backgroundColor','red');
+
+      //3.객체로 작성:css()메서드를 한번만 사용=>가장 효율적인 구조
+      $('.box').css({//css(객체)
+        'float':'left',
+        'margin':10,
+        'width':100,
+        'height':100,
+        'backgroundColor':'red'
+      });
+
+      alert($('.box').css('float'));
+
+
+    })
+
+  </script>
+</head>
+<body>
+  <!-- div[class=box]*3 -->
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</body>
+</html>
