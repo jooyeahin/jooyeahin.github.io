@@ -390,13 +390,6 @@ $(document).ready(function(){
       depth3frame.update();
     })
 
-
-
-
-
-
-
-
     // 장바구니 아이콘 클릭시 팝업 노출
     $('.icon-bag').on('click', function(e){
       e.preventDefault();
