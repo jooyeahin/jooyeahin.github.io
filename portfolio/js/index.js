@@ -30,7 +30,7 @@ $(document).ready(function(){
   }
 
   // a태그 href속성 제거 및 스크롤 이동
-  $(".menubar").find('a').removeAttr("href");
+  // $(".menubar").find('a').removeAttr("href");
   $('.menubar > li').eq(0).on('click', function(){
     $('html').animate( { scrollTop : 0 }, 500 );
   })
