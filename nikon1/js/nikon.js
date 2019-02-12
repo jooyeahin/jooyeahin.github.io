@@ -251,8 +251,8 @@ $(document).ready(function(){
           $('.depth3frame').css({'display':'none'})
           $('body').removeClass('noScroll')
         }
-        depth3frame.update();
-        depth2Swiper.update();
+        //depth3frame.update();
+        //depth2Swiper.update();
       })
 
       $(window).scroll(function(e){ // e, e.preventDefault
