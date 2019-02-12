@@ -235,6 +235,32 @@ $(document).ready(function(){
         this.location.reload(false);
       });
 
+
+      // 메뉴 아이콘 클릭시
+      $('.icon-menu').click(function(e){
+        e.preventDefault();
+        $('header').css('transition','0s');
+        if($('.depth2-frame').css('display') == "none"){ //보이게
+          $('header').addClass('on');
+          //$('header').removeClass('scroll')
+          $('.gnb > li > .gnb-back').hide();
+          $(this).parent('li').find('.gnb-back').show();
+          $('.depth2-frame').css({'display':'block'})
+          $('.depth3frame').css({'display':'block'})
+          $('.gnb').css({'display':'block'})
+        }else{ //안보이게
+          $('header').removeClass('on');
+          $('header').removeClass('scroll-on');
+          $(this).parent('li').find('.gnb-back').hide();
+          $('.depth2-frame').css({'display':'none'})
+          $('.depth3frame').css({'display':'none'})
+          $('.gnb').css({'display':'none'})
+        }
+        depth3frame.update();
+        depth2Swiper.update();
+      })
+
+
       if($('header.on').height()>600){
         $('.icon-menu').addClass('icon-close')
         $('.gnb > li > .gnb-back').hide();
@@ -302,30 +328,7 @@ $(document).ready(function(){
       depth3frame.update();
     })
 
-    // 메뉴 아이콘 클릭시
-    $('.icon-menu').click(function(e){
-      e.preventDefault();
-      $('header').css('transition','0s');
-      if($('.depth2-frame').css('display') == "none"){ //보이게
-        $('header').addClass('on');
-        //$('header').removeClass('scroll')
-        $('.gnb > li > .gnb-back').hide();
-        $(this).parent('li').find('.gnb-back').show();
-        $('.depth2-frame').css({'display':'block'})
-        $('.depth3frame').css({'display':'block'})
-        $('.gnb').css({'display':'block'})
-      }else{ //안보이게
-        $('header').removeClass('on');
-        $('header').removeClass('scroll-on');
-        $(this).parent('li').find('.gnb-back').hide();
-        $('.depth2-frame').css({'display':'none'})
-        $('.depth3frame').css({'display':'none'})
-        $('.gnb').css({'display':'none'})
-      }
 
-      depth3frame.update();
-      depth2Swiper.update();
-    })
 
 
 
