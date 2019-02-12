@@ -258,7 +258,7 @@ $(document).ready(function(){
       $(window).scroll(function(e){ // e, e.preventDefault
         e.preventDefault();
         var height = $(document).scrollTop();
-        //console.log(height)
+        console.log(height)
         if(height>100){ // 100픽셀 이상 스크롤했을 때
           //--------------100픽셀 이상 스크롤, 스크롤안된상태------------------
           $('header').addClass('scroll');
