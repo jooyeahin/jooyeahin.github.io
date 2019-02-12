@@ -236,7 +236,7 @@ $(document).ready(function(){
       });
 
       // 스크롤 발생 후 100픽셀 이상 넘어가면 헤더 변화
-      $(window).scroll(function(e){
+      $('body').scroll(function(e){
         e.preventDefault();
         var height = $(document).scrollTop();
         $('header').css('transition','all 0.3s ease');
@@ -490,7 +490,7 @@ $(document).ready(function(){
     })
 
     // 스크롤 발생시 헤더 크기 변경
-    $(window).scroll(function(){
+    $('body').scroll(function(){
       var height = $(document).scrollTop();
       $('header').addClass('notrst')
       if(height>100){
