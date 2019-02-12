@@ -235,8 +235,8 @@ $(document).ready(function(){
         this.location.reload(false);
       });
 
-      $('.icon-menu').on('click', function(){
-        //e.preventDefault();
+      $('.icon-menu').on('click', function(e){
+        e.preventDefault();
         $('header').css('transition','0s');
         if($('.depth2-frame').css('display') == "none"){ //보이게
           $('header').addClass('on');
@@ -255,8 +255,8 @@ $(document).ready(function(){
         depth2Swiper.update();
       })
 
-      $(window).scroll(function(){ // e, e.preventDefault
-        //e.preventDefault();
+      $(window).scroll(function(e){ // e, e.preventDefault
+        e.preventDefault();
         var height = $(document).scrollTop();
         console.log(height)
         if(height>100){ // 100픽셀 이상 스크롤했을 때
