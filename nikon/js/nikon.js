@@ -308,7 +308,7 @@ $(document).ready(function(){
           $('.depth3frame').css({'top':'165px'})
           $('.icon-menu').click(function(e){
             ++scrlheight;
-              $('header').Class('on')
+              $('header').addClass('on')
               $('header').removeClass('scroll')
               $('header').removeClass('scroll-on')
               if(scrlheight>1){
