@@ -235,41 +235,36 @@ $(document).ready(function(){
         this.location.reload(false);
       });
 
-
-
       // 스크롤 발생 후 100픽셀 이상 넘어가면 헤더 변화
       $(window).scroll(function(e){
         e.preventDefault();
         var height = $(document).scrollTop();
         $('header').css('transition','all 0.3s ease');
-          $('header').addClass('scroll')
-          $('.top-area > h1 > a > img').attr({'src':'img/nikon-logo-small.png'}).css({'margin-top':'20px'})
-          $('.util-nav').addClass('scroll')
-          $('nav.wrapper').css({'top':'115px'})
-          $('.depth3frame').css({'top':'100px'})
-          if(height>100){
-            var scrlheight = 0;
-            $('.icon-menu').click(function(e){
-              ++scrlheight;
+        if(height>100){
+          var scrlheight = 0;
+          $('.icon-menu').click(function(e){
+            ++scrlheight;
               $('header').removeClass('on')
               $('header').addClass('scroll')
               $('header').addClass('scroll-on')
-              $('.top-area > h1 > a > img').attr({'src':'img/nikon-logo-small.png'}).css({'margin-top':'20px'})
               if(scrlheight>1){
                 scrlheight=0;
                 $('header').removeClass('on')
                 $('header').addClass('scroll')
                 $('header').removeClass('scroll-on')
               }
-            })
+          })
+          $('header').addClass('scroll')
+          $('.top-area > h1 > a > img').attr({'src':'img/nikon-logo-small.png'}).css({'margin-top':'20px'})
+          $('.util-nav').addClass('scroll')
+          $('nav.wrapper').css({'top':'115px'})
+          $('.depth3frame').css({'top':'100px'})
           if($('.depth2-frame').css('display') == "block"){
             $('header').removeClass('on')
-            $('header').addClass('scroll')
             $('header').addClass('scroll-on')
             $('.depth3frame').css({'top':'100px'})
           }else{
             $('header').removeClass('on')
-            $('header').removeClass('scroll-on')
             $('header').addClass('scroll')
           }
         }else{
@@ -280,7 +275,7 @@ $(document).ready(function(){
           $('.depth3frame').css({'top':'165px'})
           $('.icon-menu').click(function(e){
             ++scrlheight;
-              $('header').addClass('on')
+              $('header').Class('on')
               $('header').removeClass('scroll')
               $('header').removeClass('scroll-on')
               if(scrlheight>1){
