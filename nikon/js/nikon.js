@@ -337,6 +337,7 @@ $(document).ready(function(){
       $('header').css('transition','all 0.3s ease');
       if(height>100){
         var scrlheight = 0;
+        $('.top-area > h1 > a > img').attr({'src':'img/nikon-logo-small.png'}).css({'margin-top':'20px'})
         $('.icon-menu').click(function(e){
           ++scrlheight;
             $('header').removeClass('on')
@@ -350,7 +351,6 @@ $(document).ready(function(){
             }
         })
         $('header').addClass('scroll')
-        $('.top-area > h1 > a > img').attr({'src':'img/nikon-logo-small.png'}).css({'margin-top':'20px'})
         $('.util-nav').addClass('scroll')
         $('nav.wrapper').css({'top':'115px'})
         $('.depth3frame').css({'top':'100px'})
