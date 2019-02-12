@@ -5,9 +5,10 @@ li {
 a { text-decoration: none; }
 body {
   background: #fff;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Arial', sans-serif;
   overflow-x: hidden;
   color: #454646;
+  /* 'Nanum Gothic' */
 }
 .wrapper {
   max-width: 1400px;
