@@ -318,7 +318,6 @@ $(document).ready(function(){
         depth2Swiper.update();
       })
 
-
       // if($('header.on').height()>600){
       //   $('.icon-menu').addClass('icon-close')
       //   $('.gnb > li > .gnb-back').hide();
@@ -327,9 +326,6 @@ $(document).ready(function(){
       //   $('.depth3frame').css({'display':'block'})
       //   $('.gnb').css({'display':'block'})
       // }
-
-
-
 
     // 메인메뉴 클릭시 2뎁스 리스트 변경
     $('.gnb > li').click(function(){
@@ -345,14 +341,12 @@ $(document).ready(function(){
       depth3frame.update();
     });
 
-
     //2뎁스 메뉴 클릭시 텍스트 색상 변경
     $('.depth2 .swiper-slide').eq(0).find('a').css({'color':'#ffdd00'})
     $('.depth2').on('click', 'a',function(){
       $('.depth2 .swiper-slide').find('a').css({'color':'#000'})
       $(this).css({'color':'#ffdd00'})
     })
-
 
     // 2뎁스 메뉴 클릭시 3뎁스 리스트 변경.
     $('.depth2').on('click', 'a', function(){
@@ -374,7 +368,6 @@ $(document).ready(function(){
       }
       depth3frame.update();
     });
-
 
     // 메인메뉴 클릭시 메뉴 아이콘 색상 변경
     var gnbclk = 0;
