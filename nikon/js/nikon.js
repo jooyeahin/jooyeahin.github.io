@@ -236,34 +236,6 @@ $(document).ready(function(){
       });
 
 
-      // 메뉴 아이콘 클릭시
-      $('.icon-menu').click(function(e){
-        e.preventDefault();
-        $('header').css('transition','0s');
-        if($('.depth2-frame').css('display') == "none"){ //보이게
-          $('header').addClass('on');
-          //$('header').removeClass('scroll')
-          $('.gnb > li > .gnb-back').hide();
-          $(this).parent('li').find('.gnb-back').show();
-          $('.depth2-frame').css({'display':'block'})
-          $('.depth3frame').css({'display':'block'})
-          $('.gnb').css({'display':'block'})
-          $('body').addClass('noScroll')
-        }else{ //안보이게
-          $('header').removeClass('scroll');
-          $('header').removeClass('on');
-          $('header').removeClass('scroll-on');
-          $(this).parent('li').find('.gnb-back').hide();
-          $('.depth2-frame').css({'display':'none'})
-          $('.depth3frame').css({'display':'none'})
-          $('.gnb').css({'display':'none'})
-          $('body').removeClass('noScroll')
-        }
-        depth3frame.update();
-        depth2Swiper.update();
-      })
-
-
       // 스크롤 발생 후 100픽셀 이상 넘어가면 헤더 변화
       $(window).scroll(function(e){
         e.preventDefault();
@@ -326,6 +298,32 @@ $(document).ready(function(){
         }
       })
 
+      // 메뉴 아이콘 클릭시
+      $('.icon-menu').click(function(e){
+        e.preventDefault();
+        $('header').css('transition','0s');
+        if($('.depth2-frame').css('display') == "none"){ //보이게
+          $('header').addClass('on');
+          //$('header').removeClass('scroll')
+          $('.gnb > li > .gnb-back').hide();
+          $(this).parent('li').find('.gnb-back').show();
+          $('.depth2-frame').css({'display':'block'})
+          $('.depth3frame').css({'display':'block'})
+          $('.gnb').css({'display':'block'})
+          $('body').addClass('noScroll')
+        }else{ //안보이게
+          $('header').removeClass('scroll');
+          $('header').removeClass('on');
+          $('header').removeClass('scroll-on');
+          $(this).parent('li').find('.gnb-back').hide();
+          $('.depth2-frame').css({'display':'none'})
+          $('.depth3frame').css({'display':'none'})
+          $('.gnb').css({'display':'none'})
+          $('body').removeClass('noScroll')
+        }
+        depth3frame.update();
+        depth2Swiper.update();
+      })
 
       // if($('header.on').height()>600){
       //   $('.icon-menu').addClass('icon-close')
@@ -335,9 +333,6 @@ $(document).ready(function(){
       //   $('.depth3frame').css({'display':'block'})
       //   $('.gnb').css({'display':'block'})
       // }
-
-
-
 
     // 메인메뉴 클릭시 2뎁스 리스트 변경
     $('.gnb > li').click(function(){
