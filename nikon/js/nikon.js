@@ -252,6 +252,7 @@ $(document).ready(function(){
               $('header').removeClass('on')
               $('header').addClass('scroll')
               $('header').addClass('scroll-on')
+              $('.top-area > h1 > a > img').attr({'src':'img/nikon-logo-small.png'}).css({'margin-top':'20px'})
               if(scrlheight>1){
                 scrlheight=0;
                 $('header').removeClass('on')
@@ -464,6 +465,11 @@ $(document).ready(function(){
       $('.footer-accordion').stop().slideUp();
       $(this).next().stop().slideToggle();
     })
+
+    $('.accordion > li > a').click(function(){
+      $(this).find('i').toggleClass('click')
+    })
+
 
   } else {        // =================================== 데스크탑
 

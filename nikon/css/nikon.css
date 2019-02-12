@@ -1637,6 +1637,10 @@ left:0; top:0; transform: none;
   margin-left: 50%;
   transform: translateX(-150px);
   text-align: center;
+  color: #454646;
+}
+.gallery > div > .gallery-textbox > h2 > span {
+  color: #454646;
 }
 .gallery-textbox > p {
   display: none;
@@ -1733,6 +1737,20 @@ footer {
   display: block;
   margin-left: 15%;
   line-height: 50px;
+}
+.footer-top > div > ul:nth-child(3) > li > a > i {
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  background: url('../img/icon.png');
+  background-size: 400px 160px;
+  background-position: -205px -45px;
+  transform: translateY(10px);
+}
+.footer-top > div > ul:nth-child(3) > li > a > i.click {
+  background-position: -245px -5px;
 }
 .footer-top > div > ul:nth-child(3) > li > ul{
   clear: both;
