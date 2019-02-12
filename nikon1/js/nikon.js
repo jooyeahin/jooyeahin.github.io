@@ -231,9 +231,9 @@ $(document).ready(function(){
     if(windowW<768){ //================================== 모바일
 
       //페이지 리로드
-      $(window).bind('resize', function(){
-        this.location.reload(false);
-      });
+      // $(window).bind('resize', function(){
+      //   this.location.reload(false);
+      // });
 
       $('.icon-menu').on('click', function(e){
         //e.preventDefault();
