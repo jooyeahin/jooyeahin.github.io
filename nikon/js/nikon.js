@@ -468,6 +468,7 @@ $(document).ready(function(){
 
     $('.accordion > li > a').click(function(){
       $(this).find('i').toggleClass('click')
+      $('.accordion > li > a').not(this).find('i').removeClass('click')
     })
 
 
