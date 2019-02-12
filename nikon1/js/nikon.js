@@ -235,7 +235,7 @@ $(document).ready(function(){
       //   this.location.reload(false);
       // });
 
-      $('.icon-menu').on('click', function(e){
+      $('.icon.icon-menu').on('click', function(e){
         e.preventDefault();
         $('header').css('transition','0s');
         if($('.depth2-frame').css('display') == "none"){ //보이게
