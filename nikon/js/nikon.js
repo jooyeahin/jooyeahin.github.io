@@ -252,7 +252,7 @@ $(document).ready(function(){
       $('.depth2-frame .swiper-wrapper').empty();
       for (var i in depth2Menu[key]) {
         $('.depth2-frame .swiper-wrapper').append(
-          '<div class="swiper-slide"><a href="#">'+depth2Menu[key][i]+'</a></div>'
+          '<div class="swiper-slide"><a href="#" onclick="return false">'+depth2Menu[key][i]+'</a></div>'
         )
       }
       depth3frame.update();
