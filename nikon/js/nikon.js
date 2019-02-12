@@ -240,10 +240,15 @@ $(document).ready(function(){
         e.preventDefault();
         var height = $(document).scrollTop();
         $('header').css('transition','all 0.3s ease');
-        if(height>100){
-          var scrlheight = 0;
-          $('.icon-menu').click(function(e){
-            ++scrlheight;
+          $('header').addClass('scroll')
+          $('.top-area > h1 > a > img').attr({'src':'img/nikon-logo-small.png'}).css({'margin-top':'20px'})
+          $('.util-nav').addClass('scroll')
+          $('nav.wrapper').css({'top':'115px'})
+          $('.depth3frame').css({'top':'100px'})
+          if(height>100){
+            var scrlheight = 0;
+            $('.icon-menu').click(function(e){
+              ++scrlheight;
               $('header').removeClass('on')
               $('header').addClass('scroll')
               $('header').addClass('scroll-on')
@@ -253,18 +258,15 @@ $(document).ready(function(){
                 $('header').addClass('scroll')
                 $('header').removeClass('scroll-on')
               }
-          })
-          $('header').addClass('scroll')
-          $('.top-area > h1 > a > img').attr({'src':'img/nikon-logo-small.png'}).css({'margin-top':'20px'})
-          $('.util-nav').addClass('scroll')
-          $('nav.wrapper').css({'top':'115px'})
-          $('.depth3frame').css({'top':'100px'})
+            })
           if($('.depth2-frame').css('display') == "block"){
             $('header').removeClass('on')
+            $('header').addClass('scroll')
             $('header').addClass('scroll-on')
             $('.depth3frame').css({'top':'100px'})
           }else{
             $('header').removeClass('on')
+            $('header').removeClass('scroll-on')
             $('header').addClass('scroll')
           }
         }else{
