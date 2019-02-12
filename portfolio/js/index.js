@@ -61,15 +61,15 @@ $(document).ready(function(){
     });
 
   $('.title-wrapper li a').click(function(){
-    if($(this).parents('li').index()===0){
+    if($(this).parents('li').index()==0){
       $('.portfolio-pic li').show();
-    }else if($(this).parents('li').index()===1){
+    }else if($(this).parents('li').index()==1){
       $('.portfolio-pic li').hide();
       $('.desktop').show();
-    }else if($(this).parents('li').index()===2){
+    }else if($(this).parents('li').index()==2){
       $('.portfolio-pic li').hide();
       $('.mobile').show();
-    }else if($(this).parents('li').index()===3){
+    }else if($(this).parents('li').index()==3){
       $('.portfolio-pic li').hide();
       $('.responsive').show();
     }
