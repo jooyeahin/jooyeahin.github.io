@@ -307,7 +307,6 @@ $(document).ready(function(){
         e.preventDefault();
         $('header').css('transition','0s');
         if($('.depth2-frame').css('display') == "none"){ //보이게
-          $('body').addClass('noScroll')
           $('header').addClass('on');
           //$('header').removeClass('scroll')
           $('.gnb > li > .gnb-back').hide();
@@ -315,14 +314,15 @@ $(document).ready(function(){
           $('.depth2-frame').css({'display':'block'})
           $('.depth3frame').css({'display':'block'})
           $('.gnb').css({'display':'block'})
+          $('body').addClass('noScroll')
         }else{ //안보이게
-          $('body').removeClass('noScroll')
           $('header').removeClass('on');
           $('header').removeClass('scroll-on');
           $(this).parent('li').find('.gnb-back').hide();
           $('.depth2-frame').css({'display':'none'})
           $('.depth3frame').css({'display':'none'})
           $('.gnb').css({'display':'none'})
+          $('body').removeClass('noScroll')
         }
         depth3frame.update();
         depth2Swiper.update();
