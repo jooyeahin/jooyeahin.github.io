@@ -2,7 +2,7 @@ $(document).ready(function(){
   //스크롤 위치에 따른 헤더 변화
   $(window).scroll(function(){
     var height = $(document).scrollTop();
-    console.log(height)
+    //console.log(height)
     if(height>100){
       $('header').addClass('scroll');
       $('header h1').addClass('scroll');
@@ -44,4 +44,34 @@ $(document).ready(function(){
     $('html').animate( { scrollTop : 1614 }, 500 );
   })
 
+
+  $('.portfolio-pic ul li:lt(3)').show();
+    var items =  6;
+    var shown =  3;
+    var three = 3;
+    $('.more').click(function () {
+      console.log('more')
+      shown = $('.portfolio-pic ul li:visible').length+3;
+      if(shown <= items) {
+        $('.portfolio-pic ul li:lt('+shown+')').show(300);
+      } else if(shown > items){
+        $('.portfolio-pic ul li').hide();
+        $('.portfolio-pic ul li:lt('+three+')').show(300);
+      }
+    });
+
+  $('.title-wrapper li a').click(function(){
+    if($(this).parents('li').index()===0){
+      $('.portfolio-pic li').show();
+    }else if($(this).parents('li').index()===1){
+      $('.portfolio-pic li').hide();
+      $('.desktop').show();
+    }else if($(this).parents('li').index()===2){
+      $('.portfolio-pic li').hide();
+      $('.mobile').show();
+    }else if($(this).parents('li').index()===3){
+      $('.portfolio-pic li').hide();
+      $('.responsive').show();
+    }
+  })
 })

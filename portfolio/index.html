@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+  <!-- START HERE -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+  <link rel="stylesheet" href="css/pure.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/index.css">
-  <script src="jg/jquery-3.3.1.min.js"></script>
+  <script src="js/form-submission-handler.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/index.js"></script>
 </head>
 <body>
@@ -45,17 +48,17 @@
                Standard web / Mobile Web / Responsive Web.</p>
           </div>
           <ul class="col-7">
-            <li><a href="">All</a></li>
-            <li><a href="">Desktop</a></li>
-            <li><a href="">Mobile</a></li>
-            <li><a href="">Responsive</a></li>
+            <li><a href="#" onclick="return false">All</a></li>
+            <li><a href="#" onclick="return false">Desktop</a></li>
+            <li><a href="#" onclick="return false">Mobile</a></li>
+            <li><a href="#" onclick="return false">Responsive</a></li>
           </ul>
         </div>
       </div>
       <div class="wrapper">
         <div class="portfolio-pic">
           <ul>
-            <li class="col-4">
+            <li class="col-4 responsive">
               <div>
                 <h3>Nikon Imaging Korea</h3>
                 <p>- Renewal</p>
@@ -63,7 +66,7 @@
               </div>
               <a href=""><img src="img/pic1.png" alt=""></a>
             </li>
-            <li class="col-4">
+            <li class="col-4 desktop">
               <div>
                 <h3>SK Tworld</h3>
                 <p>- Copy</p>
@@ -71,7 +74,7 @@
               </div>
               <a href=""><img src="img/tworld.jpg" alt=""></a>
             </li>
-            <li class="col-4">
+            <li class="col-4 desktop">
               <div>
                 <h3>Allgorithmic</h3>
                 <p>- Copy</p>
@@ -79,8 +82,32 @@
               </div>
               <a href=""><img src="img/allegorithmic.jpg" alt=""></a>
             </li>
-
+            <li class="col-4 desktop">
+              <div>
+                <h3>Allgorithmic</h3>
+                <p>- Copy</p>
+                <p>- Desktop</p>
+              </div>
+              <a href=""><img src="img/none.png" alt=""></a>
+            </li>
+            <li class="col-4 desktop">
+              <div>
+                <h3>Allgorithmic</h3>
+                <p>- Copy</p>
+                <p>- Desktop</p>
+              </div>
+              <a href=""><img src="img/none.png" alt=""></a>
+            </li>
+            <li class="col-4 desktop">
+              <div>
+                <h3>Allgorithmic</h3>
+                <p>- Copy</p>
+                <p>- Desktop</p>
+              </div>
+              <a href=""><img src="img/none.png" alt=""></a>
+            </li>
           </ul>
+          <button class="more">Show more</button>
         </div>
       </div>
     </article>
@@ -181,7 +208,7 @@
               <span class="blind">MAVELOUS DESIGNER</span
                 ></li>
             <li class="col-3">
-              <p>SUBSTANCE PINTER</p>
+              <p>SUBSTANCE PAINTER</p>
               <div></div>
               <img src="img/LOGO_0000_Layer-4.png" alt="">
               <span class="blind">SUBSTANCE PINTER</span>
@@ -218,20 +245,55 @@
 
     <article class="contact">
       <div class="wrapper">
-        <h2>Contact</h2>
-        <p>Joohyung Kim</p>
-        <p></p>
+        <h2 class="blind">Contact</h2>
+
         <ul>
           <li class="col-5">
-            <img src="img/111-.png" alt="">
+            <h2>Contact Us.</h2>
+            <p>Write us an e-mail via the form, or just send us an e-mail directly at</p>
+            <a href="">jooyeahin@naver.com</a>
+            <a href="">010-7114-6223</a>
+            <h3>Our Address.</h3>
+            <p>Suwon-si, Gyeonggi-do, Republic of Korea</p>
           </li>
           <li class="col-7">
-            <div>
-              <p>E-mail : jooyeahin@naver.com</p>
-              <p>Adress : 수원시 팔달구 </p>
-              <p>Phone : 010-7114-6223 </p>
-              <p>Git : https://github.com/jooyeahin/</p>
-            </div>
+            <form class="gform pure-form pure-form-stacked" method="POST" data-email="jooyeahin@naver.com"
+            action="https://script.google.com/macros/s/AKfycbzttyhtUMc4qDy0V0Ml40bBo7po35iqOrfQqAYX4w/exec">
+
+              <div class="form-elements">
+
+                <fieldset class="pure-group col-6">
+                  <label for="name">Name. </label>
+                  <input id="name" name="name" placeholder="" />
+                </fieldset>
+
+                <fieldset class="pure-group col-6">
+                  <label for="email">Email Address:</label>
+                  <input id="email" name="email" type="email" value=""
+                  required placeholder=""/>
+                  <span class="email-invalid" style="display:none">
+                    Must be a valid email address
+                  </span>
+                </fieldset>
+
+                <fieldset class="pure-group col-12">
+                  <label for="message">Message. </label>
+                  <textarea id="message" name="message" rows="5"
+                  placeholder=""></textarea>
+                </fieldset>
+
+
+                <button class="button-success pure-button button-xlarge">
+                  Send Message</button>
+              </div>
+
+              <!-- Customise the Thankyou Message People See when they submit the form: -->
+              <div class="thankyou_message" style="display:none;">
+                <h2>Thanks for contacting me!
+                  I will get back to you soon!</h2>
+              </div>
+
+            </form>
           </li>
         </ul>
       </div>
