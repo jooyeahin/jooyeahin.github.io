@@ -188,6 +188,7 @@ header.scroll-on {
 .util-nav{position: absolute;}
 .util-nav.scroll {
   margin-top: 0px;
+  z-index: 100;
 }
 .util-nav > li {
   width: 40px;
