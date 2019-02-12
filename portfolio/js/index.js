@@ -44,7 +44,7 @@ $(document).ready(function(){
     $('html').animate( { scrollTop : 1614 }, 500 );
   })
 
-  // 포트폴리오 더 보기 기능 
+  // 포트폴리오 더 보기 기능
   $('.portfolio-pic ul li:lt(3)').show();
     var items =  6;
     var shown =  3;
@@ -60,6 +60,7 @@ $(document).ready(function(){
       }
     });
 
+  // 포트폴리오 종류별 구분 
   $('.title-wrapper li a').click(function(){
     if($(this).parents('li').index()==0){
       $('.portfolio-pic li').show();
