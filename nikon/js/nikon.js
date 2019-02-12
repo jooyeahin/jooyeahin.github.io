@@ -132,7 +132,7 @@ $(document).ready(function(){
   });
 
   // 메인배너 스와이퍼
-  var menu = ['D850', 'CES 2019', 'D3X', 'NIKORR']
+  var menu = ['D850', 'D3X', 'NIKORR', 'CES 2019']
   var swiper2 = new Swiper('.main-banner >.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 30,
