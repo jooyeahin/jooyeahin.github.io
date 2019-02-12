@@ -235,32 +235,6 @@ $(document).ready(function(){
         this.location.reload(false);
       });
 
-
-      // 메뉴 아이콘 클릭시
-      $('.icon-menu').click(function(e){
-        e.preventDefault();
-        $('header').css('transition','0s');
-        if($('.depth2-frame').css('display') == "none"){ //보이게
-          $('header').addClass('on');
-          //$('header').removeClass('scroll')
-          $('.gnb > li > .gnb-back').hide();
-          $(this).parent('li').find('.gnb-back').show();
-          $('.depth2-frame').css({'display':'block'})
-          $('.depth3frame').css({'display':'block'})
-          $('.gnb').css({'display':'block'})
-        }else{ //안보이게
-          $('header').removeClass('on');
-          $('header').removeClass('scroll-on');
-          $(this).parent('li').find('.gnb-back').hide();
-          $('.depth2-frame').css({'display':'none'})
-          $('.depth3frame').css({'display':'none'})
-          $('.gnb').css({'display':'none'})
-        }
-        depth3frame.update();
-        depth2Swiper.update();
-      })
-
-
       if($('header.on').height()>600){
         $('.icon-menu').addClass('icon-close')
         $('.gnb > li > .gnb-back').hide();
@@ -328,7 +302,30 @@ $(document).ready(function(){
       depth3frame.update();
     })
 
+    // 메뉴 아이콘 클릭시
+    $('.icon-menu').click(function(e){
+      e.preventDefault();
+      $('header').css('transition','0s');
+      if($('.depth2-frame').css('display') == "none"){ //보이게
+        $('header').addClass('on');
+        //$('header').removeClass('scroll')
+        $('.gnb > li > .gnb-back').hide();
+        $(this).parent('li').find('.gnb-back').show();
+        $('.depth2-frame').css({'display':'block'})
+        $('.depth3frame').css({'display':'block'})
+        $('.gnb').css({'display':'block'})
+      }else{ //안보이게
+        $('header').removeClass('on');
+        $('header').removeClass('scroll-on');
+        $(this).parent('li').find('.gnb-back').hide();
+        $('.depth2-frame').css({'display':'none'})
+        $('.depth3frame').css({'display':'none'})
+        $('.gnb').css({'display':'none'})
+      }
 
+      depth3frame.update();
+      depth2Swiper.update();
+    })
 
 
 
@@ -340,7 +337,6 @@ $(document).ready(function(){
       $('header').css('transition','all 0.3s ease');
       if(height>100){
         var scrlheight = 0;
-        $('.top-area > h1 > a > img').attr({'src':'img/nikon-logo-small.png'}).css({'margin-top':'20px'})
         $('.icon-menu').click(function(e){
           ++scrlheight;
             $('header').removeClass('on')
@@ -354,6 +350,7 @@ $(document).ready(function(){
             }
         })
         $('header').addClass('scroll')
+        $('.top-area > h1 > a > img').attr({'src':'img/nikon-logo-small.png'}).css({'margin-top':'20px'})
         $('.util-nav').addClass('scroll')
         $('nav.wrapper').css({'top':'115px'})
         $('.depth3frame').css({'top':'100px'})
@@ -373,15 +370,15 @@ $(document).ready(function(){
         $('.depth3frame').css({'top':'165px'})
         $('.icon-menu').click(function(e){
           ++scrlheight;
-          $('header').addClass('on')
-          $('header').removeClass('scroll')
-          $('header').removeClass('scroll-on')
-          if(scrlheight>1){
-            scrlheight=0;
-            $('header').removeClass('on')
+            $('header').Class('on')
             $('header').removeClass('scroll')
             $('header').removeClass('scroll-on')
-          }
+            if(scrlheight>1){
+              scrlheight=0;
+              $('header').removeClass('on')
+              $('header').removeClass('scroll')
+              $('header').removeClass('scroll-on')
+            }
         })
         if($('.depth2-frame').css('display') == "block"){
           $('header').removeClass('scroll-on')

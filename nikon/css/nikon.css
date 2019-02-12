@@ -5,10 +5,9 @@ li {
 a { text-decoration: none; }
 body {
   background: #fff;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   overflow-x: hidden;
   color: #454646;
-  /* 'Nanum Gothic' */
 }
 .wrapper {
   max-width: 1400px;
@@ -1067,7 +1066,7 @@ footer {
   font-size: 16px;
   font-weight: bold;
   margin-top: 20px;
-  outline: 1px solid #aaa;
+  outline: 1px solid aaa;
   border-radius: 5px;
   border: 2px solid #ccc;
   cursor: pointer;
@@ -1182,7 +1181,7 @@ footer {
   display: inline-block;
   margin-left: 10px;
   width: 160px;
-  height: 80px;
+  hegiht: 80px;
   vertical-align: 18px;
   line-height: 20px;
 }
@@ -1444,7 +1443,7 @@ left:0; top:0; transform: none;
 .main-banner .text-box > button {
   margin-top: 10px;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 1;
   background: #fff;
 }
 .m {
@@ -1499,7 +1498,7 @@ left:0; top:0; transform: none;
   line-height: 26px;
 }
 .product-text > span {
-  font-weight: normal;
+  font-weight: 1;
   font-size: 20px;
 }
 
@@ -1527,7 +1526,7 @@ left:0; top:0; transform: none;
   width: 300px;
   margin-left: 50%;
   transform: translateX(-150px);
-  font-weight: normal;
+  font-weight: 1;
   font-size: 20px;
   text-align: center;
 }
@@ -1824,4 +1823,7 @@ hr {
 }
 .cart ul:nth-child(3) {
   margin-top: -20px;
+}
+.cart ul
+
 }
