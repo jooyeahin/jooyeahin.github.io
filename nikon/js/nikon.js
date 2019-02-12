@@ -250,6 +250,7 @@ $(document).ready(function(){
           $('.gnb').css({'display':'block'})
           $('body').addClass('noScroll')
         }else{ //안보이게
+          $('header').removeClass('scroll');
           $('header').removeClass('on');
           $('header').removeClass('scroll-on');
           $(this).parent('li').find('.gnb-back').hide();
@@ -284,8 +285,8 @@ $(document).ready(function(){
               if(scrlheight>1){
                 scrlheight=0;
                 $('header').removeClass('on')
-                $('header').addClass('scroll')
                 $('header').removeClass('scroll-on')
+                $('header').addClass('scroll')
               }
             })
           if($('.depth2-frame').css('display') == "block"){
@@ -299,6 +300,7 @@ $(document).ready(function(){
             $('header').addClass('scroll')
           }
         }else{
+          $('header').removeClass('scroll-on')
           $('header').removeClass('scroll')
           $('.top-area > h1 > a > img').attr({'src':'img/nikonlogo.png'}).css({'margin-top':'0px'})
           $('nav.wrapper').css({'top':'115px'})
@@ -318,6 +320,7 @@ $(document).ready(function(){
           })
           if($('.depth2-frame').css('display') == "block"){
             $('header').removeClass('scroll-on')
+            $('header').removeClass('scroll')
             $('header').addClass('on')
           }
         }
