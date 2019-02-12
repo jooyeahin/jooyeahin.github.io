@@ -324,10 +324,10 @@ $(document).ready(function(){
           $('.depth3frame').css({'display':'none'})
           $('.gnb').css({'display':'none'})
         }
-
         depth3frame.update();
         depth2Swiper.update();
       })
+
 
     // 메인메뉴 클릭시 2뎁스 리스트 변경
     $('.gnb > li').click(function(){
