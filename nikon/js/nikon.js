@@ -302,6 +302,33 @@ $(document).ready(function(){
       //   $('.gnb').css({'display':'block'})
       // }
 
+      // 메뉴 아이콘 클릭시
+      $('.icon-menu').click(function(e){
+        e.preventDefault();
+        $('header').css('transition','0s');
+        if($('.depth2-frame').css('display') == "none"){ //보이게
+          $('body').addClass('noScroll')
+          $('header').addClass('on');
+          //$('header').removeClass('scroll')
+          $('.gnb > li > .gnb-back').hide();
+          $(this).parent('li').find('.gnb-back').show();
+          $('.depth2-frame').css({'display':'block'})
+          $('.depth3frame').css({'display':'block'})
+          $('.gnb').css({'display':'block'})
+        }else{ //안보이게
+          $('body').removeClass('noScroll')
+          $('header').removeClass('on');
+          $('header').removeClass('scroll-on');
+          $(this).parent('li').find('.gnb-back').hide();
+          $('.depth2-frame').css({'display':'none'})
+          $('.depth3frame').css({'display':'none'})
+          $('.gnb').css({'display':'none'})
+        }
+
+        depth3frame.update();
+        depth2Swiper.update();
+      })
+
     // 메인메뉴 클릭시 2뎁스 리스트 변경
     $('.gnb > li').click(function(){
       var key=$(this).children('a').text().toLowerCase().replace(/ /g, '');
@@ -360,30 +387,7 @@ $(document).ready(function(){
       depth3frame.update();
     })
 
-    // 메뉴 아이콘 클릭시
-    $('.icon-menu').click(function(e){
-      e.preventDefault();
-      $('header').css('transition','0s');
-      if($('.depth2-frame').css('display') == "none"){ //보이게
-        $('header').addClass('on');
-        //$('header').removeClass('scroll')
-        $('.gnb > li > .gnb-back').hide();
-        $(this).parent('li').find('.gnb-back').show();
-        $('.depth2-frame').css({'display':'block'})
-        $('.depth3frame').css({'display':'block'})
-        $('.gnb').css({'display':'block'})
-      }else{ //안보이게
-        $('header').removeClass('on');
-        $('header').removeClass('scroll-on');
-        $(this).parent('li').find('.gnb-back').hide();
-        $('.depth2-frame').css({'display':'none'})
-        $('.depth3frame').css({'display':'none'})
-        $('.gnb').css({'display':'none'})
-      }
 
-      depth3frame.update();
-      depth2Swiper.update();
-    })
 
 
 

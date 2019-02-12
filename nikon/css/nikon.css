@@ -9,6 +9,9 @@ body {
   overflow-x: hidden;
   color: #454646;
 }
+body.noScroll {
+  overflow: hidden;
+}
 .wrapper {
   max-width: 1400px;
   margin: auto;
