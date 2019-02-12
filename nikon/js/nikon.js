@@ -236,6 +236,7 @@ $(document).ready(function(){
       });
 
 
+
       // 스크롤 발생 후 100픽셀 이상 넘어가면 헤더 변화
       $(window).scroll(function(e){
         e.preventDefault();
@@ -257,8 +258,8 @@ $(document).ready(function(){
               if(scrlheight>1){
                 scrlheight=0;
                 $('header').removeClass('on')
-                $('header').removeClass('scroll-on')
                 $('header').addClass('scroll')
+                $('header').removeClass('scroll-on')
               }
             })
           if($('.depth2-frame').css('display') == "block"){
@@ -272,7 +273,6 @@ $(document).ready(function(){
             $('header').addClass('scroll')
           }
         }else{
-          $('header').removeClass('scroll-on')
           $('header').removeClass('scroll')
           $('.top-area > h1 > a > img').attr({'src':'img/nikonlogo.png'}).css({'margin-top':'0px'})
           $('nav.wrapper').css({'top':'115px'})
@@ -280,7 +280,7 @@ $(document).ready(function(){
           $('.depth3frame').css({'top':'165px'})
           $('.icon-menu').click(function(e){
             ++scrlheight;
-              $('header').addClass('on')
+              $('header').Class('on')
               $('header').removeClass('scroll')
               $('header').removeClass('scroll-on')
               if(scrlheight>1){
@@ -292,7 +292,6 @@ $(document).ready(function(){
           })
           if($('.depth2-frame').css('display') == "block"){
             $('header').removeClass('scroll-on')
-            $('header').removeClass('scroll')
             $('header').addClass('on')
           }
         }
@@ -312,7 +311,6 @@ $(document).ready(function(){
           $('.gnb').css({'display':'block'})
           $('body').addClass('noScroll')
         }else{ //안보이게
-          $('header').removeClass('scroll');
           $('header').removeClass('on');
           $('header').removeClass('scroll-on');
           $(this).parent('li').find('.gnb-back').hide();
@@ -324,6 +322,7 @@ $(document).ready(function(){
         depth3frame.update();
         depth2Swiper.update();
       })
+      
 
       // if($('header.on').height()>600){
       //   $('.icon-menu').addClass('icon-close')
@@ -333,6 +332,9 @@ $(document).ready(function(){
       //   $('.depth3frame').css({'display':'block'})
       //   $('.gnb').css({'display':'block'})
       // }
+
+
+
 
     // 메인메뉴 클릭시 2뎁스 리스트 변경
     $('.gnb > li').click(function(){
