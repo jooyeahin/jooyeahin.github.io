@@ -234,6 +234,7 @@ $(document).ready(function(){
       $(window).bind('resize', function(e){
         this.location.reload(false);
       });
+      
       $('.icon.icon-menu').on('click', function(e){
         e.preventDefault();
         $('header').css('transition','0s');
@@ -282,7 +283,6 @@ $(document).ready(function(){
         }
       })
 
-
     // 메인메뉴 클릭시 2뎁스 리스트 변경
     $('.gnb > li').click(function(){
       var key=$(this).children('a').text().toLowerCase().replace(/ /g, '');
@@ -297,14 +297,12 @@ $(document).ready(function(){
       depth3frame.update();
     });
 
-
     //2뎁스 메뉴 클릭시 텍스트 색상 변경
     $('.depth2 .swiper-slide').eq(0).find('a').css({'color':'#ffdd00'})
     $('.depth2').on('click', 'a',function(){
       $('.depth2 .swiper-slide').find('a').css({'color':'#000'})
       $(this).css({'color':'#ffdd00'})
     })
-
 
     // 2뎁스 메뉴 클릭시 3뎁스 리스트 변경.
     $('.depth2').on('click', 'a', function(){
@@ -327,7 +325,6 @@ $(document).ready(function(){
       depth3frame.update();
     });
 
-
     // 메인메뉴 클릭시 메뉴 아이콘 색상 변경
     var gnbclk = 0;
     $('.gnb > li').click(function(){
@@ -344,29 +341,20 @@ $(document).ready(function(){
     // 장바구니 아이콘 클릭시 팝업 노출
     $('.icon-bag').on('click', function(e){
       e.preventDefault();
-      $('.black-layer').show();
-      $('.popup').show();
-      $('.cart').show();
+      $('.black-layer, .popup, .cart').show();
       $('.login-text').hide();
     })
 
     // 로그인 아이콘 클릭시 팝업 노출
     $('.icon-login').on('click', function(e){
       e.preventDefault();
-      $('.black-layer').show();
-      $('.popup').show();
-      $('.login-text').show();
-      $('.cart').hide();
+      $('.black-layer, .popup, .login-text, .cart').show();
     })
 
     // 팝업 X버튼 클릭시 팝업 hide()
     $('.icon-close').click(function(e){
       e.preventDefault();
-      $('.black-layer').hide();
-      $('.popup').hide();
-      $('.login-text').hide();
-      $('.cart').hide();
-      $('.login-text').hide();
+      $('.black-layer, .popup, .login-text, .cart').hide();
     })
 
     // 헤더 아이콘 메뉴 보이기
@@ -411,13 +399,6 @@ $(document).ready(function(){
     })
 
   } else {        // =================================== 데스크탑
-
-    // if($('header.on').height()>500){
-    //   $('.depth2-frame').css({'display':'none'})
-    //   $('.depth3frame').css({'display':'block'})
-    //   $('.gnb-back').css({'display':'block'})
-    //   $('.gnb').css({'display':'block'})
-    // }
 
     // 메인메뉴 클릭시 2뎁스 보이기
     $('.gnb > li > a').click(function(e){
