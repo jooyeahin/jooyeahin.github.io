@@ -95,6 +95,7 @@ header {
   background: #fff;
   z-index:100;
   box-shadow: 0px 0.2px 10px #999;
+  transition: all 0.3s ease;
 }
 header > div.wrapper {
   position: relative;
@@ -255,7 +256,7 @@ header.scroll-on {
 .scroll .gnb {
   position: relative;
   top: 0px;
-  margin-top: -45px;
+  margin-top: -65px;
 }
 .gnb > li {
   float: left;
