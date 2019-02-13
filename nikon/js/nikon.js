@@ -222,7 +222,6 @@ $(document).ready(function(){
     $(this).toggleClass('full');
   })
 
-
   $('.icon.icon-menu').on('click', function(e){
     e.preventDefault();
     $('header').css('transition','0s');
@@ -238,7 +237,7 @@ $(document).ready(function(){
     depth3frame.update();
     depth2Swiper.update();
   })
-  
+
 // ================미디어쿼리=========================
 
   $(window).resize(function(){
@@ -250,8 +249,6 @@ $(document).ready(function(){
       $(window).bind('resize', function(e){
         this.location.reload(false);
       });
-
-
 
       $(window).scroll(function(e){ // e, e.preventDefault
         e.preventDefault();
