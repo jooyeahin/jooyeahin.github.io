@@ -290,6 +290,27 @@ $(document).ready(function(){
           //depth3frame.update();
           //depth2Swiper.update();
         }
+        $('.icon.icon-menu').on('click', function(e){
+          e.preventDefault();
+          $('header').css('transition','0s');
+          if($('.depth2-frame').css('display') == "none"){ //보이게
+            $('header').addClass('on');
+            $('.gnb').css({'display':'block'})
+            $('.scroll .gnb').css({'display':'block'})
+            $('.depth2-frame').css({'display':'block'})
+            $('.depth3frame').css({'display':'block'})
+            $('body').addClass('noScroll')
+          }else{ //안보이게
+            $('header').removeClass('on');
+            $('.gnb').css({'display':'none'})
+            $('.scroll .gnb').css({'display':'none'})
+            $('.depth2-frame').css({'display':'none'})
+            $('.depth3frame').css({'display':'none'})
+            $('body').removeClass('noScroll')
+          }
+          depth3frame.update();
+          depth2Swiper.update();
+        })
       })
 
 
