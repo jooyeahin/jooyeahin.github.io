@@ -1249,11 +1249,19 @@ header.on{
   height: 100%;
   transition: 0s;
 }
+header.on .gnb {
+  display: block;
+}
+header.on .depth2-frame {
+  display: block;
+}
+header.on .depth3frame {
+  display: block;
+}
 header.scroll-on {
   height: 100%;
   transition: 0s;
 }
-header.on .depth3frame{ display: none;}
 .drop-down {
   top:0;
   width: 100%;
@@ -1401,6 +1409,7 @@ nav.wrapper.top {
   height: 300px;
   transition: all 0.3s ease;
   border: 0px solid red;
+  display: none;
 }
 .depth3frame .swiper-container {
   width: 100%;
