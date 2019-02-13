@@ -390,6 +390,11 @@ $(document).ready(function(){
       $(this).next().stop().slideToggle();
     })
 
+    $('.footer-top ul li a i').click(function(){
+      $('.footer-top ul li a i').not(this).removeClass('click')
+      $(this).toggleClass('click')
+    })
+
   } else {        // =================================== 데스크탑
 
     // 메인메뉴 클릭시 2뎁스 보이기
