@@ -231,9 +231,18 @@ $(document).ready(function(){
     if(windowW<768){ //================================== 모바일
 
       //페이지 리로드
-      // $(window).bind('resize', function(){
-      //   this.location.reload(false);
-      // });
+      $(window).bind('resize', function(){
+        this.location.reload(false);
+      });
+
+      if($('header.on').height()>600){
+        $('.icon-menu').addClass('icon-close')
+        $('.gnb > li > .gnb-back').hide();
+        $(this).parent('li').find('.gnb-back').show();
+        $('.depth2-frame').css({'display':'block'})
+        $('.depth3frame').css({'display':'block'})
+        $('.gnb').css({'display':'block'})
+      }
 
 
 
