@@ -235,7 +235,9 @@ $(document).ready(function(){
       //   this.location.reload(false);
       // });
 
-      $('.sign').text('update').css({'color':'#fff'})
+      $('.sign').text('update2').css({'color':'#fff'})
+
+
       $('.icon.icon-menu').on('click', function(e){
         e.preventDefault();
         $('header').css('transition','0s');
@@ -258,8 +260,8 @@ $(document).ready(function(){
         depth2Swiper.update();
       })
 
-      $(window).scroll(function(){ // e, e.preventDefault
-        //e.preventDefault();
+      $(window).scroll(function(e){ // e, e.preventDefault
+        e.preventDefault();
         var height = $(document).scrollTop();
         $('header').css('transition','0.3s ease');
         console.log('update1')
