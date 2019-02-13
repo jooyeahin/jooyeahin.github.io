@@ -235,15 +235,6 @@ $(document).ready(function(){
         this.location.reload(false);
       });
 
-      // if($('header.on').height()>600){
-      //   $('.icon-menu').addClass('icon-close')
-      //   $('.gnb > li > .gnb-back').hide();
-      //   $(this).parent('li').find('.gnb-back').show();
-      //   $('.depth2-frame').css({'display':'block'})
-      //   $('.depth3frame').css({'display':'block'})
-      //   $('.gnb').css({'display':'block'})
-      // }
-
       $('.icon.icon-menu').on('click', function(e){
         e.preventDefault();
         $('header').css('transition','0s');
@@ -270,7 +261,7 @@ $(document).ready(function(){
         e.preventDefault();
         var height = $(document).scrollTop();
         $('header').css('transition','0.3s ease');
-        console.log(height)
+        console.log('ok1')
         if(height>100){ // 100픽셀 이상 스크롤했을 때
           //--------------100픽셀 이상 스크롤, 스크롤된상태------------------
           //e.preventDefault();
