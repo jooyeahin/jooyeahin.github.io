@@ -257,11 +257,11 @@ $(document).ready(function(){
         depth2Swiper.update();
       })
 
-      $(window).scroll(function(e){ // e, e.preventDefault
-        e.preventDefault();
+      $(window).scroll(function(){ // e, e.preventDefault
+        //e.preventDefault();
         var height = $(document).scrollTop();
         $('header').css('transition','0.3s ease');
-        console.log('ok1')
+        console.log('update')
         if(height>100){ // 100픽셀 이상 스크롤했을 때
           //--------------100픽셀 이상 스크롤, 스크롤된상태------------------
           //e.preventDefault();
