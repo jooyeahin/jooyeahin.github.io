@@ -256,7 +256,7 @@ header.scroll-on {
 .scroll .gnb {
   position: relative;
   top: 0px;
-  margin-top: -65px;
+  margin-top: -45px;
 }
 .gnb > li {
   float: left;
