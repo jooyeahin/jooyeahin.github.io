@@ -223,6 +223,22 @@ $(document).ready(function(){
   })
 
 
+  $('.icon.icon-menu').on('click', function(e){
+    e.preventDefault();
+    $('header').css('transition','0s');
+    if($('.depth2-frame').css('display') == "none"){ //보이게
+      $('header').addClass('on');
+      $('.scroll .gnb').css({'display':'block'})
+      $('body').addClass('noScroll')
+    }else{ //안보이게
+      $('header').removeClass('on');
+      $('.scroll .gnb').css({'display':'none'})
+      $('body').removeClass('noScroll')
+    }
+    depth3frame.update();
+    depth2Swiper.update();
+  })
+  
 // ================미디어쿼리=========================
 
   $(window).resize(function(){
@@ -235,21 +251,7 @@ $(document).ready(function(){
         this.location.reload(false);
       });
 
-      $('.icon.icon-menu').on('click', function(e){
-        e.preventDefault();
-        $('header').css('transition','0s');
-        if($('.depth2-frame').css('display') == "none"){ //보이게
-          $('header').addClass('on');
-          $('.scroll .gnb').css({'display':'block'})
-          $('body').addClass('noScroll')
-        }else{ //안보이게
-          $('header').removeClass('on');
-          $('.scroll .gnb').css({'display':'none'})
-          $('body').removeClass('noScroll')
-        }
-        depth3frame.update();
-        depth2Swiper.update();
-      })
+
 
       $(window).scroll(function(e){ // e, e.preventDefault
         e.preventDefault();
