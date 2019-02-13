@@ -273,7 +273,7 @@ $(document).ready(function(){
         console.log(height)
         if(height>100){ // 100픽셀 이상 스크롤했을 때
           //--------------100픽셀 이상 스크롤, 스크롤된상태------------------
-          e.preventDefault();
+          //e.preventDefault();
           $('header').addClass('scroll');
           $('header').removeClass('on');
           $('.util-nav').addClass('scroll');
@@ -282,7 +282,7 @@ $(document).ready(function(){
           //depth2Swiper.update();
         }else{ // 스크롤 100픽셀 이하일 때
           //--------------100픽셀 이하 스크롤, 스크롤된상태------------------
-          e.preventDefault();
+          //e.preventDefault();
           $('header').removeClass('scroll');
           $('header').removeClass('scroll-on');
           $('.util-nav').removeClass('scroll')
