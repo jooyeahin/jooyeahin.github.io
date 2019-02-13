@@ -261,7 +261,7 @@ $(document).ready(function(){
         //e.preventDefault();
         var height = $(document).scrollTop();
         $('header').css('transition','0.3s ease');
-        console.log('update')
+        console.log('update1')
         if(height>100){ // 100픽셀 이상 스크롤했을 때
           //--------------100픽셀 이상 스크롤, 스크롤된상태------------------
           //e.preventDefault();
