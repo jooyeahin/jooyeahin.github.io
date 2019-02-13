@@ -112,6 +112,12 @@ header.on{
   height: 600px;
   transition: 0s;
 }
+header.on .depth2-frame {
+  display: block;
+}
+header.on .gnb {
+  display: block;
+}
 header.scroll-on {
   height: 550px;
   transition: 0s;
@@ -251,6 +257,7 @@ header.scroll-on {
   padding: 50px 200px 0;
   height: 60px;
   transition: all 0.3s ease;
+  display:none;
 }
 /*  .gnb scroll  */
 .scroll .gnb {
@@ -328,6 +335,7 @@ header.scroll-on {
 }
 
 header.on .depth3frame{display: block;}
+
 .depth3 {
   width: 90%;
   left: 5%;
@@ -335,6 +343,7 @@ header.on .depth3frame{display: block;}
   transform: translateY(-50%);
   margin: 0 0px;
   box-sizing: border-box;
+  display: none;
 }
 .depth3 .swiper-slide > img {
   width: 100%;
