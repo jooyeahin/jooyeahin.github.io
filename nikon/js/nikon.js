@@ -240,11 +240,17 @@ $(document).ready(function(){
         $('header').css('transition','0s');
         if($('.depth2-frame').css('display') == "none"){ //보이게
           $('header').addClass('on');
+          $('.gnb').css({'display':'block'})
           $('.scroll .gnb').css({'display':'block'})
+          $('.depth2-frame').css({'display':'block'})
+          $('.depth3frame').css({'display':'block'})
           $('body').addClass('noScroll')
         }else{ //안보이게
           $('header').removeClass('on');
+          $('.gnb').css({'display':'none'})
           $('.scroll .gnb').css({'display':'none'})
+          $('.depth2-frame').css({'display':'none'})
+          $('.depth3frame').css({'display':'none'})
           $('body').removeClass('noScroll')
         }
         depth3frame.update();
@@ -426,25 +432,30 @@ $(document).ready(function(){
 
     // 장바구니 아이콘 클릭시 팝업 노출
     $('.icon-bag').click(function(){
-      $('.black-layer, .cart').show();
+      $('.black-layer').show();
       $('.popup').removeClass('hide');
       $('.popup').addClass('show').css({'height':'1000px'})
+      $('.cart').show();
       $('.login-text').hide();
     })
 
     // 로그인 아이콘 클릭시 팝업 노출
     $('.icon-login').click(function(){
-      $('.black-layer, .login-text').show();
+
+      $('.black-layer').show();
       $('.popup').removeClass('hide');
       $('.popup').addClass('show').css({'height':'630px'})
+      $('.login-text').show();
       $('.cart').hide();
     })
 
     // 팝업창 내 x버튼 클릭시 팝업 숨기기
     $('.icon-close').click(function(e){
       e.preventDefault();
-      $('.black-layer, .popup, .cart').hide();
+      $('.black-layer').hide();
       $('.popup').addClass('hide');
+      $('.login-text').hide();
+      $('.cart').hide();
     })
 
     // 검색 창
