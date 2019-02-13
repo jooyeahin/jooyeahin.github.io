@@ -235,6 +235,34 @@ $(document).ready(function(){
       //   this.location.reload(false);
       // });
 
+
+
+      $(window).scroll(function(e){ // e, e.preventDefault
+        e.preventDefault();
+        var height = $(document).scrollTop();
+        $('header').css('transition','0.3s ease');
+        console.log(height)
+        if(height>100){ // 100픽셀 이상 스크롤했을 때
+          //--------------100픽셀 이상 스크롤, 스크롤된상태------------------
+          e.preventDefault();
+          $('header').addClass('scroll');
+          $('header').removeClass('on');
+          $('.util-nav').addClass('scroll');
+          $('.top-area > h1 > a > img').attr({'src':'img/nikon-logo-small.png'}).css({'margin-top':'20px'});
+          //depth3frame.update();
+          //depth2Swiper.update();
+        }else{ // 스크롤 100픽셀 이하일 때
+          //--------------100픽셀 이하 스크롤, 스크롤된상태------------------
+          e.preventDefault();
+          $('header').removeClass('scroll');
+          $('header').removeClass('scroll-on');
+          $('.util-nav').removeClass('scroll')
+          $('.top-area > h1 > a > img').attr({'src':'img/nikonlogo.png'}).css({'margin-top':'0px'});
+          //depth3frame.update();
+          //depth2Swiper.update();
+        }
+      })
+
       $('.icon.icon-menu').on('click', function(e){
         e.preventDefault();
         $('header').css('transition','0s');
@@ -256,33 +284,6 @@ $(document).ready(function(){
         depth3frame.update();
         depth2Swiper.update();
       })
-
-      $(window).scroll(function(e){ // e, e.preventDefault
-        e.preventDefault();
-        var height = $(document).scrollTop();
-        $('header').css('transition','0.3s ease');
-        console.log(height)
-        if(height>100){ // 100픽셀 이상 스크롤했을 때
-          //--------------100픽셀 이상 스크롤, 스크롤된상태------------------
-          //e.preventDefault();
-          $('header').addClass('scroll');
-          $('header').removeClass('on');
-          $('.util-nav').addClass('scroll');
-          $('.top-area > h1 > a > img').attr({'src':'img/nikon-logo-small.png'}).css({'margin-top':'20px'});
-          //depth3frame.update();
-          //depth2Swiper.update();
-        }else{ // 스크롤 100픽셀 이하일 때
-          //--------------100픽셀 이하 스크롤, 스크롤된상태------------------
-          //e.preventDefault();
-          $('header').removeClass('scroll');
-          $('header').removeClass('scroll-on');
-          $('.util-nav').removeClass('scroll')
-          $('.top-area > h1 > a > img').attr({'src':'img/nikonlogo.png'}).css({'margin-top':'0px'});
-          //depth3frame.update();
-          //depth2Swiper.update();
-        }
-      })
-
 
     // 메인메뉴 클릭시 2뎁스 리스트 변경
     $('.gnb > li').click(function(){
