@@ -235,7 +235,6 @@ $(document).ready(function(){
         this.location.reload(false);
       });
 
-
       if($('header.on').height()>600){
         $('.icon-menu').addClass('icon-close')
         $('.gnb > li > .gnb-back').hide();
@@ -245,37 +244,6 @@ $(document).ready(function(){
         $('.gnb').css({'display':'block'})
       }
 
-
-
-
-      // 메뉴 아이콘 클릭시
-      $('.icon-menu').click(function(e){
-        e.preventDefault();
-        $('header').css('transition','0s');
-        if($('.depth2-frame').css('display') == "none"){ //보이게
-          $('header').addClass('on');
-          //$('header').removeClass('scroll')
-          $('.gnb > li > .gnb-back').hide();
-          $(this).parent('li').find('.gnb-back').show();
-          $('.depth2-frame').css({'display':'block'})
-          $('.depth3frame').css({'display':'block'})
-          $('.gnb').css({'display':'block'})
-          $('body').addClass('noScroll')
-        }else{ //안보이게
-          $('header').removeClass('on');
-          $('header').removeClass('scroll-on');
-          $(this).parent('li').find('.gnb-back').hide();
-          $('.depth2-frame').css({'display':'none'})
-          $('.depth3frame').css({'display':'none'})
-          $('.gnb').css({'display':'none'})
-          $('body').removeClass('noScroll')
-        }
-        depth3frame.update();
-        depth2Swiper.update();
-      })
-
-
-
     // 메인메뉴 클릭시 2뎁스 리스트 변경
     $('.gnb > li').click(function(){
       var key=$(this).children('a').text().toLowerCase().replace(/ /g, '');
@@ -284,11 +252,12 @@ $(document).ready(function(){
       $('.depth2-frame .swiper-wrapper').empty();
       for (var i in depth2Menu[key]) {
         $('.depth2-frame .swiper-wrapper').append(
-          '<div class="swiper-slide"><a href="#" onclick="return false">'+depth2Menu[key][i]+'</a></div>'
+          '<div class="swiper-slide"><a href="#">'+depth2Menu[key][i]+'</a></div>'
         )
       }
       depth3frame.update();
     });
+
 
     //2뎁스 메뉴 클릭시 텍스트 색상 변경
     $('.depth2 .swiper-slide').eq(0).find('a').css({'color':'#ffdd00'})
@@ -296,6 +265,7 @@ $(document).ready(function(){
       $('.depth2 .swiper-slide').find('a').css({'color':'#000'})
       $(this).css({'color':'#ffdd00'})
     })
+
 
     // 2뎁스 메뉴 클릭시 3뎁스 리스트 변경.
     $('.depth2').on('click', 'a', function(){
@@ -318,6 +288,7 @@ $(document).ready(function(){
       depth3frame.update();
     });
 
+
     // 메인메뉴 클릭시 메뉴 아이콘 색상 변경
     var gnbclk = 0;
     $('.gnb > li').click(function(){
@@ -330,6 +301,33 @@ $(document).ready(function(){
       $(this).find('img').attr({'src':'img/depth2_icon'+dep2idx+'_1.png'});
       depth3frame.update();
     })
+
+    // 메뉴 아이콘 클릭시
+    $('.icon-menu').click(function(e){
+      e.preventDefault();
+      $('header').css('transition','0s');
+      if($('.depth2-frame').css('display') == "none"){ //보이게
+        $('header').addClass('on');
+        //$('header').removeClass('scroll')
+        $('.gnb > li > .gnb-back').hide();
+        $(this).parent('li').find('.gnb-back').show();
+        $('.depth2-frame').css({'display':'block'})
+        $('.depth3frame').css({'display':'block'})
+        $('.gnb').css({'display':'block'})
+      }else{ //안보이게
+        $('header').removeClass('on');
+        $('header').removeClass('scroll-on');
+        $(this).parent('li').find('.gnb-back').hide();
+        $('.depth2-frame').css({'display':'none'})
+        $('.depth3frame').css({'display':'none'})
+        $('.gnb').css({'display':'none'})
+      }
+
+      depth3frame.update();
+      depth2Swiper.update();
+    })
+
+
 
 
     // 스크롤 발생 후 100픽셀 이상 넘어가면 헤더 변화
@@ -388,7 +386,7 @@ $(document).ready(function(){
         }
       }
     })
-    
+
     // 장바구니 아이콘 클릭시 팝업 노출
     $('.icon-bag').on('click', function(e){
       e.preventDefault();
@@ -457,12 +455,6 @@ $(document).ready(function(){
       $('.footer-accordion').stop().slideUp();
       $(this).next().stop().slideToggle();
     })
-
-    $('.accordion > li > a').click(function(){
-      $(this).find('i').toggleClass('click')
-      $('.accordion > li > a').not(this).find('i').removeClass('click')
-    })
-
 
   } else {        // =================================== 데스크탑
 
