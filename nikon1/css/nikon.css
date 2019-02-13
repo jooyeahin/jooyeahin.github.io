@@ -380,6 +380,7 @@ section {
   width: 100%;
   height: 8000px;
   background: #000;
+  padding-top: 200px;
 }
 .m { display: none; }
 /*  media query  */

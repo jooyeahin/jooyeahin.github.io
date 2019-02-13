@@ -235,6 +235,7 @@ $(document).ready(function(){
       //   this.location.reload(false);
       // });
 
+      $('.sign').text('update').css({'color':'#fff'})
       $('.icon.icon-menu').on('click', function(e){
         e.preventDefault();
         $('header').css('transition','0s');
