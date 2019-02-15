@@ -285,7 +285,7 @@ $(document).ready(function(){
   //.detail 태그 바로 밑에 닫기버튼으로 변경
 
 
-  $('.detail .detail-wrapper > button').on('click', 'i', function(){
+  $('.detail .detail-info').on('click','i', function(){
     $('.black-layer').css({'display':'none'})
     $('.detail').removeClass('block')
     $('.detail').addClass('none')
@@ -312,7 +312,7 @@ $(document).ready(function(){
         +'<input type="checkbox" class="chkbx"><a href="">'
         + cartList[code][0] + '</a>'
         + '<dl>'
-        + '<dt>' + cartList[code][1] + '</dt>'
+        + '<dt>' + cartList[code][1]  + '<select name="quantity" id="quantity"><option value="1">1</option> <option value="2">2</option><option value="3">3</option></select>' + '<span >Q\'ty</span>' +'</dt>'
         + '<dd>' + 'color : ' + cartList[code][2] + '</dd>'
         + '<dd class="price">' + cartList[code][3] + '</dd>'
         + '</dl>'
@@ -320,9 +320,8 @@ $(document).ready(function(){
       )
     }
   })
-
-  // 체크박스 단일 체크
   var priceSum = 0;
+  var price = 0;
   $(document).on('click', '.chkbx', function(event){
     $('.allchk').prop('checked', false);
     var price = parseInt($(this).parents('li').find('.price').text().replace(/[^0-9]/g,''));
@@ -331,8 +330,8 @@ $(document).ready(function(){
     }else if($(this).is(":checked")==false){
       priceSum = priceSum-price
     }
-    $('.total-item').text(  $('.chkbx:checked').length + 'item')
-
+    itemNo = $('.chkbx:checked').parents('li').length
+    $('.item-no').text('item' + itemNo)
     //console.log(priceSum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
     $('.total-price').empty();
     $('.total-price').append(
@@ -348,6 +347,7 @@ $(document).ready(function(){
   // attr('checked','checked');=>값변경
   var numb = 0;
   //prop(), attr() => 속성제어
+  var listprice = 0;
   $('.allchk').change(function(){
     if($(this).prop('checked')){
       //console.log('모두체크')
@@ -366,9 +366,8 @@ $(document).ready(function(){
       //console.log('모두체크해제')
       $('.chkbx').prop('checked', false);
       $('.total-price').text('KRW  0');
-      priceSum=0;
     }
-    $('.total-item').text(  $('.chkbx:checked').length + 'item')
+
   // $('.allchk').change(function(){
   //   if($('*.chkbx').is(":checked")==true){
   //     //alert('모든값은 0')
@@ -378,7 +377,7 @@ $(document).ready(function(){
   //     $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').append(
   //       'KRW  ' + '0'
   //     );
-  //     //console.log('첫번째조건실행')
+  //     console.log('첫번째조건실행')
   //   }else if($('*.chkbx').is(":checked")==false){
   //     //alert('모든값의 합')
   //     $('*.chkbx').prop('checked', true)
@@ -386,32 +385,32 @@ $(document).ready(function(){
   //       $('.allchk').prop('checked', false)
   //     })
   //     numb = $('.chkbx:checked').length
-  //     //console.log(numb)
+  //     console.log(numb)
   //
   //     for (var i = 0; i < numb; i++) {
   //       listprice = parseInt($('.chkbx:checked').parents('li').eq(i).find('.price').text().replace(/[^0-9]/g,''));
   //       //alert(listprice)
   //       priceSum = parseInt(priceSum) + listprice
   //       //console.log(typeof(listprice));
-  //       //console.log(priceSum)
+  //       console.log(priceSum)
   //       $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').empty();
   //       $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').append(
   //         'KRW  ' + priceSum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
   //       );
   //     }
-  //     //console.log('두번째조건실행')
+  //     console.log('두번째조건실행')
   //   }
   //   if($('.allchk').is(":checked")==true && $('*.chkbx').prop('checked', true)){
   //     //alert('모든값의 합')
   //     $('*.chkbx').prop('checked', true)
-  //     //console.log($('.chkbx:checked').length);
+  //     console.log($('.chkbx:checked').length);
   //     priceSum=0;
   //     for (var i = 0; i < $('.chkbx:checked').length; i++) {
   //       listprice = parseInt($('.chkbx:checked').parents('li').eq(i).find('.price').text().replace(/[^0-9]/g,''));
   //       //alert(listprice)
   //       priceSum = parseInt(priceSum) + listprice
   //       //console.log(typeof(listprice));
-  //       //console.log(priceSum)
+  //       console.log(priceSum)
   //       $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').empty();
   //       $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').append(
   //         'KRW  ' + priceSum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
@@ -421,29 +420,40 @@ $(document).ready(function(){
   //     // $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').append(
   //     //   'KRW  ' + priceSum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
   //     // );
-  //     //console.log('세번째조건실행')
+  //     console.log('세번째조건실행')
   //   }
   })
-
-  $('.del-sel').on('click' ,function(){
-    if($('.chkbx').is(":checked")==true){
-      $('.chkbx:checked').parents('li').remove();
-      $('.total-price').empty();
-      $('.total-price').append(
-        'KRW  ' + '0'
-      );
-      priceSum=0;
-    }
+  priceSum = 0;
+  price = 0;
+  listprice = 0;
+  $(document).on('click', '.del-sel', function(){
+    $('.chkbx:checked').parents('li').remove();
+    cartList = [];
+    $('.total-price').text('KRW  0');
+    priceSum = 0;
+  })
+  $(document).on('click', '.del-all' ,function(){
+    $('.prlist').empty();
+    cartList = [];
+    $('.total-price').text('KRW  0');
+    priceSum = 0;
   })
 
-  $('.del-all').on('click', function(){
-    $('.prlist > li').remove();
-    $('.total-price').empty();
-    $('.total-price').append(
-      'KRW  ' + '0'
-    );
-    priceSum=0;
+
+
+  var qty = 0;
+  $(document).on('change', '#quantity',function(){
+    qty = parseInt($(this).parents('li').find("option:selected").text())
+    //alert(qty)
+    qtyprice = ($(this).parents('li').find('.price').text().replace(/[^0-9]/g,'')*qty)
+    //alert(price)
+    priceSum = priceSum + qtyprice
+    alert(priceSum)
   })
+
+
+
+
 
 // ================미디어쿼리=========================
 
