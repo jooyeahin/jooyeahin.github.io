@@ -293,47 +293,47 @@
     </article>
 
     <article class="product">
-      <h2>NIKON PRODUCT</h2>
+      <h2>NIKON BEST PRODUCT</h2>
       <div class="wrapper">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-code="Product1542">
               <a href="" onclick="return false"><img src="img/1542_D810_front.png" alt=""></a>
               <p class="product-text"><span>FX Series Camera</span> NIKON D810</p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-code="Product1557">
               <a href="" onclick="return false"><img src="img/1557_D5_front.png" alt=""></a>
               <p class="product-text"><span>FX Series Camera</span> NIKON New D5</p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-code="Product1581">
               <a href="" onclick="return false"><img src="img/1581_D7500_front.png" alt=""></a>
               <p class="product-text"><span>DX Series Camera</span> NIKON D7500</p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-code="Product1585">
               <a href="" onclick="return false"><img src="img/1585_D850_front.png" alt=""></a>
               <p class="product-text"><span>FX Series Camera</span> NIKON D850</p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-code="Product1591">
               <a href="" onclick="return false"><img src="img/1591_Z7_front.png" alt=""></a>
               <p class="product-text"><span>Fullframe Mirroless</span> NIKON Z7</p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-code="Product1689">
               <a href="" onclick="return false"><img src="img/1689_FM10_front.png" alt=""></a>
               <p class="product-text"><span>New Film Camera</span> NIKON FM10</p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-code="Product2181">
               <a href="" onclick="return false"><img src="img/2181_AF-S-DX-Zoom-NIKKOR-10-24mm-f-3.5-4.5G-ED_front.png" alt=""></a>
               <p class="product-text"><span>DX DSLR Lens</span> Nikkor 10-24mm</p>
             </div>
-            <div class="swiper-slide">
-              <a href="" onclick="return false"><img src="img/4193-HB-89-Bayonet-Lens-Hood.png" alt=""></a>
+            <div class="swiper-slide" data-code="Product4193">
+              <a href="" onclick="return false"><img src="img/4941_HB-45-Bayonet-Lens-Hood_front.png" alt=""></a>
               <p class="product-text"><span>DSLR Accessories</span> DSLR Hood</p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-code="Product11858">
               <a href="" onclick="return false"><img src="img/11858_Extended_Service_Coverage_2_Years_D800.png" alt="d800"></a>
               <p class="product-text"><span>NIKON COVERAGE </span>2YEAR SERVICE</p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-code="Product20066">
               <a href="" onclick="return false"><img src="img/20066-AF-S-FISHEYE-NIKKOR-8-15mm.png" alt="nikkor-8-15mm"></a>
               <p class="product-text"><span>AFS DSLR Lens</span> Nikkor 8-15mm </p>
             </div>
@@ -685,37 +685,11 @@
     <div class="cart">
       <div class="cart-wrapper">
         <div class="cart-header">
+          <input type="checkbox" class="allchk">
           <img src="img/shop.png" alt="">
           <h3>Your Shopping Bag</h3>
         </div>
-        <ul>
-          <li>
-            <input type="checkbox">
-            <a href=""><img src="img/1542_D810_front.png" alt=""></a>
-            <dl>
-              <dt>D850</dt>
-              <dd>color : black</dd>
-              <dd>KRW 3,390,000</dd>
-            </dl>
-          </li>
-          <li>
-            <input type="checkbox">
-            <a href=""><img src="img/1542_D810_front.png" alt=""></a>
-            <dl>
-              <dt>D850</dt>
-              <dd>color : black</dd>
-              <dd>KRW 3,390,000</dd>
-            </dl>
-          </li>
-          <li>
-            <input type="checkbox">
-            <a href=""><img src="img/1542_D810_front.png" alt=""></a>
-            <dl>
-              <dt>D850</dt>
-              <dd>color : black</dd>
-              <dd>KRW 3,390,000</dd>
-            </dl>
-          </li>
+        <ul class="prlist">
 
         </ul>
         <ul>
@@ -723,16 +697,55 @@
             <p>Subtotal <span>Ecsl. Sales Tax</span></p>
             <p>Delivery fee</p>
           </li>
-          <li><p>Total <span>KRW 3,390,000</span></p></li>
+          <li>
+            <p>
+              Total
+              <span class="total-price">KRW 0</span>
+              <span class="total-item"></span>
+            </p>
+          </li>
         </ul>
       </div>
     </div>
-
+    <div class="cart-btn">
+      <div class="del-btn">
+        <button class="del-sel">Delete Selection</button>
+        <button class="del-all">Delete All</button>
+      </div>
+      <button class="chkout-btn">Check out</button>
+    </div>
   </div>
 
 
-  <!--  cart popup  -->
 
+  <!--  view detail popup  -->
+  <div class="detail">
+    <div class="detail-wrapper">
+      <button class="detail-close"><i></i></button>
+      <div class="col-6 img-info">
+        <img src="img/1591_Z7_front_1.png" alt="">
+      </div>
+      <div class="col-6 detail-info">
+        <span>AB0118A61C1A1</span>
+        <h3>PREMIER B01 CHRONOGRAPH 42</h3>
+        <p>STEEL - BLUE</p>
+        <p>This stunning Premier B01 Chronograph features a 42 mm stainless steel case.</p>
+        <p><strong>USD 8,700.00</strong></p>
+        <span>Excl. Sales Tax</span>
+        <div>
+          <button>Body Only</button>
+          <button>Film maker's Kit</button>
+        </div>
+        <button class="addcart">ADD TO CART</button>
+        <button>Call to buy: [02] 555-7834</button>
+        <button>Find a store</button>
+        <div>
+          <i></i>
+          <i></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 </body>
