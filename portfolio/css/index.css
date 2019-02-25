@@ -30,6 +30,7 @@ header.scroll {
   background: rgba(51, 51, 51, 0.4);
   /* background: rgba(156, 153, 151, 0.5); */
 }
+header > h1 > a { display: block; position: absolute; z-index: 200; }
 header li {
   display: inline-block;
   width: auto;
@@ -41,7 +42,7 @@ header li:nth-child(1) {
   padding-left: 0;
   padding-right: 0px;
 }
-header li a { color: #fff; line-height: 40px; cursor: pointer;}
+header li a { color: #fff; line-height: 40px; cursor: pointer; }
 header li:hover {
 
 }
