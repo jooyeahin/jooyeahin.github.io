@@ -132,7 +132,7 @@ $(document).ready(function(){
   });
 
   // 메인배너 스와이퍼
-  var menu = ['D850', 'D3X', 'NIKORR', 'CES 2019']
+  var menu = [ 'CES 2019', 'D850', 'D3X', 'NIKORR']
   var swiper2 = new Swiper('.main-banner >.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -227,15 +227,208 @@ $(document).ready(function(){
     $('header').css('transition','0s');
     if($('.depth2-frame').css('display') == "none"){ //보이게
       $('header').addClass('on');
-      $('.scroll .gnb').css({'display':'block'})
+      $('.gnb').css({'display':'block'})
       $('body').addClass('noScroll')
     }else{ //안보이게
       $('header').removeClass('on');
-      $('.scroll .gnb').css({'display':'none'})
+      $('.gnb').css({'display':'none'})
       $('body').removeClass('noScroll')
     }
     depth3frame.update();
     depth2Swiper.update();
+  })
+
+  // ============================ 장바구니 팝업
+
+  var prcode = {
+    Product1542:['<img src="img/1542_D810_front.png">', 'Product 1542', 'The Peak point of quality Nikon D810','STEEL BALCK', '-36.35 million pixels in effect <br>-High resolution image is realized by removing optical low pass filter <br>-Supports abundant generation and low noise ISO 64 commercial reduction', 'KRW 2,255,400', 'D810'],
+    Product1557:['<img src="img/1557_D5_front.png">', 'Product 1557', 'Innovation for inspiration The Nikon D5.','STEEL BALCK', '- High-speed, high-precision 153 point AF system supports 12 fps high-speed speakers<br>- With 20.82 million pixel full-frame CMOS sensors<br>- 4K UHD ultra-high-definition video can be filmed', 'KRW 7,290,000', 'D5'],
+    Product1581:['<img src="img/1581_D7500_front.png">', 'Product 1581', 'I AM AMAZING MOMENTS The Nikon D7500.','STEEL BALCK', '- With EXPED 5, ISO commercial sensitivity ISO 100 - 51200<br>- Supports 4K Full HD video shooting<br>- High-speed continuous shooting of up to approximately 8 fps, 50 frames.', 'KRW 1,880,000', 'D7500'],
+    Product1585:['<img src="img/1585_D850_front.png">', 'Product 1585', 'I AM THE DIFFERENCE MAKER The Nikon D850.','STEEL BALCK', '- Employing 45.75 million pixels and reverse-survey Nikon FX format CMOS sensors<br>- Excellent video processing engine, equipped with EXPED 5.<Br>- Commercial sensitivity ISO 64 - 25600, Full Frame 4K UHD response<br>- Fast, continuous shooting at 7m* per second.', 'KRW 3,980,000', 'D850'],
+    Product1591:['<img src="img/1591_Z7_front.png">', 'Product 1591', 'High pixel full-frame mirrorless Z 7 The Nikon Z 7.','STEEL BALCK', '- 45.75 million pixels of effective pixel. ISO 64-25600.<br>- High-resolution model Z 7.', 'KRW 3,699,000', 'Z7'],
+    Product1689:['<img src="img/1689_FM10_front.png">', 'Product 1689', 'Pure Photography, once again, feels the depth of a picture.','STEEL BALCK', '- FX format full frame, 16.25 million pixel sensor and high sensitivity low noise quality<br>- 39 AF points, enabling fast, accurate, high-speed AF.<br>- Intuitively view/regulate figures at a glance', 'KRW 639,000', 'FM10'],
+    Product2181:['<img src="img/2181_AF-S-DX-Zoom-NIKKOR-10-24mm-f-3.5-4.5G-ED_front.png">', 'Product 2181', 'AF DX Fisheye Nikkor ED 10.5mm f/2.8G','STEEL BALCK', 'Have an annular lens angle of 16mm calculated as 35mm<br> An annular lens exclusive to DX format', 'KRW 964,000', 'Nikkor ED 10.5mm'],
+    Product4193:['<img src="img/4941_HB-45-Bayonet-Lens-Hood_front.png">', 'Product 4193', 'Bayonet Lens Hood.','STEEL BALCK', '-The HB-79 Bayonet Lens Hood is designed to keep flare from entering the lens when shooting.', 'KRW 49,900', 'Bayonet-Lens-Hood'],
+    Product11858:['<img src="img/11858_Extended_Service_Coverage_2_Years_D800.png">', 'Product 11858', '2-Year Extended Service','2 YEARS', 'The Nikon 2-Year Extended Service Coverage (ESC) for the D800,', 'KRW 359,000', '2-Year Extended Service'],
+    Product20066:['<img src="img/20066-AF-S-FISHEYE-NIKKOR-8-15mm.png">', 'Product 20066', 'AF S FISHEYE NIKKOR 8-15mm','STEEL BLACK', '- A zoom lens that can produce circular and diagonal angling effects<br>- Applies excellent resolution, description performance, and anti-seismic, anti-span and pollution structures,', 'KRW 1,560,000', 'FISHEYE NIKKOR 8-15mm']
+  }
+
+  $('.product .swiper-slide a').click(function(){
+    $('body').css({'overflow-y':'hidden'})
+    var code=$(this).parents('div.swiper-slide').data('code');
+    $('.detail').removeClass('none')
+    $('.detail').addClass('block')
+    $('.black-layer').css({'display':'block'})
+    $('.img-info, .detail-info').empty();
+    $('.img-info').append(prcode[code][0])
+    $('.detail-info').append(
+      '<i></i>'+
+      '<span>'+prcode[code][1]+'</span>'+
+      '<h3>'+prcode[code][2]+'</h3>'+
+      '<p>'+prcode[code][3]+'</p>'+
+      '<p>'+prcode[code][4]+'</p>'+
+      '<p><strong>'+prcode[code][5]+'</strong></p>'+
+      '<span>Excl. Sales Tax</span>'+
+      '<div>'+
+      '  <button>Body Only</button>'+
+      '  <button>Film maker\'s Kit</button>'+
+      '</div>'+
+      '<button class="addcart" data-code="'+code+'">ADD TO CART</button>'+
+      '<button>Call to buy: [02] 555-7834</button>'+
+      '<button>Find a store</button>'
+    );
+  })
+
+  //.detail 태그 바로 밑에 닫기버튼으로 변경
+
+
+  $('.detail').on('click', '.detail-close', function(){
+    $('body').css({'overflow-y':'visible'})
+    $('.black-layer').css({'display':'none'})
+    $('.detail').removeClass('block')
+    $('.detail').addClass('none')
+  })
+
+
+  var cartList={
+    // Product1581:['이미지','제품명','색상','가격']
+  };
+
+  $('.detail-info').on('click','.addcart',function(){
+    var cartcode=$(this).data('code');
+    cartList[cartcode]=[];
+    cartList[cartcode][0]=prcode[cartcode][0];//이미지
+    cartList[cartcode][1]=prcode[cartcode][6];//제품명
+    cartList[cartcode][2]=prcode[cartcode][3];//색상
+    cartList[cartcode][3]=prcode[cartcode][5];//가격
+
+    //console.log(cartList);
+
+    $('.prlist').empty();
+    for (var code in cartList) {
+      $('.prlist').append(
+        '<li data-code="'+cartcode+'">'
+        +'<input type="checkbox" class="chkbx"><a href="">'
+        + cartList[code][0] + '</a>'
+        + '<dl>'
+        + '<dt>' + cartList[code][1]  + '<select name="quantity"><option value="1">1</option> <option value="2">2</option><option value="3">3</option></select>' + '<span >Q\'ty</span>' +'</dt>'
+        + '<dd>' + 'color : ' + cartList[code][2] + '</dd>'
+        + '<dd class="price">' + cartList[code][3] + '</dd>'
+        + '</dl>'
+        + '</li>'
+      )
+    }
+  })
+
+  function total(){
+    var total=0;
+    $('.prlist li').each(function(){
+      if($(this).find('.chkbx').is(":checked")){
+        var price=Number($(this).find('.price').text().replace(/[^0-9]/g,''));
+        var count=Number($(this).find('select').val());
+        console.log(price, count);
+        total+=price*count;
+      }
+    })
+    console.log(total);
+    total=total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    $('.total-price').text('KRW '+total);
+  }
+
+  $(document).on('change', '[name=quantity]',function(){
+    total();
+  })
+
+  var priceSum = 0;
+  var price = 0;
+  $(document).on('click', '.chkbx', function(event){
+    $('.allchk').prop('checked', false);
+    itemNo = $('.chkbx:checked').parents('li').length
+    $('.item-no').text('item' + itemNo)
+    total();
+  })
+  var listprice = 0;
+  $('.allchk').change(function(){
+    if($(this).prop('checked')){
+      $('.chkbx').prop('checked', true);
+      total();
+    }else{
+      //console.log('모두체크해제')
+      $('.chkbx').prop('checked', false);
+      $('.total-price').text('KRW  0');
+    }
+
+  // $('.allchk').change(function(){
+  //   if($('*.chkbx').is(":checked")==true){
+  //     //alert('모든값은 0')
+  //     $('.chkbx').prop('checked', false)
+  //     priceSum = 0;
+  //     $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').empty();
+  //     $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').append(
+  //       'KRW  ' + '0'
+  //     );
+  //     console.log('첫번째조건실행')
+  //   }else if($('*.chkbx').is(":checked")==false){
+  //     //alert('모든값의 합')
+  //     $('*.chkbx').prop('checked', true)
+  //     $('.chkbx').click(function(){
+  //       $('.allchk').prop('checked', false)
+  //     })
+  //     numb = $('.chkbx:checked').length
+  //     console.log(numb)
+  //
+  //     for (var i = 0; i < numb; i++) {
+  //       listprice = parseInt($('.chkbx:checked').parents('li').eq(i).find('.price').text().replace(/[^0-9]/g,''));
+  //       //alert(listprice)
+  //       priceSum = parseInt(priceSum) + listprice
+  //       //console.log(typeof(listprice));
+  //       console.log(priceSum)
+  //       $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').empty();
+  //       $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').append(
+  //         'KRW  ' + priceSum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+  //       );
+  //     }
+  //     console.log('두번째조건실행')
+  //   }
+  //   if($('.allchk').is(":checked")==true && $('*.chkbx').prop('checked', true)){
+  //     //alert('모든값의 합')
+  //     $('*.chkbx').prop('checked', true)
+  //     console.log($('.chkbx:checked').length);
+  //     priceSum=0;
+  //     for (var i = 0; i < $('.chkbx:checked').length; i++) {
+  //       listprice = parseInt($('.chkbx:checked').parents('li').eq(i).find('.price').text().replace(/[^0-9]/g,''));
+  //       //alert(listprice)
+  //       priceSum = parseInt(priceSum) + listprice
+  //       //console.log(typeof(listprice));
+  //       console.log(priceSum)
+  //       $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').empty();
+  //       $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').append(
+  //         'KRW  ' + priceSum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+  //       );
+  //     }
+  //     // $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').empty();
+  //     // $('.cart-wrapper > ul:nth-child(3) > li:nth-child(2) > p > span').append(
+  //     //   'KRW  ' + priceSum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+  //     // );
+  //     console.log('세번째조건실행')
+  //   }
+  })
+
+
+  priceSum = 0;
+  price = 0;
+  listprice = 0;
+  $(document).on('click', '.del-sel', function(){
+    $('.chkbx:checked').parents('li').remove();
+    cartList = [];
+    $('.total-price').text('KRW  0');
+    priceSum = 0;
+  })
+  $(document).on('click', '.del-all' ,function(){
+    $('.prlist').empty();
+    cartList = [];
+    $('.total-price').text('KRW  0');
+    priceSum = 0;
   })
 
 // ================미디어쿼리=========================
@@ -340,7 +533,8 @@ $(document).ready(function(){
     // 로그인 아이콘 클릭시 팝업 노출
     $('.icon-login').on('click', function(e){
       e.preventDefault();
-      $('.black-layer, .popup, .login-text, .cart').show();
+      $('.black-layer, .popup, .login-text').show();
+      $('.cart, .cart-btn').hide();
     })
 
     // 팝업 X버튼 클릭시 팝업 hide()
@@ -390,15 +584,16 @@ $(document).ready(function(){
       $(this).next().stop().slideToggle();
     })
 
-    $('.footer-top ul li a i').click(function(){
-      $('.footer-top ul li a i').not(this).removeClass('click')
-      $(this).toggleClass('click')
+    $('.footer-top ul li a').click(function(){
+      $('.footer-top ul li a').not(this).find('i').removeClass('click')
+      $(this).find('i').toggleClass('click')
     })
+
 
   } else {        // =================================== 데스크탑
 
     // 메인메뉴 클릭시 2뎁스 보이기
-    $('.gnb > li > a').click(function(e){
+    $('.gnb > li > a').off('click').click(function(e){
       e.preventDefault();
       $('header').css('transition','0s');
       if($(this).parent('li').find('div').css("display") == "none"){
@@ -409,7 +604,21 @@ $(document).ready(function(){
         $('header').removeClass('on');
         $('.gnb-back').hide();
       }
-      depth3frame.update();
+      //DSLR CAMERA, DSLR LENS, DSLR ACCESSORIES
+
+      $('.gnb-back > ul > li > a').removeClass('active');
+      $('.gnb-back > ul > li:nth-child(1) > a').addClass('active');
+
+      var menuIndex=$('.gnb > li > a').index(this);
+      var key;
+      if(menuIndex!=2){
+        switch (menuIndex) {
+          case 0: key='dslrcamera'; break;
+          case 1: key='dslrlens'; break;
+          case 3: key='dslraccessories'; break;
+        }
+         depth3frameUpdate(key);
+       }
     })
 
     // 스크롤 발생시 헤더 크기 변경
@@ -429,10 +638,11 @@ $(document).ready(function(){
 
     // 장바구니 아이콘 클릭시 팝업 노출
     $('.icon-bag').click(function(){
+      $('.login-text').hide();
       $('.black-layer').show();
-      $('.popup, .login-text').removeClass('hide');
-      $('.popup').addClass('show').css({'height':'1000px'})
-      $('.cart').show();
+      $('.popup').removeClass('hide');
+      $('.popup').addClass('show').css({'height':'100%'})
+      $('.cart, .cart-btn').show();
     })
 
     // 로그인 아이콘 클릭시 팝업 노출
@@ -440,13 +650,13 @@ $(document).ready(function(){
       $('.black-layer, .login-text').show();
       $('.popup').removeClass('hide');
       $('.popup').addClass('show').css({'height':'630px'})
-      $('.cart').hide();
+      $('.cart, .cart-btn').hide();
     })
 
     // 팝업창 내 x버튼 클릭시 팝업 숨기기
     $('.icon-close').click(function(e){
       e.preventDefault();
-      $('.black-layer, .login-text, .cart').hide();
+      $('.black-layer, .login-text, .cart, .cart-btn').hide();
       $('.popup').addClass('hide');
     })
 
@@ -463,15 +673,16 @@ $(document).ready(function(){
     }
 
     // 2뎁스 메뉴 클릭시 색상 변경
-    $('.gnb-back > ul > li > a').click(function(){
-      $('.gnb-back > ul > li > a').css({'color':'#000'})
-      $(this).css({'color':'#ffdd00'})
+    $('.gnb-back > ul > li > a').off('click').click(function(){
+      $('.gnb-back > ul > li > a').removeClass('active');
+      $(this).addClass('active');
+
+      var key=$(this).text().toLowerCase().replace(/ /g, '');
+      console.log(key)
+      depth3frameUpdate(key);
     })
 
-    // 2뎁스 메뉴 클릭시 3뎁스 리스트 변경
-    $('.gnb-back > ul > li').on('click',  function(){
-      var key=$(this).find('a').text().toLowerCase().replace(/ /g, '');
-      console.log(key)
+    function depth3frameUpdate(key){
       $('.depth3 .swiper-wrapper').empty();
       for (var i in depth3Menu[key]) {
         //console.log(depth3Menu[key][i][0])
@@ -487,7 +698,8 @@ $(document).ready(function(){
         )
       }
       depth3frame.update();
-    });
+    }
+
 
   }).resize(); //resize
 
