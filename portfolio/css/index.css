@@ -167,8 +167,8 @@ header li:nth-child(1) ~*:hover a {
   width: 98%;
   background: #fff;
 }
-.about li:nth-child(1) div { height: 348px;}
-.about li div img { width: 100%;}
+.about li:nth-child(1) div { height: 320px;}
+.about li div img { width: 89%; margin-left: 50%; transform: translateX(-50%); }
 .about li:nth-child(2) div {
   float: right;
 }
