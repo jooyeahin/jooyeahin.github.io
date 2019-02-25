@@ -438,10 +438,10 @@ $(document).ready(function(){
     windowW=$(window).width();
     if(windowW<768){ //================================== 모바일
 
-      //페이지 리로드
-      // $(window).bind('resize', function(e){
-      //   this.location.reload(false);
-      // });
+      페이지 리로드
+      $(window).bind('resize', function(e){
+        this.location.reload(false);
+      });
 
       $(window).scroll(function(e){ // e, e.preventDefault
         e.preventDefault();
