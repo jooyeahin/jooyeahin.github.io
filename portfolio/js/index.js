@@ -41,9 +41,11 @@ $(document).ready(function(){
     $('html').animate( { scrollTop : 910 }, 500 );
   })
   $('.menubar > li').eq(3).on('click', function(){
-    $('html').animate( { scrollTop : 1614 }, 500 );
+    $('html').animate( { scrollTop : 1666 }, 500 );
   })
-
+  $('.menubar > li').eq(4).on('click', function(){
+    $('html').animate( { scrollTop : 2884 }, 500 );
+  })
   // 포트폴리오 더 보기 기능
   $('.portfolio-pic ul li:lt(3)').show();
     var items =  6;
@@ -60,7 +62,7 @@ $(document).ready(function(){
       }
     });
 
-  // 포트폴리오 종류별 구분 
+  // 포트폴리오 종류별 구분
   $('.title-wrapper li a').click(function(){
     if($(this).parents('li').index()==0){
       $('.portfolio-pic li').show();
