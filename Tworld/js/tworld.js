@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-  
   // 메인메뉴 호버
   $('.main-menu > li > a').hover(function(){
     $('.main-menu > li').toggleClass('nothover');
