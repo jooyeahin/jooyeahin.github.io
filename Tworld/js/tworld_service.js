@@ -6,6 +6,7 @@ $(document).ready(function(){
   $('.data > div > ul > li > a').click(function(){
     return false;
   })
+  
   $(window).scroll(function(){
     var scHeight = $(document).scrollTop();
     if(scHeight>10){
