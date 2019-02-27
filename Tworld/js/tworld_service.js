@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  //
+  
   $('.mobile-txt > li > a').click(function(){
     return false;
   })
-  // 
+
   $('.data > div > ul > li > a').click(function(){
     return false;
   })
