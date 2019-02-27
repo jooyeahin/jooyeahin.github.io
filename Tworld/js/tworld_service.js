@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  
-  $('.mobile-txt > li > a'){
-    return false;
-  }
 
+  $('.mobile-txt > li > a').click(function(){
+    return false;
+  })
+  
   $(window).scroll(function(){
     var scHeight = $(document).scrollTop();
     if(scHeight>10){
