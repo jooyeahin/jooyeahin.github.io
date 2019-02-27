@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  //
   $('.mobile-txt > li > a').click(function(){
     return false;
   })
