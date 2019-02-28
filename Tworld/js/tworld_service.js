@@ -1,10 +1,6 @@
 $(document).ready(function(){
-  
-  $('.mobile-txt > li > a').click(function(){
-    return false;
-  })
 
-  $('.data > div > ul > li > a').click(function(){
+  $('.mobile-txt > li > a, .data > div > ul > li > a, find a, .discount a, .allservice a').click(function(){
     return false;
   })
 
@@ -131,6 +127,8 @@ $(document).ready(function(){
     $('.data > div:nth-child(2) > div').find('ul').eq(panelIdx).addClass('show')
   })
 
-
+  $('.discount > div > ul > li > div > div > a').click(function(){
+    $(this).parent('div').find('ul').toggleClass('show')
+  })
   // js끝.
 })
