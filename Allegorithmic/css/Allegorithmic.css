@@ -17,17 +17,18 @@ body { overflow-x: hidden; background: #fbfbfb; font-family: gotham-light-webfon
 /*  header  */
 header { position: fixed; width: 100%; height: 80px; z-index: 100; background: rgba(0,0,0,0.2); box-shadow: 0px 0px 10px rgba(0,0,0,0.3); font-family: gotham-book-webfont; transition: 0.3s ease; }
 header.scroll { height: 60px; background: #fff; }
-header h1 { display: inline-block; width: 170px; height: 60px; transform: translateY(-10px); margin-left: -15px; transition: 0.3s ease; }
+header h1 { position: absolute; display: inline-block; width: 170px; height: 60px; transform: translateY(7px); margin-left: -21px; transition: 0.3s ease; }
 header h1.scroll { transform: translateY(-2px); }
+header h1 > a { display: block; }
 header h1 img { width: 168px; }
 header > div { padding-left: 20px; padding: right: 20px; box-sizing: border-box;
 }
-header > div > ul { display: inline-block; margin-left: 155px; transition: 0.3s ease; }
-header > div > ul.scroll { margin-left: 255px; }
+header > div > ul { display: inline-block; float: right; transition: 0.3s ease; }
+header > div > ul.scroll { float: right; }
 header > div > ul > li:hover { background: #00bcf2; }
 header > div > ul > li:hover > ul { display: block; }
 header > div > ul > li { float: left; cursor: pointer; }
-header > div > ul > li > a {  line-height: 80px; padding-left: 15px; padding-right: 15px; font-size: 16px; color: white; transition: 0.3s ease; }
+header > div > ul > li > a {  line-height: 80px; padding-left: 15px; padding-right: 15px; font-size: 16px; color: white; transition: 0.3s ease; display: block;}
 header > div > ul > li > a.scroll { color: #888; font-size: 14px; padding-left: 12px; padding-right: 12px; line-height: 60px;}
 header > div > ul > li:hover > a { color: #fff; }
 header > div > ul > li > ul { display: none; position: absolute; background: #00bcf2; }
@@ -45,45 +46,51 @@ header > div > ul > li:last-child img.scroll { width: 18px; }
 
 /*  section  */
 /*  article.video  */
-.video { overflow: hidden; height: 780px; }
-.video div { position: absolute; bottom: 250px; left: 50%; transform: translateX(-50%); z-index: 1; }
-.video div h2 img { width: 200px; }
-.video div button { width: 200px; height: 44px; transform: translateY(15px); background: #00bcf2; color: #fff; border: 0; font-family: 'gotham-book-webfont'; font-size: 16px; cursor: pointer; }
-.video > p { position: absolute; bottom: 200px; right: 0; font-size: 14px; color: #fff; }
+.video { overflow: hidden; width: 100%; height: 80vh; transition: all 0.2s ease; }
+.video div { position: absolute; bottom: 26.5vh; left: 50%; transform: translateX(-50%); z-index: 1; }
+.video > div > h2 > a { display: block; }
+.video > div > h2 > a > img { width: 200px; margin-left: 50%; transform: translateX(-50%); }
+.video > div > button { width: 200px; height: 44px; transform: translateY(15px); background: #00bcf2; color: #fff; border: 0; font-family: 'gotham-book-webfont'; font-size: 16px; cursor: pointer; }
+.video > p { position: absolute; bottom: 20vh; right: 0; font-size: 14px; color: #fff; }
+/*  desktop size. */
 .video video { width: 100%; }
 
 /*  article.newsletter  */
 .newsletter { font-family: gotham-light-webfont; color: #444; margin-bottom: 100px; }
 .newsletter h2 { font-weight: 1; text-align: center; margin-top: 80px; }
 .newsletter p { font-size: 16px; text-align: center;  font-weight: bold; margin-top: 20px; }
-.newsletter > div > div{ display: inline-block; margin-left: 50%; margin-top: 30px;
-  transform: translateX(-50%); width: 692px; }
-.newsletter input { width: 570px; height: 40px; border: 1px solid #ccc; float: left; text-indent: 10px; font-size: 16px; font-family: gotham-light-webfont;}
-.newsletter button { width: 120px; height: 40px; background: #000; color: #fff; border: 0;
-  transition: 0.5s ease; cursor: pointer; margin-top: 1px; }
+.newsletter > div { padding: 0 20px; }
+.newsletter > div > div { display: inline-flex; margin-left: 50%; margin-top: 30px; transform: translateX(-50%); width: 100%; max-width: 700px;}
+.newsletter input { width: 100%; max-width: 570px; height: 40px; border: 1px solid #ccc; text-indent: 10px; font-size: 16px; font-family: gotham-light-webfont; }
+.newsletter button { padding: 0 20px; height: 40px; background: #000; color: #fff; border: 0; transition: 0.5s ease; cursor: pointer; margin-top: 1px;}
 .newsletter button:hover { background: #ccc; color: #fff; border:0; }
 
 
 /*  news  */
-.news { padding-bottom: 50px; overflow: hidden; }
-.news > div > ul { overflow: hidden; }
-.news > div > ul > li { position: relative; padding: 5px;
-  box-sizing: border-box; overflow: hidden; cursor: pointer; }
-.news > div > ul > li > div > p { position: absolute; bottom: 0; z-index: 10; color: #fff; text-align: center; width: 100%; }
-.news > div > ul > li > div > p:nth-child(2) { font-size: 12px; bottom: 65px; }
-.news > div > ul > li > div > p:nth-child(3) { bottom: 30px; }
-.news div > ul > li > div { position: relative;  overflow: hidden;}
-.news div > ul > li > div > div {
-  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)); position: absolute; z-index: 1;  width: 100%; height: 100%; }
-.news div > ul > li > div > a > img { width: 160%; margin-left: 50%;
-  transform: translateX(-50%); }
-.news div:nth-child(3) > ul > li:last-child > div > a > img { width: 100%; }
-.news > div .plus { position: absolute; width: 100%; height: 430px; background: #00bcf2; z-index: 15; transition: 0.3s ease; }
-.news > div .plus { width: 170px; height: 170px; transform: rotate(45deg); right: -205px; bottom: -205px; }
-.news > div .plus > img { transform: rotate(-45deg); position: absolute;
-  left: 20px; top: 75px; }
-.news > div > ul > li:hover .plus { right: -85px; bottom: -85px; }
+.news { overflow: hidden; }
+.news > div > ul > li { padding: 5px; box-sizing: border-box; overflow: hidden; }
+.news-view { position: relative; overflow: hidden; }
+.news-view::before { position: absolute; content:url('../img/plus1.png'); display: block; width: 170px; height: 170px; background: #00bcf2; right: -205px; bottom: -205px; transform: rotate(45deg); z-index: 4; transition: all 0.25s ease; line-height: 180px; padding-left:20px; box-sizing: border-box;}
+.news-view.hover::before { right: -85px; bottom: -85px; }
+.news-view > div:nth-child(1) { position: absolute; width: 100%; height: 100%; z-index: 6;}
+.news-view > div:nth-child(1) > a { display: block; overflow: hidden; width: 100%; height: 100%;}
+.news-view > div:nth-child(2) { position: absolute; color: #fff; bottom: 0; padding: 20px; z-index: 2; width: 100%; box-sizing: border-box;}
+.news-view > div:nth-child(2) > p { text-align: center; }
+.news-view > div:nth-child(2) > p:nth-child(1) { font-size: 13px; padding-bottom: 20px; }
+.news-view > div:nth-child(3) { position: absolute; background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)); width: 100%; height: 100%; }
 
+.news > div > ul > li > div > span { display: block; padding-top: 65.7%;  background-position: center; background-size: cover; }
+.news > div > ul > li:nth-child(1) > div > span { background: url('../img/User_story_John_Seymour_Blogpost_highlight_2000x850.jpg'); background-position: center; background-size: cover; }
+.news > div > ul > li:nth-child(2) > div > span { background: url('../img/User_story_Srinivasa_Raju_Blogpost_highlight_2000x850.jpg'); background-position: center; background-size: cover; }
+.news > div > ul > li:nth-child(3) > div > span { background: url('../img/Blog_post_Yechawood_Blogpost_highlight_2000x850.jpg'); background-position: center; background-size: cover; }
+.news > div > ul > li:nth-child(4) > div > span { background: url('../img/User_story_Jeremy_Heintz_Blogpost_highlight_2000x850.jpg'); background-position: center; background-size: cover; }
+.news > div > ul > li:nth-child(5) > div > span { background: url('../img/Blog_post_Polycount_greentooth_Blogpost_highlight_2000x850.jpg'); background-position: center; background-size: cover; }
+.news > div > ul > li:nth-child(6) > div > span { background: url('../img/User_story_Pasquale_Scionti_Blogpost_highlight_2000x850.jpg'); background-position: center; background-size: cover; }
+.news > div > ul > li:nth-child(7) > div > span { background: url('../img/User_story_Inside_The_Vault_Blogpost_highlight_2000x850.jpg'); background-position: center; background-size: cover; }
+.news > div > ul > li:nth-child(8) > div > span { background: url('../img/User_story_Rocket_League_Blogpost_highlight_2000x850.jpg'); background-position: center; background-size: cover; }
+.news > div > ul > li:nth-child(9) > div > span { background: url('../img/SDAYS_GDC_STD_Blogpost_highlight_2000x850.jpg'); background-position: center; background-size: cover; }
+.news > div > ul > li:nth-child(10) > div > span { background: url('../img/Source_Drop_Sportwear_Source_banner_2400x800.jpg'); background-position: center; background-size: cover; }
+.news > div > ul > li:nth-child(11) > div > span { background: url('../img/The Allegorithmic Blog.jpg_0_0_0.jpg'); background-position: center; background-size: cover; }
 
 /*  banner  */
 .banner { position: relative; overflow: hidden; height: 500px; font-family: 'gotham-book-webfont';}
@@ -96,22 +103,24 @@ header > div > ul > li:last-child img.scroll { width: 18px; }
 .banner > img { margin-top: -520px; width: 100%; }
 .banner > div img { margin-top: 160px;  width: 320px; }
 
-
 /*  using  */
-.using { padding-top: 70px; padding-bottom: 100px; }
+.using { padding-top: 130px; padding-bottom: 100px; }
 .using h2 { font-weight: 1; font-size: 32px; text-align: center; }
 .using a:nth-child(2) > img { margin-top: 40px; }
 .using > div > a > img { width: 97%; margin-left: 50%; transform: translateX(-50%); }
 .using > div > div > ul { overflow: hidden; }
 .using > div > div > ul > li { padding-left: 40px; padding-right: 40px; box-sizing: border-box;}
 .using > div > div > ul > li > a > img { width: 100%; margin-left: 50%; transform: translateX(-50%); position: relative; top:0; }
-
+.tab { display: none; }
+.pc { display: block; }
+.phone { display: none; }
 /*  /section  */
 
 /*  footer  */
 footer{
 	background: #191919;
   padding-top: 100px;
+  display: block;
 }
 footer > div { overflow: hidden;}
 footer > div > ul { position: relative; overflow: hidden; display: inline-block;
@@ -134,7 +143,40 @@ footer > div > ul > li > ul > li > a > i > img { position: relative; left: 90px;
 footer > div:nth-child(2) { margin-top: 40px; color: #fff; text-align: center; padding-bottom: 50px; }
 
 
+/*  media query   */
 
+@media screen and (max-width:1324px) {
+  .video { height: 80vh; }
+  .video video { width: 200vh; margin-left: 50%; transform: translateX(-50%); }
+  .video > p { z-index: 10; }
+}
 
+@media screen and (max-width:1024px) {
+  header > div > ul { display: none; }
+  .video div button { width: 240px; height: 64px; }
+  .newsletter > div > div { display: flex; }
+  .news-view::before { display: none; }
+  .pc { display: none; }
+  .tab { display: block; }
+  .phone { display: none; }
+  .using > div > h2 { margin-bottom: 50px; }
+  .using > div > a > img { width: 580px; margin-left: 50%; transform: translateX(-50%); }
+  .using > div > div > ul > li > a > img { width: 400px; margin-left: 50%; transform: translateX(-50%); position: relative; top:0; }
+  footer { padding-top: 20px; }
+  footer > div > ul { display: none; }
+}
 
-/*  /body  */
+@media screen and (max-width:640px) {
+  .video { height: 100vh; }
+  .video video { width: 190vh;  }
+  .video > div { width: 100%; bottom: 40px; }
+  .video > div > h2 > a > img { width: 50%; margin-left: 50%; transform: translateX(-50%); }
+  .video > div > button { width: 100%; height: 44px; margin-bottom: 10px;}
+  .video > p { position: absolute; bottom: 0; right: 0; font-size: 12px; color: #fff; z-index: 10; text-align: right;}
+  .using > div > h2 { margin-bottom: 50px; }
+  .using > div > a > img { width: 400px; margin-left: 50%; transform: translateX(-50%); }
+  .using > div > div > ul > li > a > img { width: 340px; margin-left: 50%; transform: translateX(-50%); position: relative; top:0; }
+  .pc { display: none; }
+  .tab { display: none; }
+  .phone { display: block; }
+}

@@ -45,4 +45,7 @@ $(document).ready(function(){
     $(this).find('img').attr({'src':'img/' + footerIcon['iconArray' + snsidx + liidx][1] })
   })
 
+  $('.news-view > div:nth-child(1) > a').hover(function(){
+    $(this).parents('div.news-view').toggleClass('hover')
+  })
 });
