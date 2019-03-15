@@ -444,8 +444,6 @@ $(document).ready(function(){
       //   this.location.reload(false);
       // });
 
-      $('.gnb-back > ul').hide();
-
       $(window).scroll(function(e){ // e, e.preventDefault
         e.preventDefault();
         var height = $(document).scrollTop();
