@@ -90,6 +90,7 @@ body.hidden {
 
 /* ------------------------------------------------------------ */
 /*  header  */
+
 header {
   position: fixed;
   top: 0;
@@ -291,7 +292,7 @@ header.scroll-on {
   border-right:0;
   display: none;
 }
-
+.gnb-back.desk { display: block; }
 .gnb-back > ul {
   padding: 30px;
   height: 300px;
@@ -1534,6 +1535,7 @@ nav.wrapper.top {
   margin-left: 50%;
   transform: translateX(-50px);
 }
+.gnb-back.desk { left:99999px; }
 .util-nav1 li:nth-child(odd){display: inline-block;}
 .search-form {
   width: 100%;

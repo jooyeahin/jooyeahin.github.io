@@ -436,14 +436,14 @@ $(document).ready(function(){
   $(window).resize(function(){
 
     windowW=$(window).width();
+
     if(windowW<768){ //================================== 모바일
-      //
-      //
+
       //페이지 리로드
       // $(window).bind('resize', function(e){
       //   this.location.reload(false);
       // });
-
+      $('.gnb-back').addClass('desk')
       $(window).scroll(function(e){ // e, e.preventDefault
         e.preventDefault();
         var height = $(document).scrollTop();
@@ -520,7 +520,7 @@ $(document).ready(function(){
       for(i=0; i<=3; i++){
         $('.gnb > li').eq(i).children('a').find('img').attr({'src':'img/depth2_icon'+ (i+1) +'.png'})
       }
-      $(this).find('img').attr({'src':'img/depth2_icon'+dep2idx+'_1.png'});
+      $(this).children('a').find('img').attr({'src':'img/depth2_icon'+dep2idx+'_1.png'});
       depth3frame.update();
     })
 
@@ -592,7 +592,7 @@ $(document).ready(function(){
 
 
   } else {        // =================================== 데스크탑
-
+    $('.gnb-back').removeClass('desk')
     // 메인메뉴 클릭시 2뎁스 보이기
     $('.gnb > li > a').off('click').click(function(e){
       e.preventDefault();
