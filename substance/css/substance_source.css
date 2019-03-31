@@ -111,11 +111,11 @@ header.scroll .login > ul > li:nth-child(2) > a:hover > i { color: #fff; }
 .metalic-layer > div > p { text-align: center; margin-top: 30px; color: #fff; font-size: 18px; font-weight: bold;}
 .metalic-layer > ul { overflow: hidden; }
 .metalic-layer > ul > li { position: relative; height: 489px; color: #fff; }
-.metalic-layer > ul > li:nth-child(1) { background: url(../img/chrono_red_rock.jpg); background-position: center; background-size: 1920px 1279px; background-attachment: fixed; }
-.metalic-layer > ul > li:nth-child(2) { background: url(../img/chrono_Rock_Scoria_1.jpg); background-position: center; background-size: 1920px 1279px; background-attachment: fixed; }
-.metalic-layer > ul > li:nth-child(3) { background: url(../img/chrono_rock_wall_smooth_0.jpg) no-repeat; background-position: center; background-size: 1920px 1279px; background-attachment: fixed; }
-.metalic-layer > ul > li:nth-child(4) { background: url(../img/chrono_concrete_svgegyptianwallbasedirty_0.jpg); background-position: center; background-size: 1920px 1279px; background-attachment: fixed; }
-.metalic-layer > ul > li > p { position: absolute; bottom: 0; margin-left: 50%; transform: translate(-50%); font-weight: bold; font-size: 18px; }
+.metalic-layer > ul > li:nth-child(1) { background: url(../img/chrono_red_rock.jpg); background-position: center; background-size: cover; background-attachment: fixed; }
+.metalic-layer > ul > li:nth-child(2) { background: url(../img/chrono_Rock_Scoria_1.jpg); background-position: center; background-size: cover; background-attachment: fixed; }
+.metalic-layer > ul > li:nth-child(3) { background: url(../img/chrono_rock_wall_smooth_0.jpg) no-repeat; background-position: center; background-size: cover; background-attachment: fixed; }
+.metalic-layer > ul > li:nth-child(4) { background: url(../img/chrono_concrete_svgegyptianwallbasedirty_0.jpg); background-position: center; background-size: cover; background-attachment: fixed; }
+.metalic-layer > ul > li > p { position: absolute; bottom: 5px; margin-left: 50%; transform: translate(-50%); font-weight: bold; font-size: 18px; }
 
 .metalic-back { position: fixed; top:0; z-index:-9; width: 100%; height: 1956px; overflow: hidden;}
 .metalic-back > li { position: absolute; top: 0; width: 100%; height: 100%; }
@@ -227,10 +227,10 @@ footer > div > span:nth-child(9) { display: block; margin-top: 10px; color: #fff
   .video .text-box > p:nth-child(2) { margin-top: 0; font-size: 1.4rem; }
   .video .text-box > p:nth-child(3) { font-size: 0.9rem; margin-top: 10px; }
   .library > button { width:90%; }
-  .metalic-layer > ul > li:nth-child(1) { background-attachment: initial; background-size: 150%; }
-  .metalic-layer > ul > li:nth-child(2) { background-attachment: initial; background-size: 150%; }
-  .metalic-layer > ul > li:nth-child(3) { background-attachment: initial; background-size: 150%; }
-  .metalic-layer > ul > li:nth-child(4) { background-attachment: initial; background-size: 150%; }
+  .metalic-layer > ul > li:nth-child(1) { background-attachment: initial; background-size: cover; }
+  .metalic-layer > ul > li:nth-child(2) { background-attachment: initial; background-size: cover; }
+  .metalic-layer > ul > li:nth-child(3) { background-attachment: initial; background-size: cover; }
+  .metalic-layer > ul > li:nth-child(4) { background-attachment: initial; background-size: cover; }
   footer > div > ul.footer-nav { display: block; }
   footer > div > ul.footer-nav > li { display: block; margin: 20px;}
   footer > div > ul.footer-sns { margin: 30px 20px; width: initial;}
