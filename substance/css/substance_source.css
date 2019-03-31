@@ -220,7 +220,12 @@ footer > div > span:nth-child(9) { display: block; margin-top: 10px; color: #fff
 @media screen and (max-width:630px) {
   .video { background: url('../img/SourceTextileDrop_visuel_home_mobile.jpg') no-repeat; background-size: cover; background-position: center; }
   .video > video { display: none; }
+  .video > img { display: none; }
+  .video > div.text-box { top: 15%; }
   .video .text-box > button { width: 100%; }
+  .video .text-box > img { width: 150px; height: 150px; }
+  .video .text-box > p:nth-child(2) { margin-top: 0; font-size: 1.4rem; }
+  .video .text-box > p:nth-child(3) { font-size: 0.9rem; margin-top: 10px; }
   .library > button { width:90%; }
   .metalic-layer > ul > li:nth-child(1) { background-attachment: initial; background-size: 150%; }
   .metalic-layer > ul > li:nth-child(2) { background-attachment: initial; background-size: 150%; }
