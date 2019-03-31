@@ -324,7 +324,7 @@ footer > div > span:nth-child(9) { display: block; margin-top: 10px; color: #fff
   footer > div > ul.footer-sns > li { width: 50%; }
 }
 @media screen and (max-width:600px) {
-  .background > div > img { width: 290px; }
+  .background > div > img { width: 240px; }
   .use-it > div > ul > li { height: auto; }
   .use-it > div > ul > li:nth-child(1) { padding-top: 30px; }
   .use-it > div > ul > li > p:nth-child(2) { padding-top: 10px; }
