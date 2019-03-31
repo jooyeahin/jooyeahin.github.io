@@ -224,7 +224,6 @@ footer > div > span.adobe { text-align: center; display: block; margin-top: 30px
 footer > div > span.adobe > img { width: 30px; }
 footer > div > span:nth-child(9) { display: block; margin-top: 10px; color: #fff; font-size: 16px; text-align: center; padding-bottom: 30px; }
 
-
 /*  media query   */
 @media screen and (max-width:1600px) {
   header > div > h1 { width: 210px; }
