@@ -109,7 +109,7 @@ header.scroll .login > ul > li:nth-child(2) > a:hover > i { color: #fff; }
 .augmented { background: #060a0d; color: #fff; text-align: center; }
 .augmented > h2 { font-size: 48px; font-weight: 1; padding-top: 100px; }
 .augmented > p:nth-child(2) { font-size: 22px; padding-top: 50px; }
-.augmented > ul { padding-top: 120px;  }
+.augmented > ul { padding-top: 120px; overflow: hidden; }
 .augmented > ul > li > img { width: 80%; }
 .augmented > ul > li > p:nth-child(2){ font-size: 32px; padding-top: 20px; }
 .augmented > ul > li > p:nth-child(3){ font-size: 18px; padding-top: 20px; }
@@ -266,10 +266,16 @@ footer > div > span:nth-child(9) { display: block; margin-top: 10px; color: #fff
 }
 @media screen and (max-width:630px) {
   .artist img { width: 100%; }
-  .pbr > div > p:nth-child(2) { padding-bottom: 50px; }
+  .artist p:nth-child(2) { padding: 50px 20px; }
+  .pbr > div > p:nth-child(2) { padding: 50px 20px; }
   .pbr > ul > li { padding-bottom: 32px; }
   .pbr > img { width: 100%;  }
+  .pbr > h3 { padding: 100px 20px 20px 20px; }
+  .augmented > ul { padding: 120px 20px 0 20px; }
+  .vfx > p:nth-child(2) { padding: 50px 20px;  }
   .world > div > ul > li > img { width: 100%; }
+  .world > div > p:nth-child(2) { padding: 40px 20px 0 20px; }
+  .praise > p:nth-child(2) { padding:30px 20px 0 20px; }
   .texturing .swiper-slide > p:nth-child(1) { top: 10px; font-size: 0.8em; }
   .texturing .swiper-slide > p:nth-child(2) { top: 50px; font-size: 0.5em; }
   footer > div > ul.footer-nav { display: block; }

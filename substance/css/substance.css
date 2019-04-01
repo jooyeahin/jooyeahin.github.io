@@ -104,7 +104,7 @@ header.scroll .login > ul > li:nth-child(2) > a:hover > i { color: #fff; }
 .substance ul:nth-child(3) { overflow: hidden; height: 100%; padding-bottom: 30px; }
 .substance ul:nth-child(3) > li > p:nth-child(1) { font-size: 32px; font-weight: bold; color: #333; text-align: center; margin-top: 200px; }
 .substance ul:nth-child(3) > li > p:nth-child(2) { font-size: 20px; color: #666; text-align: center; padding-top: 20px; }
-.substance ul:nth-child(3) img { min-height: 100%; }
+.substance ul:nth-child(3) img { min-height: 100%; margin-left:50%; transform: translateX(-50%); }
 .substance ul:nth-child(4) { overflow: hidden; height: 100%; background: #2c2b2d; }
 .substance ul:nth-child(4) > li > p:nth-child(1) { font-size: 32px; font-weight: bold; color: #fff; text-align: center; margin-top: 35%; transform: translateY(-50%); }
 .substance ul:nth-child(4) > li > p:nth-child(2) { font-size: 20px; color: #fff; text-align: center; padding-top: 20px; }
@@ -196,6 +196,10 @@ footer > div > span:nth-child(9) { display: block; margin-top: 10px; color: #fff
 }
 @media screen and (max-width:630px) {
   .video .text-box > h2 > img { height: 200px; }
+  .substance > div > p { padding: 0 20px 50px 20px; }
+  .substance ul:nth-child(1) > li > p:nth-child(2) { padding: 10px 20px 0 20px; }
+  .substance ul:nth-child(2) > li > p:nth-child(2) { padding: 30px 20px 80px 20px; }
+  .substance ul:nth-child(3) img
   footer > div > ul.footer-nav { display: block; }
   footer > div > ul.footer-nav > li { display: block; margin: 20px;}
   footer > div > ul.footer-sns { margin: 30px 20px; width: initial;}
@@ -203,7 +207,6 @@ footer > div > span:nth-child(9) { display: block; margin-top: 10px; color: #fff
 }
 @media screen and (max-width:600px) {
   .substance ul:nth-child(2) > li > p:nth-child(1) { padding-top: 80px; }
-  .substance ul:nth-child(2) > li > p:nth-child(2) { padding-bottom: 80px; }
   .substance ul:nth-child(3) > li > p:nth-child(1) { margin-top: 80px; }
   .substance ul:nth-child(3) > li > p:nth-child(2) { padding-bottom: 80px; }
   .substance ul:nth-child(4) > li > p:nth-child(1) { margin-top: 0; }
