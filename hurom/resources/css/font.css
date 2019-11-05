@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'NotosansKR';
+  font-weight: 300;
+  src: url('../font/NotoSans-Thin.eot'),
+       url('../font/Notosans-Thin.eot?#iefix') format('embedded-opentype') ,
+       url('../font/Notosans-Thin.woff') format('woff'),
+       url('../font/Notosans-Thin.woff2') format('woff2'),
+       url('../font/Notosans-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NotosansKR';
+  font-weight: 400;
+  src: url('../font/Notosans-Light.eot'),
+       url('../font/Notosans-Light.eot?#iefix') format('embedded-opentype') ,
+       url('../font/Notosans-Light.woff') format('woff'),
+       url('../font/Notosans-Light.woff2') format('woff2'),
+       url('../font/Notosans-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NotosansKR';
+  font-weight: 500;
+  src: url('../font/NotoSans-Regular.eot'),
+       url('../font/Notosans-Regular.eot?#iefix') format('embedded-opentype') ,
+       url('../font/Notosans-Regular.woff') format('woff'),
+       url('../font/Notosans-Regular.woff2') format('woff2'),
+       url('../font/Notosans-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NotosansKR';
+  font-weight: 600;
+  src: url('../font/Notosans-Medium.eot'),
+       url('../font/Notosans-Medium.eot?#iefix') format('embedded-opentype') ,
+       url('../font/Notosans-Medium.woff') format('woff'),
+       url('../font/Notosans-Medium.woff2') format('woff2'),
+       url('../font/Notosans-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NotosansKR';
+  font-weight: 700;
+  src: url('../font/Notosans-Bold.eot'),
+       url('../font/Notosans-Bold.eot?#iefix') format('embedded-opentype') ,
+       url('../font/Notosans-Bold.woff') format('woff'),
+       url('../font/Notosans-Bold.woff2') format('woff2'),
+       url('../font/Notosans-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NotosansKR';
+  font-weight: 800;
+  src: url('../font/Notosans-Black.eot'),
+       url('../font/Notosans-Black.eot?#iefix') format('embedded-opentype') ,
+       url('../font/Notosans-Black.woff') format('woff'),
+       url('../font/Notosans-Black.woff2') format('woff2'),
+       url('../font/Notosans-Black.otf') format('opentype');
+}
