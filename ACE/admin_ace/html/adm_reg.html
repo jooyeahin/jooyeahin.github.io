@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>ACE맘잡고 ERP 시스템</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../resource/images/layout/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../resource/css/style.css">
+  <script src="../resource/js/jquery-3.4.1.min.js"></script>
+  <script src="../resource/js/adm.js"></script>
+</head>
+<body>
+  <header>
+      <div class="header_top">
+        <div class="wrap">
+          <h1><a href="">ACE 맘잡고 ERP 시스템</a></h1>
+          <ul>
+            <li><a href="" class="btn_li">관리자 님</a></li>
+            <li><a href="" class="btn_lo">로그아웃</a></li>
+            <!-- <li class="log_out"><a href="#">로그인</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="gnb">
+        <h2 class="blind">메인 메뉴</h2>
+        <div class="wrap">
+          <ul>
+            <li><a href="">게시판</a></li>
+            <li class="click"><a href="">가맹점관리</a></li>
+            <li><a href="">수당관리</a></li>
+            <li><a href="">정산관리</a></li>
+            <li><a href="">일정관리</a></li>
+            <li><a href="">서비스관리</a></li>
+            <li><a href="">운영관리</a></li>
+            <li><a href="">내정보관리</a></li>
+          </ul>
+        </div>
+      </div>
+  </header>
+  <section id="containter">
+    <div class="wrap">
+      <nav class="lnb">
+        <h2 class="blind">네비게이션 메뉴</h2>
+        <div class="lnb_title"><a href="">가맹점 조회</a></div>
+        <ul class="nav_acr">
+          <li>
+            <a href="" class="depth_no" onclick="return false;">가맹점 조회</a>
+          </li>
+          <li class="plus">
+            <a href="" class="depth_is" onclick="return false;">신규계약관리</a>
+            <ul>
+              <li><a href="">- 계약진행전체 (47)</a></li>
+              <li><a href="">- 대리점계약 (6)</a></li>
+              <li><a href="" class="on">- 총판검토 (0)</a></li>
+              <li><a href="">- 에이전시검토 (2)</a></li>
+              <li><a href="">- 전시반영</a></li>
+              <li><a href="">- 가맹점연락 (8)</a></li>
+              <li><a href="">- 최종전산반영 (0)</a></li>
+            </ul>
+          </li>
+          <li class="plus">
+            <a href="" class="depth_is" onclick="return false;">변경계약관리</a>
+            <ul>
+              <li><a href="">- 계약진행전체 (1)</a></li>
+              <li><a href="">- 전산반영 (1)</a></li>
+              <li><a href="">- 가맹점연락 (0)</a></li>
+              <li><a href="">- 최종전산반영 (0)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article>
+        <h2 class="blind">뷰포트</h2>
+        <div class="atc_title">
+          <h3>가맹점 관리</h3>
+          <div class="route_wrap">
+            <ul class="atc_route">
+              <li><a href=""></a></li>
+              <li><a href="">가맹점관리</a></li>
+              <li><a href="">가맹점조회</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="reg_view">
+          <div class="ctm_info">
+            <div class="ctm_title">
+              <div class="ctm_header">
+                <span></span>
+                <h4>고객정보</h4>
+              </div>
+              <ul>
+				    <li><a href="" class="btn_typeA">이체금액관리</a></li>
+				  	  <li><a href="" class="btn_typeC">엑셀다운로드</a></li>
+				  <li><a href="" class="btn_typeA">저장</a></li>
+                <li><a href="" class="btn_typeA">저장</a></li>
+                <li><a href="" class="btn_typeB">취소</a></li>
+              </ul>
+            </div>
+            <table>
+              <colgroup>
+                <col style="width: 15.9%;"/>
+                <col style="width: 34.4%;"/>
+                <col style="width: 15.9%;"/>
+                <col style="width: 34.4%;"/>
+              </colgroup>
+              <!--  display: none; -->
+              <thead>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </thead>
+              <!--  display: none; -->
+              <tbody>
+                <tr class="division">
+                  <th>사업구분<em>&#42;</em></th>
+                  <td colspan="3">
+                    <input type="radio" id="bussiness_div1" name="division" />
+                    <label for="bussiness_div1"><span></span>개인</label>
+                    <input type="radio" id="bussiness_div2" name="division" />
+                    <label for="bussiness_div2"><span></span>법인</label>
+                    <input type="radio" id="bussiness_div3" name="division" />
+                    <label for="bussiness_div3"><span></span>공동</label>
+                  </td>
+                </tr>
+                <tr >
+                  <th>상호<em>&#42;</em></th>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>상호 유형</td>
+                  <td class="check_typeA">
+                    <input type="checkbox" name="" value="" id="input_sptext1">
+                    <label for="input_sptext1"><span></span>소속</label>
+                    <input type="checkbox" name="" value="" id="input_sptext2">
+                    <label for="input_sptext2"><span></span>소속</label>
+                    <input type="checkbox" name="" value="" id="input_sptext3">
+                    <label for="input_sptext3"><span></span>소속</label>
+                  </td>
+                </tr>
+                <tr class="business_num">
+                  <th>대표자<em>&#42;</em></th>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>사업자번호<em>&#42;</em></td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                    <span>-</span>
+                      <label for=""></label>
+                      <input type="text">
+                    <span>-</span>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>업태</th>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>업종</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>주민번호</th>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                    <span class="span_blue">예) 0564586-056402</span>
+                  </td>
+                  <td>개업일</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                    <span class="open_date"><a href=""></a></span>
+                    <span class="span_blue">예) 2017-05-15</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>휴대폰번호<em>&#42;</em></th>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                    <span class="span_blue">예) 010-7554-4545</span>
+                  </td>
+                  <td>사업장연락처<em>&#42;</em></td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                    <span class="span_blue">예) 02-5468-1564</span>
+                  </td>
+                </tr>
+                <tr class="business_adr">
+                  <th>사업장주소</th>
+                  <td colspan="3">
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+                <tr class="van">
+                  <th rowspan="2">
+                    VAN정보
+                    <div class="van_btn">
+                      <a href="">추가</a>
+                      <a href="">삭제</a>
+                    </div>
+                  </th>
+                  <td rowspan="2" colspan="3">
+                    <div class="id_pw">
+                      <select name="smartro" id="smartro">
+                        <option value="">SMARTRO</option>
+                      </select>
+                        <label for="">아이디</label>
+                        <input type="text">
+                        <label for="">비밀번호</label>
+                        <input type="password" maxlength="">
+                        <label for=""></label>
+                        <input type="password" maxlength="">
+                    </div>
+                    <div class="id_pw">
+                      <select name="van_sel" id="van_sel">
+                        <option value="">VAN사 선택</option>
+                      </select>
+                        <label for="">아이디</label>
+                        <input type="text">
+                        <label for="">비밀번호</label>
+                        <input type="password" maxlength="">
+                        <label for=""></label>
+                        <input type="password" maxlength="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr class="accnt">
+                  <th >네이버계정</th>
+                  <td colspan="3">
+                    <div class="id_pw">
+                        <label for="">아이디</label>
+                        <input type="text">
+                        <label for="">비밀번호</label>
+                        <input type="password" maxlength="">
+                        <label for=""></label>
+                        <input type="password" maxlength="">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="accnt">
+                  <th>여신금융협회계정</th>
+                  <td colspan="3">
+                    <div class="id_pw">
+                        <label for="">아이디</label>
+                        <input type="text">
+                        <label for="">비밀번호</label>
+                        <input type="password" maxlength="">
+                        <label for=""></label>
+                        <input type="password" maxlength="">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="email_accnt">
+                  <th>기타메일계정</th>
+                  <td colspan="3">
+                      <label for=""></label>
+                      <input type="text">
+                    <span>@</span>
+                      <label for=""></label>
+                      <input type="text">
+                    <select name="van_sel" id="van_sel">
+                      <option value="">naver.com</option>
+                      <option value="">gmail.com</option>
+                      <option value="">daum.net</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="note">
+                  <th rowspan="2">고객비고</th>
+                  <td rowspan="2" colspan="3">
+                    <textarea name="name" rows="4" cols="50" style="resize: none;"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr class="add_file">
+                  <th>
+                    첨부파일
+                    <div class="van_btn">             
+                      <a href="">추가</a>
+                      <a href="">삭제</a>
+                    </div>
+                  </th>
+                  <td colspan="3">
+                    <!--  btn_addFile 클래스  -->
+                    <div class="btn_addFile"></div>
+
+                      <!-- 190612 주석처리 -->
+                      <!-- <input type="text" readonly="readonly" title="File Route" id="file_route">
+                      <label>찾아보기<input type="file" onchange="javascript:document.getElementById('file_route').value=this.value"></label> -->
+                      <!-- 190612 주석처리 -->
+
+                      <!-- 190612 추가 -->
+                      <div class="fileip_wrap">
+                        <input type="text" readonly="readonly" title="File Route" id="file_route">
+                        <label>찾아보기<input type="file" onchange="javascript:document.getElementById('file_route').value=this.value"></label>
+                      </div>
+                      <input type="checkbox" name="" value="" id="std_service1">
+                      <label for="std_service1"><span></span>삭제</label>
+                      <!-- //190612 추가  -->
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="req_info">
+            <div class="req_title">
+              <span></span>
+              <h4>자동이체 신청정보</h4>
+            </div>
+            <table>
+              <colgroup>
+                <col style="width: 15.9%;"/>
+                <col style="width: 34.4%;"/>
+                <col style="width: 15.9%;"/>
+                <col style="width: 34.4%;"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>신청인</th>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>연락처</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>납부금액</th>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>이메일</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+                <tr class="withdraw_meth">
+                  <th>출금방법</th>
+                  <td colspan="3">
+                    <input type="radio" id="withdraw_meth1" name="meth" />
+                    <label for="withdraw_meth1"><span></span>CMA(계좌자동결제)</label>
+                    <input type="radio" id="withdraw_meth2" name="meth" />
+                    <label for="withdraw_meth2"><span></span>신용카드</label>
+                    <input type="radio" id="withdraw_meth3" name="meth" />
+                    <label for="withdraw_meth3"><span></span>카드 대금 입금 잔액에서 출금</label>
+                  </td>
+                </tr>
+                <tr class="payment_name">
+                  <th>결제자명</th>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>사업자번호</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                    <span>-</span>
+                      <label for=""></label>
+                      <input type="text">
+                    <span>-</span>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>생년월일</th>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                    <span class="span_blue">예) 19750112</span>
+                  </td>
+                  <td>결제자 휴대전화</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>은행</th>
+                  <td>
+                    <select name="van_sel" id="van_sel">
+                      <option value="">국민은행</option>
+                      <option value="">우리은행</option>
+                      <option value="">하나은행</option>
+                    </select>
+                  </td>
+                  <td>카드사</td>
+                  <td>
+                    <select name="van_sel" id="van_sel">
+                      <option value="">삼성카드</option>
+                      <option value="">현대카드</option>
+                      <option value="">롯데카드</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="card_term">
+                  <th>계좌번호</th>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>카드유효기간</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                      <label for=""></label>
+                      <input type="text">
+                    <span class="span_blue">mm/yy(월/년)</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>결제자와의 관계</th>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>카드번호</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="acpt_info">
+            <div class="acpt_title">
+              <span></span>
+              <h4>AIG 동의정보</h4>
+            </div>
+            <table>
+              <colgroup>
+                <col style="width: 15.9%;"/>
+                <col style="width: 34.4%;"/>
+                <col style="width: 15.9%;"/>
+                <col style="width: 34.4%;"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>AIG동의 등록여부</th>
+                  <td>
+                    <input type="radio" id="aig_div1" name="aig_div" />
+                    <label for="aig_div1"><span></span>개인</label>
+                    <input type="radio" id="aig_div2" name="aig_div" />
+                    <label for="aig_div2"><span></span>법인</label>
+                  </td>
+                  <td>동의자성명</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="std_service">
+            <div class="std_title">
+              <span></span>
+              <h4>기본서비스</h4>
+            </div>
+            <table>
+              <colgroup>
+                <col style="width: 4%;"/>
+                <col style="width: 4%;"/ >
+                <col style="width: 23.6%;"/>
+                <col style="width: 16.5%;"/>
+                <col style="width: 12%;"/>
+                <col style="width: 38%;"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th></th>
+                  <td>No</td>
+                  <td>서비스명</td>
+                  <td>청구시작일</td>
+                  <td>월수수료증감분(원)</td>
+                  <td>비고</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <input type="checkbox" name="" value="" id="std_service1">
+                    <label for="std_service1"><span></span></label>
+                  </th>
+                  <td>1</td>
+                  <td>GAM앱</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <input type="checkbox" name="" value="" id="std_service2">
+                    <label for="std_service2"><span></span></label>
+                  </th>
+                  <td>2</td>
+                  <td>AIG종합화재보험 및 음식물 배상책임보험</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <input type="checkbox" name="" value="" id="std_service3">
+                    <label for="std_service3"><span></span></label>
+                  </th>
+                  <td>3</td>
+                  <td>변호사 선임비용보험</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <input type="checkbox" name="" value="" id="std_service4">
+                    <label for="std_service4"><span></span></label>
+                  </th>
+                  <td>4</td>
+                  <td>법률상담무료연계</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <input type="checkbox" name="" value="" id="std_service5">
+                    <label for="std_service5"><span></span></label>
+                  </th>
+                  <td>5</td>
+                  <td>노무상담무료연계</td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                  <td>
+                      <label for=""></label>
+                      <input type="text">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="bottom_text">&#8251; 전산반영일, 청구시작일을 8자리 숫자형식(yyyymmdd)으로 입력하세요. 예)20181015</p>
+      </article>
+    </div>
+  </section>
+</body>
+</html>

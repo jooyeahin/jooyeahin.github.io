@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1300">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>ACE맘잡고 Publishing List</title>
+<link rel="shortcut icon" href="./resources/images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="./resources/images/layout/apple-touch-icon.png">
+<style type="text/css">
+* {margin:0;padding:0;font-family:'Malgun Gothic','맑은 고딕',Verdana,Tahoma,"돋움",Dotum,"굴림",Gulim,Geneva,sans-serif,Apple Gothic,AppleGothic;}
+body {font-size:13px;}
+li {list-style:none;}
+a {color:#444;text-decoration:none;}
+a:hover {color:#444;}
+a:visited, a:focus, a:active {color:#444;}
+#wrap {position:relative;width:1200px;margin:0 auto;padding:110px 20px 50px 20px;}
+header {position: fixed;left:0;top:0;width:100%;height:110px;background:#fff;}
+header .cont_area {position:relative;width:1200px;margin:0 auto;padding:0 20px;}
+
+h1 {font-size:30px;margin:20px 0;line-height:34px;letter-spacing:-1px; vertical-align:top;}
+h1 img { vertical-align:top;}
+.info {position:absolute;right:25px;bottom:5px;}
+.guide {margin:10px 0 5px 0;text-align:right;}
+h2 {padding:8px 15px;font-size:13px;border:1px solid #444;border-bottom:none;background:#595959;color:#fff;}
+h3 {position:relative;margin:-1px 0;padding:6px 15px;border:1px solid;border-color:#999 #ccc;background:#ccc;font-size:13px;}
+caption {display:none;}
+div.cont {border-top:1px solid #444;}
+table {border-collapse:collapse;width:100%;border-spacing:0;}
+table thead th {padding:6px 3px;border:1px solid #ccc;background:#eee;font-size:13px;}
+table tbody td {padding:5px 3px;border:1px solid #ccc;background:#e4e4e4;text-align:center;color:#898989;font-size:11px;}
+table tbody td.left {padding:5px 10px;text-align:left;}
+table tbody td.url {padding:5px 10px;text-align:left;}
+table tbody tr.hidden td {background:#e4e4e4;color:#898989;text-decoration:line-through;}
+table tbody tr.modify td {background:#fce9dc;color:#444;}
+table tbody tr.add td {background:#e1f5fe;color:#444;}
+table tbody tr.end td {background:#fff;color:#666;}
+table tbody tr:hover td {background:#e2e6f4 !important;}
+.red {color:#c00;}
+.tab_nav {margin-bottom:5px;}
+.tab_nav li {float:left;margin-right:5px;}
+.tab_nav li a {display:block;padding:4px 10px 5px 10px;border:1px solid #444;border-radius:4px;background:#595959;color:#fff;font-size:14px;transition:all 0.4s;}
+.tab_nav li a:hover {background:#009dff;border-color:#006fb5;}
+.tab_nav:after {display:block;clear:both;height:0;content:"";overflow:hidden;}
+</style>
+<script type="text/javascript" src="./resources/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.tab_nav a').click(function() {
+		var activeTab = $(this).attr("href");
+		$('html, body').stop().animate({scrollTop:$(activeTab).offset().top - 110}, 800);
+		return false;
+	});
+});
+</script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+    <header>
+    	<div class="cont_area">
+			<h1>ACE맘잡고  Publishing List</h1>
+			<p class="info"><strong>19.07.03</strong> Last update</p>
+			<p class="guide"></p>
+
+			<ul class="tab_nav">
+				<li><a href="#c3">ACE맘잡고</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+	<h2 id="c1">메인</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="">
+				<td>메인</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/main/main.html" target="_blank">./html/main/main.html</a></td>
+				<td></td>
+				<td><span class=""></span></td>
+			</tr>
+		<tr class="modify">
+				<td>메인 레이아웃 </td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/main/main_layout.html" target="_blank">./html/main/main_layout.html</a></td>
+				<td>2019.06.26</td>
+				<td><span class="red">메타태그 뷰포트 수정 [모바일에서 틀어짐 방지]</span></td>
+			</tr>
+					<tr class="">
+				<td>서브 레이아웃 </td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/main/sub_layout.html" target="_blank">./html/main/sub_layout.htmll</a></td>
+				<td>2019.06.17</td>
+				<td><span class="red">LNB 수정 </span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+
+
+		<!-- 로그인  -->
+    <h2 id="c1">로그인</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="">
+				<td>로그인</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/join/login.html" target="_blank">./html/join/login.html</a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+			<tr class="modify">
+				<td>비밀번호찾기</td>
+				<td>아이디입력</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/join/input_id.html" target="_blank">./html/join/input_id.html</a></td>
+				<td>19.07.02</td>
+				<td><span class="red">문구추가</span></td>
+			</tr>
+			<tr class="modify">
+				<td>비밀번호찾기</td>
+				<td>이메일주소입력</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/join/find_pass.html" target="_blank">./html/join/find_pass.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">컨텐츠 수정</span></td>
+			</tr>
+			<tr class="modify">
+				<td>비밀번호찾기</td>
+				<td>새비밀번호</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/join/new_pass.html" target="_blank">./html/join/new_pass.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">컨텐츠 수정, 추가 및 css수정</span></td>
+			</tr>
+			<tr class="modify">
+				<td>비밀번호찾기</td>
+				<td>정보불일치</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/join/pass_error.html" target="_blank">./html/join/pass_error.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">버튼 수정 및 추가</span></td>
+			</tr>
+			<tr class="modify">
+				<td>아이디찾기</td>
+				<td>이메일주소입력</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/join/find_id.html" target="_blank">./html/join/find_id.html</a></td>
+				<td>19.07.02</td>
+				<td><span class="red">문구추가</span></td>
+			</tr>
+			<tr class="modify">
+				<td>아이디찾기</td>
+				<td>아이디찾기결과</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/join/findid_result.html" target="_blank">./html/join/findid_result.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">span태그 클래스 추가</span></td>
+			</tr>
+			<tr class="">
+				<td>회원가입</td>
+				<td>이용약관</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/join/join_agree.html" target="_blank">./html/join/join_agree.html</a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+			<tr class="modify">
+				<td>회원가입</td>
+				<td>14세미만 </td>
+				<td>회원가입 1단계</td>
+				<td></td>
+				<td class="url"><a href="./html/join/join_step1.html" target="_blank">./html/join/join_step1.html</a></td>
+				<td></td>
+				<td><span class="red">div클래스 추가 및 css추가</span></td>
+			</tr>
+			<tr class="modify">
+				<td>회원가입</td>
+				<td>14세미만 </td>
+				<td>회원가입 2단계</td>
+				<td></td>
+				<td class="url"><a href="./html/join/join_step2.html" target="_blank">./html/join/join_step2.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">버튼 주석처리</span></td>
+			</tr>
+			<tr class="modify">
+				<td>회원가입</td>
+				<td>14세미만 </td>
+				<td>회원가입 3단계</td>
+				<td></td>
+				<td class="url"><a href="./html/join/join_step3.html" target="_blank">./html/join/join_step3.html</a></td>
+				<td>19.07.03</td>
+				<td><span class="red">컨텐츠 수정</span></td>
+			</tr>
+			<tr class="modify">
+				<td>회원가입</td>
+				<td>14세미만 </td>
+				<td>회원가입 4단계</td>
+				<td></td>
+				<td class="url"><a href="./html/join/join_step4.html" target="_blank">./html/join/join_step4.html</a></td>
+				<td>19.07.03</td>
+				<td><span class="red">컨텐츠 수정</span></td>
+			</tr>
+
+			<tr class="">
+				<td>회원가입</td>
+				<td>개원회원 </td>
+			<td>회원가입 1단계</td>
+				<td></td>
+				<td class="url"><a href="./html/join/join02_step1.html" target="_blank">./html/join/join02_step1.html</a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+
+			<tr class="">
+				<td>회원가입</td>
+				<td>개원회원 </td>
+			<td>회원가입 2단계</td>
+				<td></td>
+				<td class="url"><a href="./html/join/join02_step2.html" target="_blank">./html/join/join02_step2.html</a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+
+			<tr class="">
+				<td>회원가입</td>
+				<td>개원회원 </td>
+				<td>회원가입 3단계</td>
+				<td></td>
+				<td class="url"><a href="./html/join/join02_step3.html" target="_blank">./html/join/join02_step3.html</a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+
+			<tr class="modify">
+				<td>회원가입</td>
+				<td>단체회원 </td>
+				<td>회원가입 2단계</td>
+				<td></td>
+				<td class="url"><a href="./html/join/join03_step2.html" target="_blank">./html/join/join03_step2.html</a></td>
+				<td>19.07.03</td>
+				<td><span class="red">컨텐츠 수정</span></td>
+			</tr>
+
+			<tr class="">
+				<td>회원가입</td>
+				<td>단체회원 </td>
+				<td>회원가입 3단계</td>
+				<td></td>
+				<td class="url"><a href="./html/join/join03_step3.html" target="_blank">./html/join/join03_step3.html</a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+			<tr class="add">
+				<td>회원가입</td>
+				<td>총판개인 </td>
+				<td>정보입력</td>
+				<td></td>
+				<td class="url"><a href="./html/join/join04_step2.html" target="_blank">./html/join/join04_step2.html</a></td>
+				<td>19.07.03</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+			<tr class="add">
+				<td>회원가입</td>
+				<td>총판개인 </td>
+				<td>정보입력</td>
+				<td></td>
+				<td class="url"><a href="./html/join/join04_step2_child.html" target="_blank">./html/join/join04_step2_child.html</a></td>
+				<td>19.07.03</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+			<tr class="add">
+				<td>회원가입</td>
+				<td>총판개인 </td>
+				<td>회원가입완료</td>
+				<td></td>
+				<td class="url"><a href="./html/join/join04_step4.html" target="_blank">./html/join/join04_step4.html</a></td>
+				<td>19.07.03</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<h2 id="c1">고객센터</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="modify">
+				<td>고객센터</td>
+				<td>1:1 문의 게시판</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/inquiry_list.html" target="_blank">./html/customer/inquiry_list.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">컨텐츠수정</span></td>
+			</tr>
+			<tr class="">
+				<td>고객센터</td>
+				<td>1:1 문의 나의문의글</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/inquiry_detail.html" target="_blank">./html/customer/inquiry_detail.html</a></td>
+				<td>19.06.10</td>
+				<td><span class=""></span></td>
+			</tr>
+			<tr class="modify">
+				<td>고객센터</td>
+				<td>1:1 문의 글쓰기</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/inquiry_form.html" target="_blank">./html/customer/inquiry_form.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">컨텐츠수정</span></td>
+			</tr>
+			<tr class="modify">
+				<td>고객센터</td>
+				<td>FAQ</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/faq.html" target="_blank">./html/customer/faq.html</a></td>
+				<td>19.06.17</td>
+				<td><span class="red">소수 수정</span></td>
+			</tr>
+			<tr class="">
+				<td>고객센터</td>
+				<td>공지사항</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/notice_list.html" target="_blank">./html/customer/notice_list.html</a></td>
+				<td>19.06.13</td>
+				<td><span class="red"></span></td>
+			</tr>
+			<tr class="">
+				<td>고객센터</td>
+				<td>공지사항상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/notice_detail.html" target="_blank">./html/customer/notice_detail.html</a></td>
+				<td>19.06.13</td>
+				<td><span class="red"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<h2 id="c1">마이페이지</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="modify">
+				<td>마이페이지</td>
+				<td>정보관리</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mypage/info_mng.html" target="_blank">./html/mypage/info_mng.html</a></td>
+				<td>19.06.17</td>
+				<td><span class="red">소스 수정 </span></td>
+			</tr>
+			<tr class="">
+				<td>마이페이지</td>
+				<td>본인인증</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mypage/info_certi.html" target="_blank">./html/mypage/info_certi.html</a></td>
+				<td>19.06.13</td>
+				<td><span class="red"></span></td>
+			</tr>
+			<tr class="">
+				<td>마이페이지</td>
+				<td>비밀번호 입력</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mypage/info_pass.html" target="_blank">./html/mypage/info_pass.html</a></td>
+				<td>19.06.13</td>
+				<td><span class="red"></span></td>
+			</tr>
+			<tr class="">
+				<td>마이페이지</td>
+				<td>회원탈퇴</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mypage/info_withdrawal.html" target="_blank">./html/mypage/info_withdrawal.html</a></td>
+				<td>19.06.13</td>
+				<td><span class="red"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<h2 id="c1">시험접수</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>시험일정</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_scd.html" target="_blank">./html/test/test_scd.html</a></td>
+				<td>19.07.02</td>
+				<td><span class="red">테이블구조 수정</span></td>
+			</tr>
+
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수하기</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_accept.html" target="_blank">./html/test/test_accept.html</a></td>
+				<td>19.07.02</td>
+				<td><span class="red">컨텐츠 수정</span></td>
+			</tr>
+				<tr class="modify">
+				<td>시험접수</td>
+				<td>접수하기</td>
+				<td>시험선택</td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_step1.html" target="_blank">./html/test/test_step1.html</a></td>
+				<td>19.06.24</td>
+				<td><span class="red">UI 변경으로 인해 전체 소스 수정</span></td>
+			</tr>
+
+			<tr class="">
+				<td>시험접수</td>
+				<td>접수하기</td>
+				<td>정보입력</td>
+				<td></td>
+					<td class="url"><a href="./html/test/test_step2.html" target="_blank">./html/test/test_step2.html</a></td>
+				<td>19.06.20</td>
+				<td><span class="red"></span></td>
+			</tr>
+
+			<tr class="">
+				<td>시험접수</td>
+				<td>접수하기</td>
+				<td>접수완료</td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_step3.html" target="_blank">./html/test/test_step3.html</a></td>
+				<td>19.06.20</td>
+				<td><span class="red"> </span></td>
+			</tr>
+			<tr class="">
+				<td>시험접수</td>
+				<td>접수하기</td>
+				<td>접수확인</td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_end_view.html" target="_blank">./html/test/test_end_view.html</a></td>
+				<td>19.06.20</td>
+				<td><span class="red"> </span></td>
+			</tr>
+
+	<tr class="modify">
+				<td>시험접수</td>
+				<td>접수 변경/취소</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_acpt_cngcncl.html" target="_blank">./html/mypage/test_test_acpt_cngcncl.html</a></td>
+				<td>19.07.02</td>
+				<td><span class="red">테이블 구조 변경</span></td>
+			</tr>
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수 변경/취소 내역</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_acpt_history.html" target="_blank">./html/mypage/test_acpt_history.html</a></td>
+				<td>19.07.02</td>
+				<td><span class="red">컨텐츠 및 CSS 수정</span></td>
+			</tr>
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수변경</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_acpt_change.html" target="_blank">./html/mypage/test_acpt_change.html</a></td>
+				<td>19.07.02</td>
+				<td><span class="red">테이블 구조 변경</span></td>
+			</tr>
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수변경완료</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_acpt_change_complete.html" target="_blank">./html/mypage/test_acpt_change_complete.html</a></td>
+				<td>19.07.02</td>
+				<td><span class="red">테이블 구조 변경</span></td>
+			</tr>
+
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수취소상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_acpt_cancel_detail.html" target="_blank">./html/mypage/test_acpt_cancel_detail.html</a></td>
+				<td>19.06.26</td>
+				<td><span class="red">텍스트 색상 변경 및 테이블 수정</span></td>
+			</tr>
+			<tr class="">
+				<td>시험접수</td>
+				<td>접수취소완료</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_acpt_cancel_complete.html" target="_blank">./html/mypage/test_acpt_cancel_complete.html</a></td>
+				<td>19.06.20</td>
+				<td><span class="red"></span></td>
+			</tr>
+
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수확인/수험표출력</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_acpt_print.html" target="_blank">./html/test/test_acpt_print.html</a></td>
+				<td>19.07.02</td>
+				<td><span class="red">테이블 구조 수정, 약도 팝업 추가</span></td>
+			</tr>
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수확인/수험표출력 팝업</td>
+				<td>팝업 노출</td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_acpt_print_popup.html" target="_blank">./html/test/test_acpt_print_popup.html</a></td>
+				<td>19.07.02</td>
+				<td><span class="red">컨텐츠 수정, css 수정</span></td>
+			</tr>
+
+
+			<tr class="">
+				<td>시험접수</td>
+				<td>접수 변경/취소</td>
+				<td>변경/취소</td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_acpt_cngcncl.html" target="_blank">./html/mypage/test_test_acpt_cngcncl.html</a></td>
+				<td>19.06.20</td>
+				<td><span class="red"></span></td>
+			</tr>
+				<tr class="">
+				<td>시험접수</td>
+				<td>접수 변경/취소</td>
+				<td>취소</td>
+				<td></td>
+				<td class="url"><a href="./html/test/test_acpt_cancel.html" target="_blank">./html/test/test_acpt_cancel.html</a></td>
+				<td>19.06.20</td>
+				<td><span class="red"></span></td>
+			</tr>
+
+
+		</tbody>
+	</table>
+	</div>
+
+
+	<h2 id="c1">시험접수[단체]</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수하기</td>
+				<td>정보입력</td>
+					<td></td>
+				<td class="url"><a href="./html/test_group/test02_step2.html" target="_blank">./html/test_group/test02_step2.html</a></td>
+				<td>19.06.26</td>
+				<td><span class="red">팝업 ui 수정</span></td>
+			</tr>
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수하기</td>
+				<td>정보입력</td>
+					<td></td>
+				<td class="url"><a href="./html/test_group/test02_step2_nolist.html" target="_blank">./html/test_group/test02_step2_nolist.html</a></td>
+				<td>19.06.26</td>
+				<td><span class="red">테이블 수정 및 버튼 추가</span></td>
+			</tr>
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수하기</td>
+				<td>정보입력 팝업</td>
+				<td></td>
+				<td class="url"><a href="./html/test_group/test02_step2_input_pop.html" target="_blank">./html/test_group/test02_step2_input_pop.html</a></td>
+				<td>19.06.26</td>
+				<td><span class="red">팝업페이지 ui 변경</span></td>
+			</tr>
+
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수하기</td>
+				<td>정보인원 엑셀 추가</td>
+				<td></td>
+				<td class="url"><a href="./html/test_group/test02_step2_excel.html" target="_blank">./html/test_group/test02_step2_excel.html</a></td>
+				<td>19.07.02</td>
+				<td><span class="red">팝업페이지 ui 변경, 컨텐츠 변경, css수정</span></td>
+			</tr>
+
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수하기 </td>
+				<td>접수완료</td>
+				<td></td>
+				<td class="url"><a href="./html/test_group/test02_step3.html" target="_blank">./html/test_group/test02_step3.html</a></td>
+				<td>19.06.26</td>
+				<td><span class="red">컨텐츠 변경 및 추가</span></td>
+			</tr>
+
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수확인 </td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test_group/test02_acpt_confirm.html" target="_blank">./html/test_group/test02_acpt_confirm.html</a></td>
+				<td>19.07.02</td>
+				<td><span class="red">컨텐츠 수정</span></td>
+			</tr>
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수변경</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test_group/test02_acpt_change.html" target="_blank">./html/test_group/test02_acpt_change.html</a></td>
+				<td>19.06.26</td>
+				<td><span class="red">컨텐츠 수정, excel 업로드 버튼 추가 소스 수정</span></td>
+			</tr>
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수변경완료</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test_group/test02_acpt_change_complete.html" target="_blank">./html/test_group/test02_acpt_change_complete.html</a></td>
+				<td>19.06.26</td>
+				<td><span class="red">컨텐츠 순서 변경 및 추가</span></td>
+			</tr>
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수취소</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test_group/test02_acpt_cancel.html" target="_blank">./html/test_group/test02_acpt_cancel.html</a></td>
+				<td>19.06.26</td>
+				<td><span class="red">컨텐츠 순서 변경 및 추가</span></td>
+			</tr>
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수취소완료</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test_group/test02_acpt_cancel_complete.html" target="_blank">./html/test_group/test02_acpt_cancel_complete.html</a></td>
+				<td>19.06.26</td>
+				<td><span class="red">컨텐츠 순서 변경 및 추가</span></td>
+			</tr>
+			<tr class="modify">
+				<td>시험접수</td>
+				<td>접수확인/수험표출력</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/test_group/test02_acpt_print.html" target="_blank">./html/test_group/test02_acpt_print.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">팝업 컨텐츠 수정, 테이블 수정</span></td>
+			</tr>
+			<tr class="add">
+				<td>시험접수</td>
+				<td>접수확인/수험표출력</td>
+				<td>약도팝업</td>
+				<td></td>
+				<td class="url"><a href="./html/test_group/test02_acpt_print_map_popup.html" target="_blank">./html/test_group/test02_acpt_print_map_popup.html</a></td>
+				<td>19.06.26</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+
+	<h2 id="c1">수험자가이드</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="modify">
+				<td>수험자가이드</td>
+				<td>시험진행안내</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/examinee/test_progress_guide.html" target="_blank">./html/examinee/test_progress_guide.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">소스수정, p태그 클래스, css 추가</span></td>
+			</tr>
+					<tr class="add">
+				<td>수험자가이드</td>
+				<td>시험관리규정</td>
+				<td>일반시험관리규정</td>
+				<td></td>
+				<td class="url"><a href="./html/examinee/test_rule_mng.html" target="_blank">./html/examinee/test_rule_mng.html</a></td>
+				<td>19.06.24</td>
+				<td><span class="red"></span></td>
+			</tr>
+					<tr class="add">
+				<td>수험자가이드</td>
+				<td>시험관리규정</td>
+				<td>접수취소및환불규정</td>
+				<td></td>
+				<td class="url"><a href="./html/examinee/test_rule_cancel.html" target="_blank">./html/examinee/test_rule_cancel.html</a></td>
+				<td>19.06.24</td>
+				<td><span class="red"></span></td>
+			</tr>
+				<tr class="add">
+				<td>수험자가이드</td>
+				<td>시험관리규정</td>
+				<td>부정행위처리규정</td>
+				<td></td>
+				<td class="url"><a href="./html/examinee/test_rule_cheating.html" target="_blank">./html/examinee/test_rule_cheating.html</a></td>
+				<td>19.06.24</td>
+				<td><span class="red"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+
+	<h2 id="c1">합격확인</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="add">
+				<td>합격확인</td>
+				<td>시험결과</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/pass_confirm/exam_result.html" target="_blank">./html/pass_confirm/exam_result.html</a></td>
+				<td>19.06.24</td>
+				<td><span class="red"></span></td>
+			</tr>
+			<tr class="add">
+				<td>합격확인</td>
+				<td>합격확인</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/pass_confirm/pass_confirm.html" target="_blank">./html/pass_confirm/pass_confirm.html</a></td>
+				<td>19.06.24</td>
+				<td><span class="red"></span></td>
+			</tr>
+			<tr class="add">
+				<td>합격확인</td>
+				<td>합격확인단체상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/pass_confirm/pass_confirm02.html" target="_blank">./html/pass_confirm/pass_confirm02.html</a></td>
+				<td>19.06.26</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+			<tr class="add">
+				<td>합격확인</td>
+				<td>합격확인단체</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/pass_confirm/pass_confirm02_detail.html" target="_blank">./html/pass_confirm/pass_confirm02_detail.html</a></td>
+				<td>19.06.26</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+			<tr class="add">
+				<td>합격확인</td>
+				<td>자격증신청</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/pass_confirm/certi_req.html" target="_blank">./html/pass_confirm/certi_req.html</a></td>
+				<td>19.06.24</td>
+				<td><span class="red"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+
+	<h2 id="c1">자격소개</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="add">
+				<td>자격소개</td>
+				<td>기출문제</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/license_itd/sample_question.html" target="_blank">./html/license_itd/sample_question.html</a></td>
+				<td>19.06.25</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+			<tr class="add">
+				<td>자격소개</td>
+				<td>기출문제상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/license_itd/question_detail.html" target="_blank">./html/license_itd/question_detail.html</a></td>
+				<td>19.06.25</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+			<tr class="modify">
+				<td>자격소개</td>
+				<td>자격시험일정</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/license_itd/license_scd.html" target="_blank">./html/license_itd/license_scd.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">테이블수정</span></td>
+			</tr>
+			<tr class="add">
+				<td>자격소개</td>
+				<td>자격소개</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/license_itd/license_guide.html" target="_blank">./html/license_itd/license_guide.html</a></td>
+				<td>19.06.25</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+
+	<h2 id="c1">메일템플릿</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="add">
+				<td>메인템플릿</td>
+				<td>접수취소완료</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mail_tpl/mail_acpt_cancel.html" target="_blank">./html/mail_tpl/mail_acpt_cancel.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+			<tr class="add">
+				<td>메인템플릿</td>
+				<td>접수변경완료</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mail_tpl/mail_acpt_change_complete.html" target="_blank">./html/mail_tpl/mail_acpt_change_complete.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+			<tr class="add">
+				<td>메인템플릿</td>
+				<td>접수완료</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mail_tpl/mail_acpt_complete.html" target="_blank">./html/mail_tpl/mail_acpt_complete.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+			<tr class="add">
+				<td>메인템플릿</td>
+				<td>인증번호</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mail_tpl/mail_certi_num.html" target="_blank">./html/mail_tpl/mail_certi_num.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+			<tr class="add">
+				<td>메인템플릿</td>
+				<td>회원가입완료</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mail_tpl/mail_join_complete.html" target="_blank">./html/mail_tpl/mail_join_complete.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+			<tr class="add">
+				<td>메인템플릿</td>
+				<td>QNA</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mail_tpl/mail_qna.html" target="_blank">./html/mail_tpl/mail_qna.html</a></td>
+				<td>19.07.04</td>
+				<td><span class="red">퍼블추가</span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+
+</div>
+</div>
+
+
+<!-- //wrap -->
+<script type="text/javascript">
+jQuery(function($){
+	$.each($("td.url > a"), function(i,v){
+		$(v).text($(v).attr("href"));
+	});
+});
+</script>
+</body>
+</html>

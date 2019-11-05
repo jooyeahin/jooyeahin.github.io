@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>ACE맘잡고 ERP 시스템</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../resource/images/layout/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../resource/css/style.css">
+  <script src="../resource/js/jquery-3.4.1.min.js"></script>
+  <script src="../resource/js/adm.js"></script>
+  <script language="javascript">
+    function ctmcngPopup(){ window.open("ctm_cng.html", "search_popup", "width=535, height=300, left=100, top=50, location=no"); }
+    function ctmsrchPopup(){ window.open("ctm_srch.html", "view_popup", "width=835, height=508, left=100, top=50, location=no"); }
+  </script>
+</head>
+<body>
+  <header>
+
+      <div class="header_top">
+        <div class="wrap">
+          <h1><a href="">ACE 맘잡고 ERP 시스템</a></h1>
+          <ul>
+            <li><a href="" class="btn_li">관리자 님</a></li>
+            <li><a href="" class="btn_lo">로그아웃</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="gnb">
+        <h2 class="blind">메인 메뉴</h2>
+        <div class="wrap">
+          <ul>
+            <li><a href="">게시판</a></li>
+            <li class="click"><a href="">가맹점관리</a></li>
+            <li><a href="">수당관리</a></li>
+            <li><a href="">정산관리</a></li>
+            <li><a href="">일정관리</a></li>
+            <li><a href="">서비스관리</a></li>
+            <li><a href="">운영관리</a></li>
+            <li><a href="">내정보관리</a></li>
+          </ul>
+        </div>
+      </div>
+  </header>
+  <section id="containter">
+    <div class="wrap">
+      <nav class="lnb">
+        <h2 class="blind">네비게이션 메뉴</h2>
+        <div class="lnb_title"><a href="">가맹점 조회</a></div>
+        <ul class="nav_acr">
+          <li>
+            <a href="" class="depth_no" onclick="return false;">가맹점 조회</a>
+          </li>
+          <li class="plus">
+            <a href="" class="depth_is" onclick="return false;">신규계약관리</a>
+            <ul>
+              <li><a href="">- 계약진행전체 (47)</a></li>
+              <li><a href="">- 대리점계약 (6)</a></li>
+              <li><a href="" class="on">- 총판검토 (0)</a></li>
+              <li><a href="">- 에이전시검토 (2)</a></li>
+              <li><a href="">- 전시반영</a></li>
+              <li><a href="">- 가맹점연락 (8)</a></li>
+              <li><a href="">- 최종전산반영 (0)</a></li>
+            </ul>
+          </li>
+          <li class="plus">
+            <a href="" class="depth_is" onclick="return false;">변경계약관리</a>
+            <ul>
+              <li><a href="">- 계약진행전체 (1)</a></li>
+              <li><a href="">- 전산반영 (1)</a></li>
+              <li><a href="">- 가맹점연락 (0)</a></li>
+              <li><a href="">- 최종전산반영 (0)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article>
+        <h2 class="blind">뷰포트</h2>
+        <div class="atc_title">
+          <h3>가맹점 관리</h3>
+
+          <div class="route_wrap">
+            <ul class="atc_route">
+              <li><a href=""></a></li>
+              <li><a href="">가맹점관리</a></li>
+              <li><a href="">가맹점조회</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="affi_title">
+          <table>
+            <colgroup>
+              <col style="width: 8.6%;"/>
+              <col style="width: 12.2%;"/>
+              <col style="width: 11.8%;"/>
+              <col style="width: 8.6%;"/>
+              <col style="width: 11.8%;"/>
+              <col style="width: 11.8%;"/>
+              <col style="width: 9%;"/>
+              <col style="width: 12.2%;"/>
+              <col style="width: 6.8%;"/>
+              <col style="width: 6.8%;"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th id="table_center">검색어</th>
+                <td>
+                  <select name="address" class="adm_slctbox">
+                    <option selected>사업장주소</option>
+                    <option >사업장주소</option>
+                    <option >사업장주소</option>
+                    <option >사업장주소</option>
+                    <option >사업장주소</option>
+                  </select>
+                </td>
+                <td colspan="3"><input type="text" name="" class="adm_input"></td>
+                <td></td>
+                <td id="table_center">VAN</td>
+                <td>
+                  <select name="address" class="adm_slctbox">
+                    <option value="">전체</option>
+                  </select>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th id="table_center">상호</th>
+                <td colspan="2"><input type="text" name="" class="adm_input"></td>
+                <td id="table_center">대표자</td>
+                <td><input type="text" name="" class="adm_input"></td>
+                <td></td>
+                <td id="table_center">사업자번호</td>
+                <td><input type="text" name="" class="adm_input"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="belong">
+                <th id="table_center">소속</th>
+                <td>
+                  <select name="address" class="adm_slctbox">
+                    <option value="">에이전시전체</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="address" class="adm_slctbox">
+                    <option value="">총판전체</option>
+                  </select>
+                </td>
+                <td colspan="2">
+                  <select name="address" class="adm_slctbox">
+                    <option value="">전체</option>
+                  </select>
+                </td>
+                <td></td>
+                <td id="table_center">소속유형</td>
+                <td colspan="3">
+                  <input type="checkbox" name="" value="" id="input_sptext1">
+                  <label for="input_sptext1"><span></span>소속</label>
+                  <input type="checkbox" name="" value="" id="input_sptext2">
+                  <label for="input_sptext2"><span></span>소속</label>
+                  <input type="checkbox" name="" value="" id="input_sptext3">
+                  <label for="input_sptext3"><span></span>소속</label>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th id="table_center">서비스</th>
+                <td colspan="2">
+                  <select name="address" class="adm_slctbox">
+                    <option value="">기본서비스</option>
+                  </select>
+                </td>
+                <td colspan="2">
+                  <select name="address" class="adm_slctbox">
+                    <option value="" selected>사업장주소</option>
+                    <option value="" >사업장주소</option>
+                    <option value="" >사업장주소</option>
+                  </select>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="period_tr">
+                <th id="table_center">기간</th>
+                <td>
+                  <select name="address" class="adm_slctbox">
+                    <option value="" selected>사업장주소</option>
+                    <option value="" >사업장주소</option>
+                    <option value="">사업장주소</option>
+                  </select>
+                </td>
+                <td colspan="3" class="affi_cal">
+                  <input type="text" class="adm_input"><i><a href=""></a></i>
+                  <span>~</span>
+                  <input type="text" class="adm_input"><i><a href=""></a></i>
+                </td>
+                <td colspan="4" class="period_radio">
+                  <input type="radio" id="a_option" name="selector" value="오늘">
+                  <label for="a_option"><span></span>오늘</label>
+                  <input type="radio" id="b_option" name="selector" value="오늘">
+                  <label for="b_option"><span></span>오늘</label>
+                  <input type="radio" id="c_option" name="selector" value="오늘">
+                  <label for="c_option"><span></span>오늘</label>
+                  <input type="radio" id="d_option" name="selector" value="오늘">
+                  <label for="d_option"><span></span>오늘</label>
+                  <input type="radio" id="e_option" name="selector" value="오늘">
+                  <label for="e_option"><span></span>오늘</label>
+                  <input type="radio" id="f_option" name="selector" value="오늘">
+                  <label for="f_option"><span></span>오늘</label>
+                  <input type="radio" id="g_option" name="selector" value="오늘">
+                  <label for="g_option"><span></span>오늘</label>
+                </td>
+                <td><a href="" class="btn_typeC" onclick="ctmsrchPopup();">검색</a></td>
+              </tr>
+            </table>
+          </tbody>
+        </div>
+
+        <div class="total">
+          <table>
+            <colgroup>
+              <col style="width: 8.6%;"/>
+              <col style="width: 14.5%;"/>
+              <col style="width: 8.6%;"/>
+              <col style="width: 15.4%;"/>
+              <col style="width: 8.6%;"/>
+              <col style="width: 15.4%;"/>
+              <col style="width: 8.6%;"/>
+              <col style="width: 20%;"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>거래금액합계</th>
+                <td>63,490,445 원</td>
+                <td>카드수수료합계</td>
+                <td>63,490,445 원</td>
+                <td>출금수수료합계</td>
+                <td>63,490,445 원</td>
+                <td>거래금액합계</td>
+                <td>63,490,445원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="affi_view">
+          <div class="view_top">
+            <div class="view_select">
+              <select name="address" class="adm_slctbox">
+                <option value="" selected>사업장주소</option>
+                <option value="">사업장주소</option>
+                <option value="">사업장주소</option>
+              </select>
+              <select name="address" class="adm_slctbox">
+                <option value="">사업장주소</option>
+              </select>
+              <span>총 47건</span>
+            </div>
+            <ul class="view_btn">
+              <!-- 190624 추가분 -->
+              <li><a href="" class="btn_typeA">엑셀일괄등록</a></li>
+              <li><a href="" class="btn_typeA">엑셀저장</a></li>
+              <li><a href="" class="btn_typeA">엑셀다운로드</a></li>
+              <li><a href="" class="btn_typeA">접수취소</a></li>
+              <li><a href="" class="btn_typeA">응시명단출력</a></li>
+              <li><a href="" class="btn_typeA">시험접수관리목록</a></li>
+              <li><a href="" class="btn_typeC">엑셀다운로드</a></li>
+              <li><a href="" class="btn_typeB">접수취소</a></li>
+            </ul>
+          </div>
+          <div class="view_table">
+            <table>
+              <colgroup>
+                <col style="width: 7.%;"/>
+                <col style="width: *;"/>
+                <col style="width: 9%;"/>
+                <col style="width: 6.4%;"/>
+                <col style="width: 8.2%;"/>
+                <col style="width: 10.4%;"/>
+                <col style="width: 10.4%;"/>
+                <col style="width: 9%;"/>
+                <col style="width: 9%;"/>
+                <col style="width: 8%;"/>
+                <col style="width: 5.4%;"/>
+                <col style="width: 5.9%;"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>                    
+					  No <!-- 190624 추가분 -->
+                    <input type="checkbox" name="" value="" id="adm_chk01">
+                    <label for="adm_chk01"><span></span></label>                  
+                  </th>
+                  <td>상호</td>
+                  <td>대표자</td>
+                  <td>상품군</td>
+                  <td>에이전시</td>
+                  <td>총판</td>
+                  <td>대리점</td>
+                  <td>신청일</td>
+                  <td>전산반영일</td>
+                  <td>상태</td>
+                  <td>신청서</td>
+                  <td>수수료</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>					            
+                    1234  
+					  <!-- 190624 추가분 -->
+                    <input type="checkbox" name="" value="" id="adm_chk02">
+                    <label for="adm_chk02"><span></span></label>
+                  </th>
+                  <td>스마트 유류결제</td>
+                  <td>보통휘발유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td>
+                    <!-- 190624 추가분 -->
+                    <input type="radio" name="" value=""  id="chk_radio01">
+                    <label for="chk_radio01"><span></span>옵션1</label>
+                  </td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtgreen">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>등유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtred">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>보통휘발유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtred">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>등유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtred">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>보통휘발유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtgreen">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>등유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtred">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>보통휘발유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtred">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr class="select_tr">
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>등유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtred">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>보통휘발유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtgreen">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>등유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtred">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>보통휘발유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtred">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>등유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtred">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>보통휘발유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtgreen">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>등유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtred">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+                <tr>
+                  <th>1234</th>
+                  <td>스마트 유류결제</td>
+                  <td>보통휘발유</td>
+                  <td>P2P</td>
+                  <td>판매중</td>
+                  <td>스마트유류결제</td>
+                  <td></td>
+                  <td>2017-04-10</td>
+                  <td>2017-04-15</td>
+                  <td class="txtred">대리점계약</td>
+                  <td></td>
+                  <td><a href="" class="btn_tblView" onclick="ctmcngPopup();">보기</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pgntn">
+              <div class="pgntn_wrap">
+                <a href="" class="pgntn_prev"></a>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="" class="on">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
+                <a href="">8</a>
+                <a href="">9</a>
+                <a href="">10</a>
+                <a href="" class="pgntn_next"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </section>
+</body>
+</html>

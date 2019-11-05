@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1300">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>ACE맘잡고 Publishing List</title>
+<link rel="shortcut icon" href="./resources/images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="./resources/images/layout/apple-touch-icon.png">
+<style type="text/css">
+* {margin:0;padding:0;font-family:'Malgun Gothic','맑은 고딕',Verdana,Tahoma,"돋움",Dotum,"굴림",Gulim,Geneva,sans-serif,Apple Gothic,AppleGothic;}
+body {font-size:13px;}
+li {list-style:none;}
+a {color:#444;text-decoration:none;}
+a:hover {color:#444;}
+a:visited, a:focus, a:active {color:#444;}
+#wrap {position:relative;width:1200px;margin:0 auto;padding:110px 20px 50px 20px;}
+header {position: fixed;left:0;top:0;width:100%;height:110px;background:#fff;}
+header .cont_area {position:relative;width:1200px;margin:0 auto;padding:0 20px;}
+
+h1 {font-size:30px;margin:20px 0;line-height:34px;letter-spacing:-1px; vertical-align:top;}
+h1 img { vertical-align:top;}
+.info {position:absolute;right:25px;bottom:5px;}
+.guide {margin:10px 0 5px 0;text-align:right;}
+h2 {padding:8px 15px;font-size:13px;border:1px solid #444;border-bottom:none;background:#595959;color:#fff;}
+h3 {position:relative;margin:-1px 0;padding:6px 15px;border:1px solid;border-color:#999 #ccc;background:#ccc;font-size:13px;}
+caption {display:none;}
+div.cont {border-top:1px solid #444;}
+table {border-collapse:collapse;width:100%;border-spacing:0;}
+table thead th {padding:6px 3px;border:1px solid #ccc;background:#eee;font-size:13px;}
+table tbody td {padding:5px 3px;border:1px solid #ccc;background:#e4e4e4;text-align:center;color:#898989;font-size:11px;}
+table tbody td.left {padding:5px 10px;text-align:left;}
+table tbody td.url {padding:5px 10px;text-align:left;}
+table tbody tr.hidden td {background:#e4e4e4;color:#898989;text-decoration:line-through;}
+table tbody tr.modify td {background:#fce9dc;color:#444;}
+table tbody tr.add td {background:#e1f5fe;color:#444;}
+table tbody tr.end td {background:#fff;color:#666;}
+table tbody tr:hover td {background:#e2e6f4 !important;}
+.red {color:#c00;}
+.tab_nav {margin-bottom:5px;}
+.tab_nav li {float:left;margin-right:5px;}
+.tab_nav li a {display:block;padding:4px 10px 5px 10px;border:1px solid #444;border-radius:4px;background:#595959;color:#fff;font-size:14px;transition:all 0.4s;}
+.tab_nav li a:hover {background:#009dff;border-color:#006fb5;}
+.tab_nav:after {display:block;clear:both;height:0;content:"";overflow:hidden;}
+</style>
+<script type="text/javascript" src="./resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.tab_nav a').click(function() {
+		var activeTab = $(this).attr("href");
+		$('html, body').stop().animate({scrollTop:$(activeTab).offset().top - 110}, 800);
+		return false;
+	});
+});
+</script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+    <header>
+    	<div class="cont_area">
+			<h1>ACE맘잡고  Publishing List</h1>
+			<p class="info"><strong>19.06.05</strong>Last update</p>
+			<p class="guide"></p>
+
+			<ul class="tab_nav">
+				<li><a href="#c3">ACE맘잡고</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+	<h2 id="c1">관리자</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="">
+				<td>관리자 로그인</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/adm_login.html" target="_blank">./html/adm_login.html</a></td>
+				<td></td>
+				<td><span class=""></span></td>
+			</tr>
+			<tr class="">
+				<td>관리자</td>
+				<td>가맹점 조회</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/adm.html" target="_blank">./html/adm.html</a></td>
+				<td></td>
+				<td><span class=""></span></td>
+			</tr>
+			<tr class="">
+				<td>관리자</td>
+				<td>가맹점 정보</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/adm_detail.html" target="_blank">./html/adm_detail.html</a></td>
+				<td></td>
+				<td><span class=""></span></td>
+			</tr>
+			<tr class="">
+				<td>관리자</td>
+				<td>가맹점 등록</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/adm_reg.html" target="_blank">./html/adm_reg.html</a></td>
+				<td>19.06.12</td>
+				<td><span class="red">checkbox 수정</span></td>
+			</tr>
+			<tr class="">
+				<td>고객상태변경 팝업</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/ctm_cng.html" target="_blank">./html/ctm_cng.html</a></td>
+				<td>19.06.17</td>
+				<td><span class="red">하드코딩 및 속성값 수정</span></td>
+			</tr>
+			<tr class="">
+				<td>업체검색 팝업</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/ctm_srch.html" target="_blank">./html/ctm_srch.html</a></td>
+				<td></td>
+				<td><span class=""></span></td>
+			</tr>
+			<tr class="">
+				<td>버튼스타일 정의 </td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/btn_style.html" target="_blank">./html/btn_style.html</a></td>
+				<td></td>
+				<td><span class=""></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+
+    <!-- <h2 id="c1">마이페이지</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="modify">
+				<td>마이페이지</td>
+				<td>내가쓴글관리</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mypage/내가쓴글관리.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>마이페이지</td>
+				<td>비밀번호변경</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mypage/비밀번호변경.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>마이페이지</td>
+				<td>회원정보수정</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mypage/회원정보수정.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>마이페이지</td>
+				<td>회원정보수정02</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mypage/회원정보수정02.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>마이페이지</td>
+				<td>회원탈퇴</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/mypage/회원탈퇴.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div> -->
+	<!-- //마이페이지-->
+
+    <!-- <h2 id="c1">고객마당</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+        	<tr class="modify">
+				<td>고객마당</td>
+				<td>고객서비스헌장</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/고객서비스헌장.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>고객마당</td>
+				<td>서비스이행표준공통</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/서비스이행표준공통.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>고객마당</td>
+				<td>시설별서비스이행표준</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/시설별서비스이행표준.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+			<tr class="modify">
+				<td>고객마당</td>
+				<td>고객의소리</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/고객의소리.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>고객마당</td>
+				<td>고객의소리_상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/고객의소리_상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>고객마당</td>
+				<td>고객의소리_입력</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/고객의소리_입력.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>고객마당</td>
+				<td>고객제안</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/고객제안.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>고객마당</td>
+				<td>고객제안_상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/고객제안_상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>고객마당</td>
+				<td>고객제안_입력</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/고객제안_입력.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>고객마당</td>
+				<td>고객제안리스트</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/고객제안리스트.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>고객마당</td>
+				<td>시민모니터단</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/시민모니터단.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>고객마당</td>
+				<td>시민모니터단_상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/시민모니터단_상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>고객마당</td>
+				<td>시민모니터단_입력</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/customer/시민모니터단_입력.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div> -->
+	<!-- //고객마당-->
+
+    <!-- <h2 id="c1">알림마당</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="modify">
+				<td>알림마당</td>
+				<td>공지사항</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/notification/공지사항.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>알림마당</td>
+				<td>공지사항상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/notification/공지사항상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>알림마당</td>
+				<td>고시및공고</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/notification/고시및공고.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>알림마당</td>
+				<td>나라장터</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/notification/나라장터.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>알림마당</td>
+				<td>입찰</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/notification/입찰.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>알림마당</td>
+				<td>입찰상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/notification/입찰상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>알림마당</td>
+				<td>채용</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/notification/채용.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>알림마당</td>
+				<td>채용상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/notification/채용상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>알림마당</td>
+				<td>클린아이</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/notification/클린아이.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div> -->
+	<!-- //알림마당-->
+
+    <!-- <h2 id="c1">도시개발사업</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="modify">
+				<td>도시개발사업</td>
+				<td>자체개발사업</td>
+				<td>자체개발사업_양정역세권복함단지개발사업</td>
+				<td></td>
+				<td class="url"><a href="./html/development/자체개발사업_양정역세권복함단지개발사업.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>도시개발사업</td>
+				<td>완료사업</td>
+				<td>완료사업_화도체육문화센터</td>
+				<td></td>
+				<td class="url"><a href="./html/development/완료사업_화도체육문화센터.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>도시개발사업</td>
+				<td>보상안내</td>
+				<td>보상안내_보상절차</td>
+				<td></td>
+				<td class="url"><a href="./html/development/보상안내_보상절차.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div> -->
+	<!-- //도시개발사업-->
+
+    <!-- <h2 id="c1">시설운영사업</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="modify">
+				<td>시설운영사업</td>
+				<td>체육문화시설</td>
+				<td>남양주체육문화센터</td>
+				<td></td>
+				<td class="url"><a href="./html/operation/남양주체육문화센터.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div> -->
+	<!-- //시설운영사업-->
+
+    <!-- <h2 id="c1">정보공유</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="modify">
+				<td>정보공유</td>
+				<td>정보공개</td>
+				<td>정보공개제도소개</td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/정보공개제도소개.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red">진행중</span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>경영공시_외부감사결과</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/경영공시_외부감사결과.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>경영공시_외부감사결과상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/경영공시_외부감사결과상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>경영공시_고객만족설문조사</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/경영공시_고객만족설문조사.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>경영공시_고객만족설문조사상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/경영공시_고객만족설문조사상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>공공데이터_사업실명제</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/공공데이터_사업실명제.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>공공데이터_사업실명제상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/공공데이터_사업실명제상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>공공데이터_수의계약내역</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/공공데이터_수의계약내역.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>공공데이터_수의계약내역상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/공공데이터_수의계약내역상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>공공데이터_시설별운영실적</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/공공데이터_시설별운영실적.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>공공데이터_시설별운영실적상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/공공데이터_시설별운영실적상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>공공데이터_업무추진비내역</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/공공데이터_업무추진비내역.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>공공데이터_업무추진비내역상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/공공데이터_업무추진비내역상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>공공데이터_하도급현황</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/공공데이터_하도급현황.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>사전정보공표_감사윤리</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/사전정보공표_감사윤리.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>사전정보공표_감사윤리상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/사전정보공표_감사윤리상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>사전정보공표_기획재정</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/사전정보공표_기획재정.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>사전정보공표_기획재정상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/사전정보공표_기획재정상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>사전정보공표_법무노무</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/사전정보공표_법무노무.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>사전정보공표_법무노무상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/사전정보공표_법무노무상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>사전정보공표_인사총무회계</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/사전정보공표_인사총무회계.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>사전정보공표_인사총무회계상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/사전정보공표_인사총무회계상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>사전정보공표_정보화</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/사전정보공표_정보화.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>사전정보공표_정보화상세</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/사전정보공표_정보화상세.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>경영공시_비전과목표</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/경영공시_비전과목표.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>경영공시_제도안내</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/경영공시_제도안내.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>경영공시_사장이행실적평가</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/경영공시_사장이행실적평가.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>경영공시_경영평가</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/경영공시_경영평가.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>경영공시_손익계산서</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/경영공시_손익계산서.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>경영공시_재무상태</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/경영공시_재무상태.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>정보공유</td>
+				<td>경영공시_사업예산2019</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/sharing/경영공시_사업예산2019.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div> -->
+	<!-- //정보공유-->
+
+    <!-- <h2 id="c1">공사소개</h2>
+	<div class="cont">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:30%;">
+			<col span="1" style="width:10%;">
+			<col span="1" style="width:20%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">1 Depth</th>
+				<th scope="col">2 Depth</th>
+				<th scope="col">3 Depth</th>
+				<th scope="col">Etc.</th>
+				<th scope="col">URL</th>
+				<th scope="col">Date</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="modify">
+				<td>공사소개</td>
+				<td>CEO인사말</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/ceo인사말.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>연혁</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/연혁.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>윤리경영_부조리신고_신고하기</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/윤리경영_부조리신고_신고하기.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>윤리경영_부조리신고센터</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/윤리경영_부조리신고센터.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>윤리경영_부조리신고센터_신고자보상</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/윤리경영_부조리신고센터_신고자보상.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>윤리경영_윤리경영</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/윤리경영_윤리경영.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>홍보마당_홍보동영상</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/홍보마당_홍보동영상.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>홍보마당_공사ci</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/홍보마당_공사ci.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>사회공헌_사회공헌활동소개</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/사회공헌_사회공헌활동소개.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>오시는길_남양주도시공사약도</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/오시는길_남양주도시공사약도.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>인증현황_안전보건경영시스템</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/인증현황_안전보건경영시스템.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>공사소개_개인정보보호_영상정보처리기기</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/공사소개_개인정보보호_영상정보처리기기.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>조직_전화번호</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/조직_전화번호.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+            <tr class="modify">
+				<td>공사소개</td>
+				<td>오시는길_셔틀버스안내</td>
+				<td></td>
+				<td></td>
+				<td class="url"><a href="./html/introduction/오시는길_셔틀버스안내.html" target="_blank"></a></td>
+				<td></td>
+				<td><span class="red"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div> -->
+	<!-- //공사소개-->
+
+
+</div>
+<!-- //wrap -->
+<script type="text/javascript">
+jQuery(function($){
+	$.each($("td.url > a"), function(i,v){
+		$(v).text($(v).attr("href"));
+	});
+});
+</script>
+</body>
+</html>

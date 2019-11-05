@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>고객 상태변경</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../resource/images/layout/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../resource/css/style.css">
+  <script src="../resource/js/jquery-3.4.1.min.js"></script>
+  <script src="../resource/js/adm.js"></script>
+</head>
+<body>
+  <div class="custom_popup">
+    <div class="cst_header">
+      <div class="cst_wrap">
+        <h1>고객 상태변경</h1>
+        <a href="#" class="pop_close" onclick="self.close();"></a>
+      </div>
+    </div>
+    <div class="cst_body">
+      <div class="cst_wrap">
+        <table>
+          <colgroup>
+            <col style="width: 150px;"/>
+            <col style="width: 355px;"/>
+          </colgroup>
+          <thead>
+            <tr>
+              <th></th>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="cpt_fst">
+              <th>상태<em>&#42;</em></th>
+              <td>
+                <input type="radio" id="cst_con1" name="cst_con" />
+                <label for="cst_con1"><span></span>개인</label>
+                <input type="radio" id="cst_con2" name="cst_con" />
+                <label for="cst_con2"><span></span>출금정지</label>
+                <input type="radio" id="cst_con3" name="cst_con" />
+                <label for="cst_con3"><span></span>해지대기</label>
+                <input type="radio" id="cst_con4" name="cst_con" />
+                <label for="cst_con4"><span></span>해지</label>
+              </td>
+            </tr>
+            <tr class="cpt_sec">
+              <th>상태변경일<em>&#42;</em></th>
+              <td>
+                  <label for=""></label>
+                  <input type="text">
+                <span><a href="#"></a></span>
+                <p>&#8251; 상태변경일 : 정상전환일, 출금정지일, 해지대기일, 해지</p>
+              </td>
+            </tr>
+            <tr class="cpt_trd">
+              <th>변경사유<em>&#42;</em></th>
+              <td>
+                <textarea name="name" rows="8" cols="50" style="resize: none;"></textarea>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="cst_btn">
+          <ul>
+            <li><a href="#">저장</a></li>
+            <li><a href="#" class="pop_close" onclick="self.close();">취소</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

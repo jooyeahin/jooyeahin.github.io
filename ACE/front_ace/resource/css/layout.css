@@ -1,0 +1,140 @@
+@charset "utf-8";
+/*
+    Layout.css
+*/
+
+/*  header  */
+/* 190614 overflow:hidden 추가 */
+header#GNB { width: 100%; position: fixed; height: 95px; z-index: 999; background: #fff; overflow: hidden; }
+/* 190614 height: auto; */
+header#GNB.hover { height: auto; border-bottom: 1px #e1e1e1 solid; background: url('../images/gnb_bg.jpg') no-repeat center #fff; background-size: 93%; background-position: bottom right;  }
+header#GNB::after { position: fixed; top: 95px; z-index: 10000; content:''; background: #e1e1e1; width: 100%; display: block; height: 1px; }
+header#GNB div.wrap { height: 100%; }
+#GNB h1 { float: left; height: 100%; }
+#GNB h1 a { display: block; line-height: 95px;}
+#GNB h1 a img { width: 100%; vertical-align: baseline;}
+#GNB p.slogan { display: none; }
+/* 190614 margin-left 50px */
+#GNB ul.main_menu { float: left; margin-left: 50px; overflow: hidden; }
+/* ul.main_menu::after { display: block; content:''; clear:both; } */
+
+/* 190614 height: 100% overflow: hidden; 추가 */
+#GNB ul.main_menu li { float: left; height: 100%; overflow: hidden; }
+#GNB ul.main_menu > li > a { display: block; line-height: 95px; font-weight: 600; font-family: NotoSansKR; font-size: 22px; padding: 0 40px; box-sizing: border-box; color: #333; border-bottom: 0;}
+#GNB.hover ul.main_menu li.hover > a { color: #0b3876; border-bottom: 2px solid #0b3876; height: 95px; }
+
+
+/* 190614 min-height: 275px height: auto; padding값 추가  box-sizing 추가  height: 100% 추가*/
+.dep2 { position: relative; top: 2px; width: 170px; min-height: 275px; height: 100%; padding: 25px 0; box-sizing: border-box; }
+/* 190614 min-height: 275 overflow hidden;*/
+.dep2.atv { background: #fafafa; }
+.dep2 ul { box-sizing: border-box; overflow: hidden; }
+.dep2 ul li { width: 100%; }
+.dep2 ul li a { display: block; text-align: center; line-height: 45px; font-size: 16px; color: #777; }
+.dep2 ul li a.atv { color: #0b3876; }
+
+
+#GNB ul.main_menu li div ul li a:hover { color: #0b3876; }
+#GNB ul.main_menu li div ul li a i { display: inline-block; width: 10px; height: 10px; background: url('../images/icon_dep3_plus.png') no-repeat; background-size: cover; }
+#GNB ul.main_menu li div ul li a i.minus {background: url('../images/icon_dep3_minus.png') no-repeat; background-size: cover;}
+#GNB ul.main_menu li div > ul li a { position: relative; }
+#GNB ul.main_menu li div.dl01 ul li a i { position: absolute;  top: 17px; right: 40px;}
+#GNB ul.main_menu li div.dl02 ul li a i { position: absolute;  top: 17px; right: 25px;}
+#GNB ul.main_menu li ul.dep3 { max-height: 0; overflow: hidden; transition: all 0.3s ease; }
+#GNB ul.main_menu li ul.dep3.open { height: auto; max-height: 100px; }
+#GNB ul.main_menu li ul.dep3 li { float: initial;  }
+#GNB ul.main_menu ul.dep3 li a { display: block; line-height: 25px; font-size: 15px; color: #ccc; text-align: center; }
+#GNB ul.main_menu ul.dep3 li { float: initial; }
+/* 190614 추가 */
+
+#GNB ul.login { float: right; }
+#GNB ul.login li { float: left; height: 95px; }
+.gnb_login::after { content:"|"; color: #e5e5e5;  }
+#GNB ul.login li a { padding: 40px 10px 40px 10px; box-sizing: border-box; line-height: 95px; color: #757371; font-size: 16px; }
+.site_map { width: 100px; }
+#GNB ul.login .site_map a { line-height: 31px; display: block; height: 100%; padding: 32px 0px 32px 0px; }
+#GNB ul.login .site_map span { display: block; text-align: center; border: 1px solid #d7d7d7; border-radius: 5px; }
+/*  //header  */
+
+/*** Container ***/
+#container {position:relative; padding-top: 95px; box-sizing: border-box; overflow-x: hidden;}
+.mc_con, .cont_area {width: 1180px; margin: 0 auto; overflow: hidden; position: relative;  }
+.cont_area h3 { text-align: center; font-size: 40px; font-weight: 600; padding: 60px 0; box-sizing: border-box; }
+.cont_area {margin-bottom: 60px;}
+.sub_text { padding-bottom: 20px; box-sizing: border-box; text-align: center; font-size: 18px; color: #777; margin-top: -20px;}
+.sub_text span {color: #4575ca;}
+
+
+/*  footer  */
+footer { width: 100%; min-width: 1180px; }
+footer .address { background: #373e48; padding: 30px 0; box-sizing: border-box; }
+.address ul { overflow: hidden; }
+.address ul li { float: left; }
+.address ul li a { font-size: 15px; padding-left: 10px; box-sizing: border-box;}
+.address ul li:first-child a { padding: 0;  }
+.address ul li:first-child a { color: #588ff1; }
+.address ul li:first-child a::after { content:"|"; color: #4b525b; margin-left: 10px;}
+.address ul li:last-child a { color: #fff; }
+.address address { margin-top: 25px; }
+.address address span { font-style: normal; font-size: 15px; color: #9b9da1; }
+footer .rights { padding: 15px 0; background: #2c323a; font-family: 'Opensans-Light'; font-size: 15px; color: #565b61; }
+/*  //footer  */
+
+
+/*  subpage common 상단 */
+.visual_area {  width: 100%; height: 267px; }
+.visual_area p { font-weight: 400; font-size: 24px; padding-top: 95px; box-sizing: border-box; margin: 0 auto; text-align: center; }
+
+/* subvisual img */
+.visual_banner { height: 210px;  }
+.visual_area .join {background: url('../images/login_top.jpg') no-repeat center; }
+
+
+.lnb_area{ height: 55px; width: 100%; border: 1px solid #e1e1e1; font-size: 0; background: #0b3876; color: #fff; }
+/* 190614 class fixed일때 추가  */
+.lnb_area.fixed { position: fixed; top: 95px; left:0; z-index:99; }
+/* //190614 class fixed일때 추가  */
+.lnb { height: 55px;  }
+/* 190614 z-index: 99 변경 */
+.lnb_dep { position: relative; z-index: 99; overflow: hidden; }
+
+/* 190614 추가 */
+.lnb_dep { display: inline-block; width: 220px; height: 55px; vertical-align: top; margin-left: -1px; border-right: 1px solid #2d5286; }
+.lnb_dep a { display: block; width: 220px; text-indent: 20px; font-size: 16px; color:#fff; line-height: 55px; }
+.lnb_dep > a::after { float: right; display: inline-block; margin-top: 25px; margin-right: 20px; content:''; width: 9px; height: 5px; background: url('../images/lnb_downarrw.png') no-repeat; background-size: cover; }
+/* //190614 추가 */
+
+.lnb_dep.hover { height: auto; overflow: hidden; }
+.lnb_dep > a { width: 219px; height: 55px; }
+.lnb_dep > ul { overflow: hidden;  background: #fafafa; }
+.lnb_dep2 a { border-bottom: 1px solid #103f7e; border-left: 1px solid #2d5286; background: #062e65; color: #ccd0d9;    }
+
+.lnb_dep2 a.atv { background: #153c7f; color: #fff; height: 55px; }
+
+.lnb_homeicn { display: inline-block; width: 60px; height: 55px; background:#4575ca url('../images/ico_home.png') center no-repeat; border-right: 1px solid #2d5286; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */

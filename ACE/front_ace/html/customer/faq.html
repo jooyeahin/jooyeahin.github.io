@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>ACE 맘잡고</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../../resource/images/layout/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../resource/css/swiper.min.css">
+  <link rel="stylesheet" href="../../resource/css/style.css">
+  <script src="../../resource/js/jquery-3.4.1.min.js"></script>
+  <script src="../../resource/js/swiper.min.js"></script>
+  <script src="../../resource/js/front_ui.js"></script>
+</head>
+<body>
+  <header id="GNB">
+    <div class="wrap">
+      <h1><a href=""><img src="../../resource/images/new_logo.png" alt="ACE맘잡고 로고"></a></h1>
+      <p class="slogan">ACE 맘잡고</p>
+      <ul class="main_menu">
+        <li class="dep1">
+          <a href="" >자격소개</a>
+          <div class="dep2">
+            <ul>
+              <li><a href="">자격소개</a></li>
+              <li><a href="">기출문제</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="dep1">
+          <a href="" >시험접수</a>
+          <div class="dep2">
+            <ul>
+              <li><a href="">시험일정</a></li>
+              <li><a href="">접수하기</a></li>
+              <li><a href="">접수확인/수험표출력</a></li>
+              <li><a href="">접수변경/취소</a></li>
+              <li><a href="">수험자 가이드</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="dep1">
+          <a href="">합격확인</a>
+          <div class="dep2">
+            <ul>
+              <li><a href="">합격확인</a></li>
+              <li><a href="">자격증신청</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="dep1">
+          <a href="" >고객센터</a>
+          <div class="dep2">
+            <ul>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">1:1문의</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul class="login">
+        <li class="gnb_login"><a href="">로그인</a></li>
+        <li><a href="">회원가입</a></li>
+        <li class="site_map"><a href=""><span>사이트맵</span></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="container">
+    <h2 class="blind">고객센터 1:1문의 페이지</h2>
+
+    <article class="visual_area">
+          <div class="visual_banner join">
+            <div class="wrap">
+              <p>에이스 자격증 홈페이지에 방문해주셔서 감사합니다.</p>
+            </div>
+          </div>
+
+          <nav class="lnb_area">
+               <div class="lnb_wrap">
+                 <div class="lnb">
+                   <a href="" class="lnb_homeicn"></a>
+                   <div id="lnb_topmenu" class="lnb_topmenu lnb_dep">
+                     <a href="">고객센터</a>
+                     <ul class="lnb_dep2">
+                       <li><a href="">자격소개</a></li>
+                       <li><a href="">시험접수</a></li>
+                       <li><a href="">고객센터</a></li>
+                       <li><a href="">마이페이지</a></li>
+                       <li><a href="">회원서비스</a></li>
+                       <li><a href="">수험자가이드</a></li>
+                       <li><a href="">합격확인</a></li>
+                       <li><a href="">자격소개</a></li>
+                     </ul>
+                   </div>
+                   <div class="lb1 lnb_dep">
+                     <a href="">FAQ</a>
+                     <ul class="lnb_dep2">
+                       <li><a href="">FAQ</a></li>
+                       <li><a href="">1:1문의</a></li>
+                       <li><a href="">공지사항</a></li>
+                     </ul>
+                   </div>
+                 </div>
+               </div>
+             </nav>
+      </article>
+      <!--//visual_area-->
+
+    <article class="cont_area">
+      <!-- 190624 텍스트 변경 -->
+        <h3>FAQ</h3>
+        <div class="faq_view">
+          <nav>
+            <ul>
+              <li><a href="" class="on">전체</a></li>
+              <li><a href="">응시관련</a></li>
+              <li><a href="">결제관련</a></li>
+              <li><a href="">기타</a></li>
+            </ul>
+          </nav>
+          <div class="faq_srch">
+            <select name="faq_category" class="select_ty">
+              <option value="">전체</option>
+            </select>
+            <select name="faq_title" class="select_ty">
+              <option value="">제목</option>
+            </select>
+            <input type="search" name="" >
+            <div class="btn_typeS">검색</div>
+          </div>
+          <div class="faq_list">
+            <ul>
+
+
+
+				<script>
+				$(document).ready(function(){
+					$('.ftext_wrap').click(function(){
+						//alert('ok')
+						$(this).parent('.faq_q').toggleClass('on');
+						$(this).parent('.faq_q').next('.faq_a').toggleClass('on');
+						//$(this).parent('.faq_q').toggleClass('on');
+
+					})
+				})
+				//faq 화살표 클릭시
+
+				</script>
+
+				<li>
+          <div class="faq_q">
+            <!-- 190624 href 추가 -->
+            <a href="#" class="ftext_wrap" >
+              <i class="faq_onI">Q</i>
+          			확인서를 인쇄하려고 하는데 지원여부에 ‘지원불가: 등록되지 않은 프린터’ 라고 나올 경우 어떻게 하나요?
+              </a>
+          </div>
+          <div class="faq_a">
+              <i class="faq_ansI">A</i>
+              출력하려는 프린터가 업데이트 되어 있지 않아 발생한 문제입니다.<br>
+            	출력하려는 프린터가 업데이트 되어 있지 않아 발생한 문제입니다.<br>
+          	  출력하려는 프린터가 업데이트 되어 있지 않아 발생한 문제입니다.<br>
+          	  출력하려는 프린터가 업데이트 되어 있지 않아 발생한 문제입니다.<br>
+          	  출력하려는 프린터가 업데이트 되어 있지 않아 발생한 문제입니다.<br>
+          	  출력하려는 프린터가 업데이트 되어 있지 않아 발생한 문제입니다.<br>
+             <img src="../../resource/images/agreement.png" alt="이미지샘플 ">
+          </div>
+        </li>
+				<li>
+          <div class="faq_q">
+            <a href="#" class="ftext_wrap">
+              <i class="faq_onI">Q</i>
+          		확인서를 인쇄하려고 하는데 지원여부에 ‘지원불가: 등록되지 않은 프린터’ 라고 나올 경우 어떻게 하나요?
+            </a>
+          </div>
+          <div class="faq_a">
+            <i class="faq_ansI">A</i>
+            출력하려는 프린터가 업데이트 되어 있지 않아 발생한 문제입니다.
+          </div>
+        </li>
+			<!--데이터 없거나 검색결과 없을 시 -->
+				<li class="not_data blind">검색 결과가 없습니다.</li>
+			<!--//데이터 없거나 검색결과 없을 시 -->
+            </ul>
+            <div class="pgntn">
+              <div class="pgntn_wrap">
+                <a href="" class="pgntn_prev"></a>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="" class="on">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="" class="pgntn_next"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </article>
+    <!--//cont_area-->
+  </section>
+  <!--//container-->
+  <footer>
+      <div class="address">
+        <div class="wrap">
+          <ul>
+            <li><a href="">개인정보 처리방침</a></li>
+            <li><a href="">이용약관</a></li>
+          </ul>
+          <address>
+            <span>대표:김현숙</span>
+            <span>주소 : 서울특별시 송파구 문정로 246, 1층 4호(마천동, 송파구사회적경제지원센터창업인큐베이터)</span>
+            <span>사업자등록번호 : 142-81-63569 </span><br>
+            <span>문의.상담 : 070-8822-4000 </span>
+            <span>이메일: support@momjobgo.com</span>
+          </address>
+          </div>
+      </div>
+      <div class="rights">
+        <div class="wrap">
+          <p>&#169; Momelance, In. All rights reserved.</p>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>

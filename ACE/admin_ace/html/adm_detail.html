@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>ACE맘잡고 ERP 시스템</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../resource/images/layout/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../resource/css/style.css">
+  <script src="../resource/js/jquery-3.4.1.min.js"></script>
+  <script src="../resource/js/adm.js"></script>
+</head>
+<body>
+  <header>
+      <div class="header_top">
+        <div class="wrap">
+          <h1><a href="">ACE 맘잡고 ERP 시스템</a></h1>
+          <ul>
+            <li><a href="" class="btn_li">관리자 님</a></li>
+            <li><a href="" class="btn_lo">로그아웃</a></li>
+            <!-- <li class="log_out"><a href="">로그인</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="gnb">
+        <h2 class="blind">메인 메뉴</h2>
+        <div class="wrap">
+          <ul>
+            <li><a href="">게시판</a></li>
+            <li class="click"><a href="">가맹점관리</a></li>
+            <li><a href="">수당관리</a></li>
+            <li><a href="">정산관리</a></li>
+            <li><a href="">일정관리</a></li>
+            <li><a href="">서비스관리</a></li>
+            <li><a href="">운영관리</a></li>
+            <li><a href="">내정보관리</a></li>
+          </ul>
+        </div>
+      </div>
+  </header>
+  <section id="containter">
+    <div class="wrap">
+      <nav class="lnb">
+        <h2 class="blind">네비게이션 메뉴</h2>
+        <div class="lnb_title"><a href="">가맹점 조회</a></div>
+        <ul class="nav_acr">
+          <li>
+            <a href="" class="depth_no" onclick="return false;">가맹점 조회</a>
+          </li>
+          <li class="plus">
+            <a href="" class="depth_is" onclick="return false;">신규계약관리</a>
+            <ul>
+              <li><a href="">- 계약진행전체 (47)</a></li>
+              <li><a href="">- 대리점계약 (6)</a></li>
+              <li><a href="" class="on">- 총판검토 (0)</a></li>
+              <li><a href="">- 에이전시검토 (2)</a></li>
+              <li><a href="">- 전시반영</a></li>
+              <li><a href="">- 가맹점연락 (8)</a></li>
+              <li><a href="">- 최종전산반영 (0)</a></li>
+            </ul>
+          </li>
+          <li class="plus">
+            <a href="" class="depth_is" onclick="return false;">변경계약관리</a>
+            <ul>
+              <li><a href="">- 계약진행전체 (1)</a></li>
+              <li><a href="">- 전산반영 (1)</a></li>
+              <li><a href="">- 가맹점연락 (0)</a></li>
+              <li><a href="">- 최종전산반영 (0)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article>
+        <h2 class="blind">뷰포트</h2>
+        <div class="atc_title">
+          <h3>가맹점 관리</h3>
+          <div class="route_wrap">
+            <ul class="atc_route">
+              <li><a href=""></a></li>
+              <li><a href="">가맹점관리</a></li>
+              <li><a href="">가맹점조회</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="detail_view">
+          <div class="progress">
+            <div class="prog_title">
+              <div class="prog_header">
+                <span></span>
+                <h4>계약진행</h4>
+              </div>
+              <ul>
+                <li><a href="" class="btn_typeA">카드사관리</a></li>
+                <li><a href="" class="btn_typeA">파일관리</a></li>
+                <li><a href="" class="btn_typeA">코멘트 등록</a></li>
+                <li><a href="" class="btn_typeA">이체금액관리</a></li>
+                <li><a href="" class="btn_typeB">수정</a></li>
+                <li><a href="" class="btn_typeB">삭제</a></li>
+                <li><a href="" class="btn_typeB">목록</a></li>
+              </ul>
+            </div>
+            <table>
+              <colgroup>
+                <col style="width: 6.3%;"/>
+                <col style="width: 14%;"/>
+                <col style="width: 15.9%;"/>
+                <col style="width: 10.4%;"/>
+                <col style="width: 14%;"/>
+                <col style="width: 10%;"/>
+                <col style="width: 10.9%;"/>
+                <col style="width: 19%;"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <td>구분</td>
+                  <td>처리일시</td>
+                  <td>처리자</td>
+                  <td>소속</td>
+                  <td>소속구분</td>
+                  <td>상태</td>
+                  <td>비고</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td>대리점계약</td>
+                  <td>2017-04-10  13:21</td>
+                  <td>김가경</td>
+                  <td>한강</td>
+                  <td>총판</td>
+                  <td>계약완료</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td>대리점계약</td>
+                  <td>2017-04-10  13:21</td>
+                  <td>김가경</td>
+                  <td>한강</td>
+                  <td>총판</td>
+                  <td>통보완료</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td>에이전시검토</td>
+                  <td>2017-04-10  13:21</td>
+                  <td>조남필</td>
+                  <td>씨제이파트너스</td>
+                  <td>에이전시</td>
+                  <td>확인완료</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="affi_info">
+            <div class="info_title">
+              <span></span>
+              <h4>가맹점정보</h4>
+            </div>
+            <table>
+              <colgroup>
+                <col style="width: 15.2%;"/>
+                <col style="width: 33.4%;"/>
+                <col style="width: 15.2%;"/>
+                <col style="width: 33.4%;"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>상호</th>
+                  <td colspan="3">똥순이네밥집</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>대표자</th>
+                  <td>이복순</td>
+                  <td>가맹점코드</td>
+                  <td>102050(A0052151)</td>
+                </tr>
+                <tr>
+                  <th>사업자번호</th>
+                  <td>205-46-00521</td>
+                  <td>사업자구분</td>
+                  <td>개인</td>
+                </tr>
+                <tr>
+                  <th>업태</th>
+                  <td>음식점업</td>
+                  <td>사업종</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>주민번호</th>
+                  <td></td>
+                  <td>개업일</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>휴대폰번호</th>
+                  <td>010-5685-4954</td>
+                  <td>사업장연락처</td>
+                  <td>044-56814-47514</td>
+                </tr>
+                <tr>
+                  <th>네이버계정</th>
+                  <td>아이디 : 미기재, 비밀번호 : 미기재</td>
+                  <td>기타메일계정</td>
+                  <td>SDF@NAKDSF.COM</td>
+                </tr>
+                <tr>
+                  <th>여신금융협회계정</th>
+                  <td colspan="3">아이디 : 미기재, 비밀번호 : 미기재</td>
+                </tr>
+                <tr>
+                  <th>사업장주소</th>
+                  <td></td>
+                  <td>등록일</td>
+                  <td>2019-01-45</td>
+                </tr>
+                <tr>
+                  <th>등록자</th>
+                  <td>김가경</td>
+                  <td>최종수정일시</td>
+                  <td>2019-01-45 13:24</td>
+                </tr>
+                <tr>
+                  <th>최종수정자</th>
+                  <td colspan="3">조남필</td>
+                </tr>
+                <tr>
+                  <th>고객비고</th>
+                  <td colspan="3"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="affi_record">
+            <div class="record_title">
+              <span></span>
+              <h4>가맹점이력</h4>
+            </div>
+            <table>
+              <colgroup>
+                <col style="width: 6.2%;"/>
+                <col style="width: 13.9%;"/>
+                <col style="width: 15.7%;"/>
+                <col style="width: 10.4%;"/>
+                <col style="width: 14%;"/>
+                <col style="width: 10%;"/>
+                <col style="width: 10.9%;"/>
+                <col style="width: 19.5%;"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <td>구분</td>
+                  <td>처리일시</td>
+                  <td>처리자</td>
+                  <td>소속</td>
+                  <td>소속구분</td>
+                  <td>상태</td>
+                  <td>비고</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <!-- <th colspan="8">등록된 내용이 없습니다.</th> -->
+                  <td colspan="8">등록된 내용이 없습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</body>
+</html>
