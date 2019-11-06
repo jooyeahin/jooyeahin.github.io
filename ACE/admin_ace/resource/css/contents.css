@@ -74,7 +74,9 @@
 /*  --------------------- // ctm_cng.html  --------------------------------  */
 
 /*  --------------------- ctm_srch.html  --------------------------------  */
-.search_popup { width: 835px; height: 508px; background: #fff; overflow: hidden; }
+/* 191106 width 삭제 */
+.search_popup { height: 508px; background: #fff; overflow: hidden; }
+/* //191106 width 삭제 */
 .search_wrap { overflow: hidden; width: 805px; margin: 0 auto; }
 .search_header { width: 100%; height: 45px; background: #1c5295; border-bottom: 1px solid #144786;  }
 .search_header h1 { float: left; display: inline-block; font-size: 18px; color: #fff; height: 100%; line-height: 45px; }
