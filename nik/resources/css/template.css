@@ -1,0 +1,93 @@
+.btn {display: inline-block; }
+
+.ht_arrow { position: absolute; top: 50%; transform: translate(0, -50%); width: 11px; height: 5px; background: url('../images/lang_arrow.png') no-repeat; margin-left: 8px; }
+.gnb_arrow { display: none; position: absolute; top: 50%; transform: translate(0, -50%); width: 16px; height: 8px; background: url('../images/menu_arrow.png') no-repeat; margin-left: 8px; }
+.btn_mobMenu { display: none; position: relative; z-index: 2; width: 40px; height: 40px; background: url('../images/icon.png') no-repeat #fff; background-position: -160px -0px; vertical-align: middle; }
+.btn_mobMenu.on { background: url('../images/icon.png') no-repeat #fff; background-position: -200px -120px;  }
+.btn_searchShow { position: absolute; left:0; z-index: 2; width: 40px; height: 40px; background: url('../images/icon.png') no-repeat #fff; background-position: -40px -0px; vertical-align: middle; }
+.btn_location { display: none; position: relative; z-index: 2; width: 40px; height: 40px; background: url('../images/icon.png') no-repeat #fff; background-position: -200px -0px; vertical-align: middle; }
+.btn_bag { background: url('../images/icon.png') no-repeat; background-position: -0px -0px; }
+.btn_login { background: url('../images/icon.png') no-repeat; background-position: -80px -0px; }
+.btn_like { background: url('../images/icon.png') no-repeat; background-position: -120px -0px; }
+.btn_like.on { background: url('../images/icon.png') no-repeat; background-position: -120px -40px;}
+.btn_search { padding: 0 5px; box-sizing: border-box; border-radius: 5px; font-size: 12px; background: #e5e5e5; line-height: 30px; vertical-align: middle; margin-left: 10px; }
+.btn_popclose { position: absolute; top: 40px; right: 30px; width: 40px; height: 40px;  background: url('../images/icon.png') no-repeat; background-position: -120px -40px; background-position: -200px -80px; z-index: 9999; }
+.btn_delete { width: 48%; height: 40px; border: 0; background: #e5e5e5; color: #777;
+border-radius: 5px; cursor: pointer; margin-left: 2%; font-size: 14px; line-height: 40px; text-align: center; }
+.btn_delete.all { margin-left: 0; margin-right: 2%;}
+.btn_chkout { margin-top: 10px; width: 100%; border: 0; height: 40px; background: #ffdd00; color: #777; border-radius: 5px; cursor: pointer; font-size: 14px; line-height: 40px; text-align: center; }
+.btn_signin { width: 100%; height: 40px; background: #ffdd00; font-size: 16px; font-weight: bold; margin-top: 20px; border-radius: 5px; border: 2px solid #ccc; cursor: pointer; text-align: center; line-height: 40px; }
+.btn_fbSignin { position: relative; width: 130px; height: 40px; background: #fff; border-radius: 5px;
+border: 2px solid #e5e5e5; align-items: center; cursor: pointer; font-size: 14px; text-align: center; line-height: 36px; padding-left: 20px; box-sizing: border-box;}
+.btn_fbSignin::before { position: absolute; left: 20px; top: 50%; transform: translate(0, -50%); content:''; display: inline-block; width: 25px; height: 25px; background: url('../images/facebook_circle-512.png') no-repeat; background-size: 100%; vertical-align: middle; }
+.btn_ggSignin { position: relative; width: 130px; height: 40px; background: #fff; border-radius: 5px;
+border: 2px solid #e5e5e5; align-items: center; cursor: pointer; float: right; font-size: 14px; text-align: center; line-height: 36px; padding-left: 20px; box-sizing: border-box;}
+.btn_ggSignin::before { position: absolute; left: 20px; top: 50%; transform: translate(0, -50%); content:''; display: inline-block; width: 23px; height: 23px; background: url('../images/new-google-favicon-512.png') no-repeat; background-size: 100%; vertical-align: middle; }
+.btn_mslink { width: 180px; height: 40px; background: #e5e5e5; border-radius: 5px; font-size: 14px; font-weight: bold; text-align: center; line-height: 40px; margin-top: 30px; transition: all 0.3s ease; }
+.btn_mslink:hover { background: #ffdd00; }
+.btn_link { padding: 0px 20px; box-sizing: border-box; background: #e5e5e5; border-radius: 5px; font-size: 14px; font-weight: bold; text-align: center; line-height: 40px; margin-top: 30px; transition: all 0.3s ease; }
+.btn_link:hover { background: #ffdd00; }
+.btn_fb { background: url('../images/icon.png') no-repeat; background-position: -0px -80px; }
+.btn_fb:hover {background-position: -0px -120px;  }
+.btn_tt { background: url('../images/icon.png') no-repeat; background-position: -40px -80px; }
+.btn_tt:hover {background-position: -40px -120px;  }
+.btn_yt { background: url('../images/icon.png') no-repeat; background-position: -80px -80px; }
+.btn_yt:hover {background-position: -80px -120px;  }
+.btn_pr { background: url('../images/icon.png') no-repeat; background-position: -120px -80px; }
+.btn_pr:hover {background-position: -120px -120px;  }
+.btn_ig { background: url('../images/icon.png') no-repeat; background-position: -160px -80px; }
+.btn_ig:hover {background-position: -160px -120px;  }
+
+.btn_wOption { width: 49.5%; margin: 0 0.25%; font-size: 14px; line-height: 40px; background: #fff; text-align: center; border-radius: 7px; box-sizing: border-box; }
+.btn_addCart { width: 100%; font-size: 16px; text-align: center; line-height: 40px; border-radius: 7px; background: #000; color: #fff; font-weight: bold; transition: all 0.3s ease; }
+.btn_modalDf { width: 100%; font-size: 16px; text-align: center; line-height: 40px;color:  #666; border: 1px solid #bbb; border-radius: 7px; transition: all 0.3s ease; }
+.btn_addCart:hover { background: #ffdd00; color: #000; }
+.btn_modalDf:hover { background: #ffdd00; color: #000; }
+.btn_link.gl {display: none; }
+
+
+.icon_bag { width: 30px; height: 40px; background: url('../images/shop.png') no-repeat; background-size: 100%; vertical-align: bottom; margin: 0 10px;  }
+
+.icon_cameras { text-align: center; width: 100%; font-size: 14px; padding-top: 60px; box-sizing: border-box; background: url('../images/depth2_icon1.png') no-repeat; background-position: center -5px; }
+.icon_lenses { text-align: center; width: 100%; font-size: 14px; padding-top: 60px; box-sizing: border-box; background: url('../images/depth2_icon2.png') no-repeat; background-position: center -5px; }
+.icon_flashes { text-align: center; width: 100%; font-size: 14px; padding-top: 60px; box-sizing: border-box; background: url('../images/depth2_icon3.png') no-repeat; background-position: center -5px; }
+.icon_acc { text-align: center; width: 100%; font-size: 14px; padding-top: 60px; box-sizing: border-box; background: url('../images/depth2_icon4.png') no-repeat; background-position: center -5px; }
+.icon_cameras.on { color: #ffdd00; text-align: center; width: 100%;  padding-top: 60px; box-sizing: border-box; background: url('../images/depth2_icon1_1.png') no-repeat; background-position: center -5px; }
+.icon_lenses.on { color: #ffdd00; text-align: center; width: 100%; padding-top: 60px; box-sizing: border-box; background: url('../images/depth2_icon2_1.png') no-repeat; background-position: center -5px; }
+.icon_flashes.on { color: #ffdd00; text-align: center; width: 100%; padding-top: 60px; box-sizing: border-box; background: url('../images/depth2_icon3_1.png') no-repeat; background-position: center -5px; }
+.icon_acc.on { color: #ffdd00; text-align: center; width: 100%; padding-top: 60px; box-sizing: border-box; background: url('../images/depth2_icon4_1.png') no-repeat; background-position: center -5px; }
+
+
+.for_tab { display: block; }
+
+@media screen and (max-width:1199px) {
+  .btn_link { line-height: 35px; }
+  .for_tab { display: block; }
+}
+@media screen and (max-width:991px) {
+  .for_tab { display: block; }
+  .gnb_arrow {margin-left: 4px; }
+}
+@media screen and (max-width:766px) {
+  .icon_cameras { font-size: 12px; }
+  .icon_lenses { font-size: 12px; }
+  .icon_flashes { font-size: 12px; }
+  .icon_acc { font-size: 12px; }
+  .for_tab { display: none; }
+  .btn_fbSignin {width: 100%; margin-bottom: 10px;}
+  .btn_fbSignin::before {left: 50%; margin-left: -50px; }
+  .btn_ggSignin {width: 100%;}
+  .btn_ggSignin::before {left: 50%; margin-left: -50px; }
+  .btn_mobMenu {display: inline-block;}
+  .btn_location {display: inline-block;}
+  .btn_link.gl {display: inline-block;}
+  .btn_searchShow { position: relative; }
+
+}
+@media screen and (max-width:370px) {
+  .icon_cameras { font-size: 11px; }
+  .icon_lenses { font-size: 11px; }
+  .icon_flashes { font-size: 11px; }
+  .icon_acc { font-size: 11px; }
+  .for_tab { display: none; }
+}
