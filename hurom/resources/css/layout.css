@@ -45,7 +45,7 @@ body.sub #gnb { padding-left: 31%; }
 #gnb > li > ul { display: none; position: absolute; left: 50%; transform: translate(-50%, 0%); border: 1px solid #b0b0b0; background: #fff; width: 180px; border-top: 1px solid #e5e5e5; }
 #gnb > li > ul.wide { width: 220px; }
 #gnb > li > ul > li {  }
-#gnb > li > ul > li > a { display: block; line-height: 40px; letter-spacing: 0px; padding: 0 20px; box-sizing: border-box; font-size: 15px; color: #28292d; font-weight: 500; transition: all 0.3s ease;  }
+#gnb > li > ul > li > a { display: block; line-height: 40px; letter-spacing: -1px; padding: 0 20px; box-sizing: border-box; font-size: 15px; color: #28292d; font-weight: 500; transition: all 0.3s ease;  }
 #gnb > li > ul > li > a:hover { color: #fff; background: #363636;  }
 
 footer { background: #333337; }
