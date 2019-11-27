@@ -2082,7 +2082,7 @@ body.sub p.sub_text.bk > .c_green {font-weight: 500;}
   .history_tab > li > a {font-size: 12px; }
   .his_list > dl {text-align: left; }
   .his_list > dl > dt {width: 5%; }
-  .his_list > dl > dd {width: 95%; }
+  .his_list > dl > dd {width: 95%; padding-left: 20px; }
   .his_list > dl > dd > strong{ font-size: 18px;}
   .his_list > dl > dd > strong::before { left: -28px; width: 25px; height: 16px; background: url('../images/contents/m_ico_story_history_year.png') no-repeat; background-size: cover; }
   .his_list > dl:first-child > dd {padding:  30px 0 0 20px; }
