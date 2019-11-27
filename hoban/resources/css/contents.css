@@ -539,7 +539,8 @@ text-align: left; border: 1px solid #e5e5e5; padding: 40px 0; box-sizing: border
 .board02 > li > a::after { content:''; position: absolute; right: 40px; top: 40px; display: inline-block; width: 23px; height: 23px;  background: url('../images/contents/icon_faq_off.gif') no-repeat; }
 .board02 > li > a.on::after { content:''; position: absolute; right: 40px; top: 50px; display: inline-block; width: 23px; height: 23px;  background: url('../images/contents/icon_faq_on.gif') no-repeat; }
 .board02 > li > a > em { display: inline-block; width: 170px; height: 100%; padding-left: 20px; box-sizing: border-box; font-size: 14px; color: #666; line-height: 34px; font-style: normal; font-weight: 500; vertical-align: top; }
-.board02 > li > a > span { display: inline-block; width: 830px; height: 100%; line-height: 34px; font-size: 30px; color: #555; vertical-align: top; font-weight:  300; }
+.board02 > li > a > span { display: inline-block; width: 830px; height: 100%; line-height: 34px; font-size: 30px; color: #555; vertical-align: top; font-weight:  300;
+display: -webkit-box;  -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; }
 .board02 > li > a.on > span  { color:#f56b02; }
 .board02 .board02_asw { display: none; }
 .board02 .board02_asw > p { font-size: 18px; font-weight: 500; color: #444; margin-left: 170px; padding-top: 30px; box-sizing: border-box; }
