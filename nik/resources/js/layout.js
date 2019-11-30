@@ -414,7 +414,7 @@ $(document).ready(function(){
 
   })
 
-  $('.sub_menu > ul .left .category .swiper-container > ul > li').on('click', 'a',function(){
+  $('body.mob .sub_menu > ul .left .category .swiper-container > ul > li').on('click', 'a',function(){
     var key = $(this).text().toLowerCase().replace(/ /g, '');
     console.log(key);
     $('.sub_menu > ul .left .category .swiper-container > ul > li > a').removeClass('on');
@@ -449,7 +449,7 @@ $(document).ready(function(){
       initialSlide: 0,
       slidesPerView:1,
       slidesPerGroup:1,
-      allowTouchMove: false,
+      // allowTouchMove: false,
       normalizeSlideIndex: true,
       navigation: {
         nextEl: '.sub_menu .right .swiper-button-next',
