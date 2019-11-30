@@ -256,7 +256,6 @@ $(document).ready(function(){
 
     }
     if(sWidth>=600 && sWidth<=782 ){
-
       setTimeout(function(){location.reload();},100)
     }
 

@@ -299,9 +299,10 @@ footer { }
 
   .icon {transform: none; right: 5px; }
   .search_box { transform: translate(0px, -0%); left: 5px; overflow: visible; }
-  .search_box .search_input { width: 100vw; position: absolute; top: 87px; left: 0; margin-left: calc(-100vw - 5px); padding: 10px 0; box-sizing: border-box; transition: margin-left 0.3s ease; }
-  .search_box .search_input.on { display: block; position: absolute; top: 87px; margin-left: -5px;  }
-  header.scroll .search_input.on { top: 42px; }
+  .search_box .search_input { width: 100vw; position: absolute; top: 87px; left: 0; margin-left: calc(-100vw - 5px); padding: 10px 0; box-sizing: border-box;  }
+  header.scroll  .search_box .search_input { width: 100vw; position: absolute; top: 42px; left: 0; margin-left: calc(-100vw - 5px); padding: 10px 0; box-sizing: border-box;  }
+  .search_box .search_input.on { display: block; position: absolute; top: 87px; margin-left: -5px; transition: margin-left 0.3s ease; }
+  header.scroll .search_input.on { top: 42px; margin-left: -5px; transition: margin-left 0.3s ease; }
 
   .search_box .search_input input { width: 50vw; }
   .header_top {height: 26px; background: #000; }
