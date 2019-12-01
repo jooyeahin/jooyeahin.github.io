@@ -1055,7 +1055,7 @@ body.sub p.sub_text.bk > .c_green {font-weight: 500;}
 
 .offline_map.center .detail_map .detail_area { height: 430px;}
 .offline_map.center .detail_map .detail_area.su { background: url('../images/contents/customer-store-sc-bg2-pc.png') no-repeat center; }
-.offline_map.center .detail_map .detail_area.gn { background: url('../images/contents/customer-store-map-bg5-pc_gs.png') no-repeat center; }
+.offline_map.center .detail_map .detail_area.gn { display: none; background: url('../images/contents/customer-store-map-bg5-pc_gs.png') no-repeat center; }
 
 
 /* 매장_광역지도 */
