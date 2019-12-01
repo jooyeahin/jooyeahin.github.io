@@ -420,6 +420,7 @@ $(document).ready(function(){
   }
 
   $(window).resize(function(){
+    contHeight = $('body').outerHeight(true);
     $('header').removeClass('fix')
     $('body').removeClass('pc tab tab_min mob');
     scrH = $(window).height();
