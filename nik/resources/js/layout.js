@@ -388,18 +388,18 @@ $(document).ready(function(){
     }
     $('.sub_menu.'+code+ ' > ul .left .category > .swiper-container > ul > li:first-child > a').trigger('click');
 
-    var depth3swiper = new Swiper('.sub_menu .right .swiper-container', {
-      init: true,
-      slidesPerView:1,
-      slidesPerGroup:1,
-      nitialSlide: 0,
-      // allowTouchMove: false,
-      normalizeSlideIndex: true,
-      navigation: {
-        nextEl: '.sub_menu .right .swiper-button-next',
-        prevEl: '.sub_menu .right .swiper-button-prev',
-      },
-    });
+    // var depth3swiper = new Swiper('.sub_menu .right .swiper-container', {
+    //   init: true,
+    //   slidesPerView:1,
+    //   slidesPerGroup:1,
+    //   nitialSlide: 0,
+    //   allowTouchMove: false,
+    //   normalizeSlideIndex: true,
+    //   navigation: {
+    //     nextEl: '.sub_menu .right .swiper-button-next',
+    //     prevEl: '.sub_menu .right .swiper-button-prev',
+    //   },
+    // });
 
     var depth2swiper = new Swiper('.sub_menu.'+code+ ' .left .category .swiper-container', {
       slidesPerView:2,
