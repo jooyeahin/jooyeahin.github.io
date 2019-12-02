@@ -142,7 +142,7 @@ color: #454646; margin-bottom: 50px; }
   .cont_area01 .banner_wrap { }
   .cont_area01 .banner_wrap .banner40 .text > em { margin-top: 5px;}
   .cont_area01 .btn_link { margin-top: 10px; }
-  .cont_area01 .banner_wrap .banner60 { display: block; width: 80%; margin: 0 auto; margin-bottom: 10px; }
+  .cont_area01 .banner_wrap .banner60 { display: block; width: 100%; margin: 0 auto; margin-bottom: 10px; }
   .cont_area01 .banner_wrap .banner40 { display: block; width: 80%; margin: 0 auto;}
   .cont_area02 .bann01 .text { top: initial; left: 50%; bottom: 10%; transform: translateX(-50%); text-align: center;  }
   .cont_area02 .bann01 .text > p {text-align: center; font-size: 24px;  }
