@@ -89,7 +89,7 @@ header { position: fixed; width: 100%; z-index: 101; background: #fff;  }
 .header_top .wrap { max-width: 1400px; margin: 0 auto; padding: 0 15px; padding-top: 19px; padding-bottom: 7px; box-sizing: border-box; z-index: 102; text-align: left; }
 
 header h1 { display: inline-block; width: 80px; position: absolute; left: 50%; transform: translateX(-50%); bottom: 20px; z-index: 999; }
-header h1 > a { display: block; height: 100%; }
+header h1 > a { display: block; height: 100%; color: none; }
 header h1 > a > img { width: 100%; }
 header h1 > a > img.scroll {display: none;}
 
