@@ -272,7 +272,7 @@ $(document).ready(function(){
     $('.sub_menu.'+code).addClass('on');
     $('.sub_menu').stop().animate({top:'-800px'}, 0);
     $('.sub_menu.'+code).stop().animate({top:'0px'}, 0);
-    // $('.sub_menu.'+code+'> ul .left .category .pc_category li:first-child > a').trigger('click')
+    $('.sub_menu.'+code+'> ul .left .category .pc_category li:first-child > a').trigger('click')
   })
 
 
