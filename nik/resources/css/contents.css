@@ -27,6 +27,7 @@ color: #454646; margin-bottom: 50px; }
 
 .cont_area01 .swiper-container { position: relative; z-index: 9; width: 90%; margin-bottom: 20px; }
 .cont_area01 .swiper-container .swiper-slide {  }
+.cont_area01 .swiper-container .swiper-slide a {color: transparent; }
 .cont_area01 .swiper-container .swiper-slide img { width: 100%; }
 .cont_area01 .banner_wrap { width: 100%; }
 .cont_area01 .banner_wrap > li { display: inline-block; vertical-align: top;}
