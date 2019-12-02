@@ -356,10 +356,10 @@ $(document).ready(function(){
            slidesPerView: 2,
            slidesPerGroup:1,
          },
-         766:{
-           slidesPerView: 1,
-           slidesPerGroup:1,
-         },
+         // 766:{
+         //   slidesPerView: 1,
+         //   slidesPerGroup:1,
+         // },
        }
     });
 
@@ -416,7 +416,7 @@ $(document).ready(function(){
       slidesPerView:1,
       slidesPerGroup:1,
       nitialSlide: 0,
-      allowTouchMove: false,
+      allowTouchMove: true,
       normalizeSlideIndex: true,
       navigation: {
         nextEl: '.sub_menu .right .swiper-button-next',
