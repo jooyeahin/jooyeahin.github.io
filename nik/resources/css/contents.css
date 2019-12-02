@@ -31,8 +31,10 @@ color: #454646; margin-bottom: 50px; }
 .cont_area01 .banner_wrap { width: 100%; }
 .cont_area01 .banner_wrap > li { display: inline-block; vertical-align: top;}
 .cont_area01 .banner_wrap .banner60 { width: 59.5%; overflow: hidden; margin-right: 1%; }
+.cont_area01 .banner_wrap .banner60 a { color: transparent; }
 .cont_area01 .banner_wrap .banner60 img { width: 100%;  }
 .cont_area01 .banner_wrap .banner40 { position: relative; width: 39.5%; overflow: hidden;}
+.cont_area01 .banner_wrap .banner40 a { color: transparent; }
 .cont_area01 .banner_wrap .banner40 img { width: 100%;  }
 .cont_area01 .banner_wrap .banner40 .text { position: absolute; top: 10%; left: 10%; text-align: left; }
 .cont_area01 .banner_wrap .banner40 .text > p { font-size: 22px; color: #fff; }
@@ -84,7 +86,7 @@ color: #454646; margin-bottom: 50px; }
 .cont_area05 div > p { font-size: 18px; text-align: center; color: #454646; margin-bottom: 60px; }
 .news_wrap { }
 .news_wrap > li { display: inline-block; vertical-align: top; width: 25%; padding: 0 15px; box-sizing: border-box; text-align: left; height: 100%;}
-.news_wrap > li > a {display: block; height: 100%;}
+.news_wrap > li > a {display: block; height: 100%; color: transparent; }
 .news_wrap > li > a > img { width: 100%; margin-bottom: 30px; }
 .news_wrap > li > a > strong { display: block; font-size: 18px; font-weight: bold; color: #454646; margin-bottom: 20px; transition: all 0.3s ease;  }
 .news_wrap > li > a > p { font-size: 14px; line-height: 20px; color: #454646; }

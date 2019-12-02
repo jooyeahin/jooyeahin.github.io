@@ -220,7 +220,7 @@ header.scroll h1 > a > img.scroll {display: block;}
   align-items: center;
 }
 .sub_menu .right .swiper-container .swiper-wrapper { width: 100%; }
-.sub_menu .right .swiper-container .swiper-slide a { display: block; height: 100%; }
+.sub_menu .right .swiper-container .swiper-slide a { display: block; height: 100%; color: transparent; }
 .sub_menu .right .swiper-container .swiper-slide a img { width: 100%;  }
 .sub_menu .right .swiper-container .swiper-slide a dl { text-align: center; }
 .sub_menu .right .swiper-container .swiper-wrapper .swiper-slide a dl > dt { font-size: 22px; font-weight: bold; color: #464545; margin-bottom: 10px; }
