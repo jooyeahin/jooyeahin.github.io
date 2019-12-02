@@ -35,7 +35,7 @@ color: #454646; margin-bottom: 50px; }
 .cont_area01 .banner_wrap .banner60 a { color: transparent; }
 .cont_area01 .banner_wrap .banner60 img { width: 100%;  }
 .cont_area01 .banner_wrap .banner40 { position: relative; width: 39.5%; overflow: hidden;}
-.cont_area01 .banner_wrap .banner40 a { color: transparent; }
+.cont_area01 .banner_wrap .banner40 a {  }
 .cont_area01 .banner_wrap .banner40 img { width: 100%;  }
 .cont_area01 .banner_wrap .banner40 .text { position: absolute; top: 10%; left: 10%; text-align: left; }
 .cont_area01 .banner_wrap .banner40 .text > p { font-size: 22px; color: #fff; }
