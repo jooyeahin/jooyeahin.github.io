@@ -207,8 +207,8 @@ header.scroll h1 > a > img.scroll {display: block;}
   background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  /* display: -ms-flexbox;
+  display: -webkit-flex; */
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
