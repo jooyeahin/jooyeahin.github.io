@@ -338,7 +338,7 @@ $(document).ready(function(){
          },
        }
     });
-    $('.sub_menu.'+code+'> ul .left .category .pc_category li:first-child > a').trigger('click')
+    $('.sub_menu.'+code+'> ul .left .category .pc_category li:first-child > a').trigger('click');
   })
 
 
