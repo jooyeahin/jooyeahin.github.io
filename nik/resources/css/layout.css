@@ -209,7 +209,7 @@ header.scroll h1 > a > img.scroll {display: block;}
   /* display: -webkit-box; */
   /* display: -ms-flexbox;
   display: -webkit-flex; */
-  display: flex;
+  /* display: flex; */
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
