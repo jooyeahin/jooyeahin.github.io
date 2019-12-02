@@ -412,12 +412,12 @@ $(document).ready(function(){
     }
 
     var depth3swiper = new Swiper('.sub_menu .right .swiper-container', {
-
+      init: true,
       slidesPerView:1,
       slidesPerGroup:1,
-      // nitialSlide: 0,
-      // allowTouchMove: false,
-      // normalizeSlideIndex: true,
+      nitialSlide: 0,
+      allowTouchMove: false,
+      normalizeSlideIndex: true,
       navigation: {
         nextEl: '.sub_menu .right .swiper-button-next',
         prevEl: '.sub_menu .right .swiper-button-prev',
