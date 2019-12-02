@@ -415,7 +415,7 @@ $(document).ready(function(){
 
       slidesPerView:1,
       slidesPerGroup:1,
-      nitialSlide: 0,
+      // nitialSlide: 0,
       // allowTouchMove: false,
       normalizeSlideIndex: true,
       navigation: {
