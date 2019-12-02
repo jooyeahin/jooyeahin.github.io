@@ -147,6 +147,7 @@ color: #454646; margin-bottom: 50px; }
   .cont_area02 .bann01 .text { top: initial; left: 50%; bottom: 10%; transform: translateX(-50%); text-align: center;  }
   .cont_area02 .bann01 .text > p {text-align: center; font-size: 24px;  }
   .cont_area02 .bann01 .text > img {width: 100%; }
+  .cont_area01 .swiper-container .swiper-slide a {color: none;}
   .cont_area01 .swiper-container .swiper-slide img {width: 80%; }
   .cont_area01 .top_wrap .swiper-button-prev {left: 0;}
   .cont_area01 .top_wrap .swiper-button-next {right: 0;}
