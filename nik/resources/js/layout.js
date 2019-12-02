@@ -417,7 +417,7 @@ $(document).ready(function(){
       slidesPerGroup:1,
       // nitialSlide: 0,
       // allowTouchMove: false,
-      // normalizeSlideIndex: true,
+      normalizeSlideIndex: true,
       navigation: {
         nextEl: '.sub_menu .right .swiper-button-next',
         prevEl: '.sub_menu .right .swiper-button-prev',
