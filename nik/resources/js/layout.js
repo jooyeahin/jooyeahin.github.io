@@ -386,7 +386,6 @@ $(document).ready(function(){
             '</li>'
       );
     }
-    $('.sub_menu.'+code+ ' > ul .left .category > .swiper-container > ul > li:first-child > a').trigger('click');
 
     var depth3swiper = new Swiper('.sub_menu .right .swiper-container', {
       init: true,
@@ -410,6 +409,7 @@ $(document).ready(function(){
       }
     });
 
+    $('.sub_menu.'+code+ ' > ul .left .category > .swiper-container > ul > li:first-child > a').trigger('click');
 
   })
 
