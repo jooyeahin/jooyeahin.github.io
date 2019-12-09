@@ -356,10 +356,10 @@ $(document).ready(function(){
            slidesPerView: 2,
            slidesPerGroup:1,
          },
-         766:{
-           slidesPerView: 1,
-           slidesPerGroup:1,
-         },
+         // 766:{
+         //   slidesPerView: 1,
+         //   slidesPerGroup:1,
+         // },
        }
     });
 
@@ -396,6 +396,7 @@ $(document).ready(function(){
     $(this).find('span').addClass('on');
     $('.sub_menu').removeClass('on');
     $('.sub_menu.'+code).addClass('on');
+    $('.sub_menu.'+code+' .right .swiper-wrapper').empty();
     for (var i in depth3Menu[code]) {
       $('.sub_menu.'+code+' .right .swiper-wrapper').append(
           '<li class="swiper-slide">' +
@@ -411,18 +412,18 @@ $(document).ready(function(){
       );
     }
 
-    var depth3swiper = new Swiper('.sub_menu .right .swiper-container', {
-      init: true,
-      slidesPerView:1,
-      slidesPerGroup:1,
-      nitialSlide: 0,
-      allowTouchMove: false,
-      normalizeSlideIndex: true,
-      navigation: {
-        nextEl: '.sub_menu .right .swiper-button-next',
-        prevEl: '.sub_menu .right .swiper-button-prev',
-      },
-    });
+    // var depth3swiper = new Swiper('.sub_menu .right .swiper-container', {
+    //   init: true,
+    //   slidesPerView:1,
+    //   slidesPerGroup:1,
+    //   nitialSlide: 0,
+    //   allowTouchMove: false,
+    //   normalizeSlideIndex: true,
+    //   navigation: {
+    //     nextEl: '.sub_menu .right .swiper-button-next',
+    //     prevEl: '.sub_menu .right .swiper-button-prev',
+    //   },
+    // });
 
 
 
@@ -444,7 +445,7 @@ $(document).ready(function(){
     console.log(key);
     $('.sub_menu > ul .left .category .swiper-container > ul > li > a').removeClass('on');
     $(this).addClass('on');
-    $('.sub_menu .right .swiper-wrapper').empty();
+    $('.sub_menu > ul .right .swiper-wrapper').empty();
     for (var i in depth3Menu[key]) {
       $('.sub_menu .right .swiper-wrapper').append(
           '<li class="swiper-slide">' +
@@ -469,7 +470,7 @@ $(document).ready(function(){
     //   }
     // });
 
-    var depth3swiper = new Swiper('.sub_menu .right .swiper-container', {
+    var depth3swiper02 = new Swiper('body.mob .sub_menu .right .swiper-container', {
       init: true,
       initialSlide: 0,
       slidesPerView:1,
@@ -482,6 +483,7 @@ $(document).ready(function(){
       },
     });
 
+    $('.sub_menu.'+code+ ' > ul .left .category > .swiper-container > ul > li:first-child > a').trigger('click');
   })
   var index = 0;
   $('.btn_mobMenu').on('click', function(){

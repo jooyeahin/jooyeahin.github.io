@@ -1302,7 +1302,7 @@ body.sub p.sub_text.bk > .c_green {font-weight: 500;}
   .cont_area02 > ul { width: 970px;  }
   .cont_area02 > ul > li.right iframe { width: 610px; height: 383px; }
   .cont_area02 > ul > li.left .swiper-container { height: 313px; }
-  .cont_area02 > ul > li.left .swiper-slide { height: 265px; padding: 0 10px;}
+  .cont_area02 > ul > li.left .swiper-slide { height: 265px; }
   .cont_area02 > ul > li.left .swiper-pagination-bullet { margin-top: 15px;  }
   .cont_area03 > ul { width:970px; }
   /* //main */

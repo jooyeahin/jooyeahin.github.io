@@ -36,6 +36,12 @@ $(document).ready(function(){
         el: '.swiper-pagination',
         clickable: true,
       },
+    breakpoints: {
+      1199: {
+        slidesPerView: 1,
+        spaceBetween: 1,
+      }
+    }
   });
   //slider
 

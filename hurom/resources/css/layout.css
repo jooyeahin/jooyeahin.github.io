@@ -1,3 +1,4 @@
+html {position: relative;}
 body { position: relative; font-family: 'NotosansKR'; color: #2b2f33; overflow-x:  hidden; }
 body.hidden {overflow-y: hidden;}
 
