@@ -171,11 +171,12 @@ footer { background: #333337; }
   .dim_menu > ul > li > a:hover::after { width: 0%; background: #7cb30a; }
 
   .sCont_area {padding: 60px 0;}
-  .sub_container { padding-top: 47px; }
+  .sub_container { padding-top: 47px;}
+  .sub_container.prd { padding-top: 47px; min-height: 925px !important;}
   .sCont_wrap {width:100%; padding: 0 20px; box-sizing: border-box; }
   body.sub header { position: fixed; top: 0; left: 0; display: block; background: #fff; }
   body.sub.hidden header {background: transparent;}
-  .sub_menu {display: block;}
+  .sub_menu {display: block; }
   .footer_cont .top > .footer_menu {margin-top: 20px;}
 }
 @media screen and (max-width: 500px) {
