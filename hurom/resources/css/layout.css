@@ -172,7 +172,7 @@ footer { background: #333337; }
 
   .sCont_area {padding: 60px 0;}
   .sub_container { padding-top: 47px;}
-  .sub_container.prd { padding-top: 47px; min-height: 925px !important;}
+  .sub_container.prd { padding-top: 47px; min-height: 1000px !important;}
   .sCont_wrap {width:100%; padding: 0 20px; box-sizing: border-box; }
   body.sub header { position: fixed; top: 0; left: 0; display: block; background: #fff; }
   body.sub.hidden header {background: transparent;}
